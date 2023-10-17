@@ -1,5 +1,5 @@
 import React from 'react';
-import './Navbar.css';
+import '../styles/Navbar.css';
 
 const Navbar = ({ showLinks, setShowLinks }) => {
   const closeLinks = () => {
@@ -11,16 +11,19 @@ const Navbar = ({ showLinks, setShowLinks }) => {
       <div className="logo">Tuutori Keskus</div>
       <div className={`nav-links ${showLinks ? 'show' : ''}`}>
         <a href="/" onClick={closeLinks}>
-          Home
+          Koti
         </a>
-        <a href="/romania" onClick={closeLinks}>
+        <a href="/Kurssit" onClick={closeLinks}>
+          Kurssit
+        </a>
+        <a href="/Romania" onClick={closeLinks}>
           Romania
         </a>
-        <a href="/about" onClick={closeLinks}>
-          About Us
+        <a href="/Meistä" onClick={closeLinks}>
+          Meistä
         </a>
-        <a href="/contact" onClick={closeLinks}>
-          Contact
+        <a href="/Yhteistiedot" onClick={closeLinks}>
+          Yhteistiedot
         </a>
       </div>
       <button className="burger" onClick={() => setShowLinks(!showLinks)}>

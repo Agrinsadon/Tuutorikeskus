@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Zen Antique Soft';
+    src: url('../font/ZenAntiqueSoft-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .yhteistiedot {
+    font-family: 'Zen Antique Soft', sans-serif;
+    background-color: #ECF9FF;
+    padding-top: 2rem;
+    height: 50rem;
+  }

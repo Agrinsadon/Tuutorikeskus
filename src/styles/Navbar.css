@@ -21,13 +21,11 @@
 }
 
 .logo {
-  font-family: 'Zen Antique Soft', sans-serif; /* Add font-family */
   font-size: 1.5rem;
   padding-left: 1rem;
 }
 
 .nav-links {
-  font-family: 'Zen Antique Soft', sans-serif; /* Add font-family */
   display: flex;
 }
 
@@ -35,7 +33,7 @@
   font-family: 'Zen Antique Soft', sans-serif; /* Add font-family */
   margin-left: 1.5rem;
   padding-left: 1rem;
-  color: black;
+  color: rgba(130, 130, 151, 1);
   text-decoration: none;
   transition: color 0.3s ease;
   border-radius: 5px;
