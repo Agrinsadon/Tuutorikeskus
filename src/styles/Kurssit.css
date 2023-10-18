@@ -13,5 +13,29 @@
     font-family: 'Zen Antique Soft', sans-serif;
     background-color: #ECF9FF;
     padding-top: 2rem;
-    height: 50rem;
+    height: 10rem;
   }
+.otsikko {
+  text-align: center;
+}
+
+
+.kurssitarjonta {
+  text-align: center;
+}
+.box {
+  width: 25rem;
+  height: 15rem;
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  margin: 40px;
+  margin-left: 0;
+  cursor: pointer;
+  display: inline-block;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
