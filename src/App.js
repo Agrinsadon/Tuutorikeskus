@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Koti from './components/Etusivu';
 import Kurssit from './components/Kurssit';
 import Romania from './components/Romania';
@@ -10,13 +10,11 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={Koti} />
         <Route path="/Kurssit" component={Kurssit} />
         <Route path="/Romania" component={Romania} />
-        <Route path="/Meistä" component={Meistä} />
+        <Route path="/meistä" component={Meistä} />
         <Route path="/Yhteistiedot" component={Yhteistiedot} />
-        {/* Redirect from root path to Etusivu */}
-        <Redirect from="/" to="/Etusivu" />
+        <Route path="/" component={Koti} />
       </Switch>
     </Router>
   );
