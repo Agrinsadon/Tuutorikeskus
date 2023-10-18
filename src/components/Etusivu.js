@@ -72,7 +72,8 @@ const Etusivu = () => {
       <div className='info-card'>
         <div className="big-card">
           <h2>Lääketiede ulkomailla?</h2>
-          <p>Suomessa tiedeyliopistoihin hyväksytään vain alle 11,5 lääketieteen tasoisia hakijoita. Tästä johtuen suuri osa lääkkeistä löytyy ulkomailta, mm. Ruotsissa, Virossa, Latviassa ja Romaniassa.
+          <p>Suomessa tiedeyliopistoihin hyväksytään vain alle 11,5 lääketieteen tasoisia hakijoita. Tästä johtuen suuri osa lääkkeistä löytyy ulkomailta, mm. Ruotsissa, Virossa, Latviassa ja Romaniassa.<br>
+          </br> <br></br>
           Haluamme varmistaa, että tavoittelevilla opiskelijoilla on mahdollisuus toteuttaa unelmiaan ja saavuttaa täysi potentiaalinsa lääketieteen alalla. Missiomme on tukea näitä nuoria yksilöitä hallitsemaan ratkaisevan polun, joka muokkaa heidän tulevaisuuttaan ja edistää merkittävästi heidän henkilökohtaista ja ammatillista kasvuaan. Näin toimimalla annamme heille mahdollisuuden toteuttaa toiveensa, mutta pyrimme myös luomaan lisäarvoa tuleville työtovereilleen ja koko terveydenhuoltoalalle. Sitoutumisemme perustuu huippuosaamisen, innovaatioiden ja omistautumisen edistämiseen seuraavan sukupolven terveydenhuollon ammattilaisten keskuudessa.</p>
           <button className="info-button" onClick={handleMeistäButtonClick}>Meistä</button>
         </div>
@@ -89,6 +90,41 @@ const Etusivu = () => {
           <button className="info-button" onClick={handleMeistäButtonClick}>Lue Lisää</button>
         </div>
       </div>
+      </div>
+      </div>
+
+      {/* Aikajana Section */}
+      <div className="aikajana">
+      <h2>Aikajanamme</h2>
+      <p>Olemme erittäin ylpeitä tilastosaavutuksistamme vuosien varrella <br /> Tutoriemme ja opiskelijoiden yhdessä saavuttamat onnistumiset</p>
+      <div className="timeline">
+      <div className="timeline-item">
+        <div className="circle">
+        <span className="percentage">90%</span>
+        </div>
+      </div>
+      <div className="timeline-item">
+        <div className="circle">
+        <span className="percentage">100%</span>
+        </div>
+      </div>
+      <div className="timeline-item">
+        <div className="circle">
+        <span className="percentage">89%</span>
+        </div>
+      </div>
+      <div className="timeline-item">
+        <div className="circle">
+        <span className="percentage">100%</span>
+        </div>
+      </div>
+      <div className="timeline-item">
+        <div className="circle">
+        <span className="percentage">100%</span>
+        </div>
+      </div>
+      </div>
+      <div className="timeline-frame">
       </div>
       </div>
     </div>

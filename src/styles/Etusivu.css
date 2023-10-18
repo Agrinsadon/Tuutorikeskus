@@ -206,7 +206,7 @@
 
 .small-card {
   height: 17.4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2.4rem;
   padding: 15px;
   border-radius: 15px;
   background-color: white;
@@ -218,10 +218,22 @@
 }
 
 .small-card .info-button {
-  margin-left: 33rem;
+  margin-left: auto;
+  margin-right: 2rem;
+  font-family: 'Zen Antique Soft', sans-serif;
+  background-color: rgba(6, 6, 64, 1);
+  margin-top: 15px;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 7rem;
+  display: block;
 }
 
-.info-button {
+.big-card .info-button {
   font-family: 'Zen Antique Soft', sans-serif;
   background-color: rgba(6, 6, 64, 1);
   margin-top: 15px;
@@ -236,6 +248,76 @@
   margin-right: auto;
   display: block;
 }
+
+/* Aikajana Section */
+.aikajana {
+  margin: 20px 120px;
+  text-align: center;
+  font-family: 'Zen Antique Soft', sans-serif;
+}
+
+.aikajana h2 {
+  font-size: 2.8rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.aikajana p {
+  font-size: 1.3rem;
+  color: rgba(130, 130, 151, 1);
+}
+
+.timeline {
+  display: flex;
+  justify-content: center;
+}
+
+.timeline-item {
+  position: relative;
+  text-align: center;
+  margin: 10px 45px; /* Adjust as needed */
+  margin-top: 2rem;
+}
+
+.circle {
+  position: relative;
+  display: inline-block;
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  background-color: rgba(206, 240, 255, 1);
+  border-radius: 50%;
+  font-size: 1.6rem; /* Adjust as needed */
+  color: rgba(255, 255, 255, 1);
+}
+
+.percentage {
+  font-family: 'Zen Antique Soft', sans-serif;
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.year {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  padding: 8px 16px; /* Adjust padding as needed */
+  font-size: 1.2rem;
+  color: black;
+}
+
+.timeline-frame {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(206, 240, 255, 1);
+  width: 74%;
+  margin-bottom: 5rem;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
 
 @media (max-width: 960px) {
 .content {
