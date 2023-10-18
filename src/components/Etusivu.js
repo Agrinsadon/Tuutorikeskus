@@ -1,11 +1,21 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faSearch, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { useHistory } from 'react-router-dom';
 import Navbar from './Navbar';
 import '../styles/Etusivu.css';
 
 const Etusivu = () => {
   const [showLinks, setShowLinks] = useState(false);
+  const history = useHistory();
+
+  const handleKurssitButtonClick = () => {
+    history.push('/Kurssit');
+  };
+
+  const handleMeistäButtonClick = () => {
+    history.push('/Meistä');
+  };
 
   return (
     <div>
@@ -15,7 +25,7 @@ const Etusivu = () => {
           <div className="text-container">
             <h1>Täydellinen paikka lääketieteelliselle matkallesi</h1>
             <p>Paikka jossa tuemme, ohjaamme ja mentoroimme koko sydämestämme pyrkiviä kollegoita heidän tiellään lääketieteen alalle.</p>
-            <button className="kurssit-button">Kurssit</button>
+            <button className="kurssit-button" onClick={handleKurssitButtonClick}>Kurssit</button>
             <div className="frame-container">
               <p>Siellä missä lääketieteen taidetta rakastetaan, siellä rakastetaan myös ihmiskuntaa - Hippocrates</p>
             </div>
@@ -60,27 +70,25 @@ const Etusivu = () => {
       {/* Lisa Tietoa Section */}
       <div className="lisa-tietoa">
       <div className='info-card'>
-        <div className="big-vertical-card">
+        <div className="big-card">
           <h2>Lääketiede ulkomailla?</h2>
           <p>Suomessa tiedeyliopistoihin hyväksytään vain alle 11,5 lääketieteen tasoisia hakijoita. Tästä johtuen suuri osa lääkkeistä löytyy ulkomailta, mm. Ruotsissa, Virossa, Latviassa ja Romaniassa.
-
-Haluamme varmistaa, että tavoittelevilla opiskelijoilla on mahdollisuus toteuttaa unelmiaan ja saavuttaa täysi potentiaalinsa lääketieteen alalla. Missiomme on tukea näitä nuoria yksilöitä hallitsemaan ratkaisevan polun, joka muokkaa heidän tulevaisuuttaan ja edistää merkittävästi heidän henkilökohtaista ja ammatillista kasvuaan. Näin toimimalla annamme heille mahdollisuuden toteuttaa toiveensa, mutta pyrimme myös luomaan lisäarvoa tuleville työtovereilleen ja koko terveydenhuoltoalalle. Sitoutumisemme perustuu huippuosaamisen, innovaatioiden ja omistautumisen edistämiseen seuraavan sukupolven terveydenhuollon ammattilaisten keskuudessa
-
-​</p>
-          <button>Meistä</button>
+          Haluamme varmistaa, että tavoittelevilla opiskelijoilla on mahdollisuus toteuttaa unelmiaan ja saavuttaa täysi potentiaalinsa lääketieteen alalla. Missiomme on tukea näitä nuoria yksilöitä hallitsemaan ratkaisevan polun, joka muokkaa heidän tulevaisuuttaan ja edistää merkittävästi heidän henkilökohtaista ja ammatillista kasvuaan. Näin toimimalla annamme heille mahdollisuuden toteuttaa toiveensa, mutta pyrimme myös luomaan lisäarvoa tuleville työtovereilleen ja koko terveydenhuoltoalalle. Sitoutumisemme perustuu huippuosaamisen, innovaatioiden ja omistautumisen edistämiseen seuraavan sukupolven terveydenhuollon ammattilaisten keskuudessa.</p>
+          <button className="info-button" onClick={handleMeistäButtonClick}>Meistä</button>
         </div>
-
-        <div className="small-horizontal-card">
+      <div className='small-cards-container'>
+        <div className="small-card">
           <h2>Lääketiede Romaniassa</h2>
-          <p>Romanian englanninkieliset lääketieteen koulutusohjelmat ovat korkeatasoisia ja täyttävät EU-maiden ja myös Suomen vaatimukset. Opinnot ovat käytännönläheisiä, ja ensimmäiset vuodet keskittyvät teoriaan (prekliininen vaihe), kun taas viimeiset kolme vuotta sisältävät intensiivistä työkokemusta (postkliininen vaihe)</p>
-          <button>Lue lisää</button>
+          <p>Romanian englanninkieliset lääketieteen koulutusohjelmat ovat korkeatasoisia ja täyttävät EU-maiden ja myös Suomen vaatimukset. Opinnot ovat käytännönläheisiä, ja ensimmäiset vuodet keskittyvät teoriaan (prekliininen vaihe), kun taas viimeiset kolme vuotta sisältävät intensiivistä työkokemusta (postkliininen vaihe).</p>
+          <button className="info-button" onClick={handleMeistäButtonClick}>Lue Lisää</button>
         </div>
 
-        <div className="small-horizontal-card">
+        <div className="small-card">
           <h2>Tenttivaatimukset</h2>
           <p>Romanian huippuyliopistot jättävät kemian ja fysiikan väliin pääsykokeissa ja keskittyvät anatomiaan ja fysiologiaan. Kokeet vaihtelevat (suulliset tai kirjalliset), ja ne tarjoavat alustan englannin- ja ainetaitosi esittelemiseen.</p>
-          <button>Lue lisää</button>
+          <button className="info-button" onClick={handleMeistäButtonClick}>Lue Lisää</button>
         </div>
+      </div>
       </div>
       </div>
     </div>

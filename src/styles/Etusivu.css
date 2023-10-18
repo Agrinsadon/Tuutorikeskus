@@ -179,10 +179,10 @@
   margin: 60px 120px;
 }
 
-.big-vertical-card {
+.big-card {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  flex-basis: 70%; /* Adjust width as needed */
+  flex-basis: 130%; /* Adjust width as needed */
   padding: 20px;
   border-radius: 15px;
   background-color: white;
@@ -190,19 +190,39 @@
   margin-right: 20px; /* Adjust spacing between big and small cards */
 }
 
-.small-horizontal-card {
-  flex-basis: calc(40% - 20px); /* Adjust width as needed */
-  margin-top: 5rem; /* Adjust spacing between small cards */
-  margin-bottom: 5rem;
+.big-card h2 {
+  text-align: center;
+}
+
+.big-card p {
+  color: rgba(130, 130, 151, 1);
+}
+
+.small-cards-container {
+  display: flex;
+  flex-direction: column; /* Stack the small cards vertically */
+  margin-top: 5rem;
+}
+
+.small-card {
+  height: 17.4rem;
+  margin-bottom: 1rem;
   padding: 15px;
   border-radius: 15px;
   background-color: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.small-card p {
+  color: rgba(130, 130, 151, 1);
+}
 
-.big-vertical-card button,
-.small-horizontal-card button {
+.small-card .info-button {
+  margin-left: 33rem;
+}
+
+.info-button {
+  font-family: 'Zen Antique Soft', sans-serif;
   background-color: rgba(6, 6, 64, 1);
   margin-top: 15px;
   color: white;
