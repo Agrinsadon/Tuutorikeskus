@@ -67,7 +67,6 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%;
   max-width: 7rem;
 }
 
@@ -89,7 +88,6 @@
   color: black;
 }
 
-/* Quote icon */
 .frame-container::before {
   content: '\201C';
   font-size: 2.8rem;
@@ -251,7 +249,7 @@
 
 /* Aikajana Section */
 .aikajana {
-  margin: 20px 120px;
+  margin: 5px 120px;
   text-align: center;
   font-family: 'Zen Antique Soft', sans-serif;
 }
@@ -297,6 +295,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: bold; /* Make the text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow to the text */
 }
 
 .year {
@@ -310,6 +309,7 @@
   max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
   margin: 0 22.7px; /* Adjust the margin for space between years */
   font-weight: bold; /* Make the text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow to the text */
 }
 
 .timeline-frame {
@@ -324,6 +324,54 @@
   border-radius: 10px;
 }
 
+/* Ota-yhteyttä section */
+.ota-yhteytta {
+  background-color: #ECF9FF;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.ota-yhteytta h2 {
+  font-size: 24px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.button {
+  font-family: 'Zen Antique Soft', sans-serif;
+  background-color: rgba(6, 6, 64, 1);
+  margin-top: 15px;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
 
 

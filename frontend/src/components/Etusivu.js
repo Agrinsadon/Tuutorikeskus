@@ -17,6 +17,11 @@ const Etusivu = () => {
     history.push('/Meistä');
   };
 
+  const handleSendMessage = () => {
+    // Implement logic to send the message (e.g., using fetch to your backend)
+    // You can use the state variables for input values
+  };
+
   return (
     <div>
       <div className="etusivu">
@@ -131,6 +136,30 @@ const Etusivu = () => {
       <span className="year">2021</span>
       <span className="year">2022</span>
       </div>
+      </div>
+      
+      {/* Ota Yhteyttä Section */}
+      <div className="ota-yhteytta">
+      <h2>Ota Yhteyttä</h2>
+      <div className="contact-form">
+        <div className="input-group">
+          <label>Name:</label>
+          <input type="text" name="name" />
+        </div>
+        <div className="input-group">
+          <label>Email:</label>
+          <input type="email" name="email" />
+        </div>
+        <div className="input-group">
+          <label>Subject:</label>
+          <input type="text" name="subject" />
+        </div>
+        <div className="input-group">
+          <label>Message:</label>
+          <textarea name="message"></textarea>
+        </div>
+        <button onClick={handleSendMessage}>Send</button>
+        </div>
       </div>
     </div>
   );
