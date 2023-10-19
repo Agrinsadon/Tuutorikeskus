@@ -140,27 +140,27 @@ const Etusivu = () => {
       
       {/* Ota Yhteyttä Section */}
       <div className="ota-yhteytta">
-      <h2>Ota Yhteyttä</h2>
-      <div className="contact-form">
+        <h2>Ota Yhteyttä</h2>
+        <div className="contact-form">
         <div className="input-group">
-          <label>Name:</label>
-          <input type="text" name="name" />
-        </div>
-        <div className="input-group">
-          <label>Email:</label>
-          <input type="email" name="email" />
+        <input type="text" name="name" placeholder="Name *" />
         </div>
         <div className="input-group">
-          <label>Subject:</label>
-          <input type="text" name="subject" />
+        <input type="email" name="email" placeholder="Email *" />
         </div>
         <div className="input-group">
-          <label>Message:</label>
-          <textarea name="message"></textarea>
+        <input type="text" name="phone" placeholder="Phone" />
         </div>
-        <button onClick={handleSendMessage}>Send</button>
+        <div className="input-group">
+        <input type="text" name="subject" placeholder="Subject *" />
         </div>
+        <div className="input-group">
+        <textarea name="message" placeholder="Message *"></textarea>
+        </div>
+        <button className="yhteys-button" onClick={handleSendMessage}>Send</button>
       </div>
+</div>
+
     </div>
   );
 };

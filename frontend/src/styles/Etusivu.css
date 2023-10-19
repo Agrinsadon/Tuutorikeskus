@@ -329,35 +329,35 @@
   background-color: #ECF9FF;
   padding: 20px;
   margin-top: 20px;
+  font-family: 'Zen Antique Soft', sans-serif;
 }
 
 .ota-yhteytta h2 {
-  font-size: 24px;
+  font-size: 2.8rem;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 .input-group {
   margin-bottom: 15px;
 }
 
-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
 input,
 textarea {
-  width: 100%;
+  width: 50%;
   padding: 8px;
-  box-sizing: border-box;
   margin-top: 5px;
+  border-radius: 10px;
 }
 
-.button {
+.yhteys-button {
   font-family: 'Zen Antique Soft', sans-serif;
   background-color: rgba(6, 6, 64, 1);
   margin-top: 15px;
@@ -368,8 +368,6 @@ textarea {
   cursor: pointer;
   width: 100%;
   max-width: 7rem;
-  margin-left: auto;
-  margin-right: auto;
   display: block;
 }
 
