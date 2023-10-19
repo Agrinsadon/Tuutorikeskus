@@ -296,26 +296,34 @@
   top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-weight: bold; /* Make the text bold */
 }
 
 .year {
-  display: inline-block;
-  text-align: center;
-  margin-top: 10px;
-  padding: 8px 16px; /* Adjust padding as needed */
-  font-size: 1.2rem;
-  color: black;
+  font-family: 'Zen Antique Soft', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5%; /* Adjust as needed for responsiveness */
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 1);
+  max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
+  margin: 0 22.7px; /* Adjust the margin for space between years */
+  font-weight: bold; /* Make the text bold */
 }
 
 .timeline-frame {
+  display: flex;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(206, 240, 255, 1);
   width: 74%;
   margin-bottom: 5rem;
-  padding: 20px;
+  padding: 5px;
   border-radius: 10px;
 }
+
 
 
 

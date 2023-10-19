@@ -125,6 +125,11 @@ const Etusivu = () => {
       </div>
       </div>
       <div className="timeline-frame">
+      <span className="year">2018</span>
+      <span className="year">2019</span>
+      <span className="year">2020</span>
+      <span className="year">2021</span>
+      <span className="year">2022</span>
       </div>
       </div>
     </div>
