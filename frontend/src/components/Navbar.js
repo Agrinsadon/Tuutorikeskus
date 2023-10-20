@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Navbar.css';
 
 const Navbar = ({ showLinks, setShowLinks }) => {
@@ -26,11 +28,11 @@ const Navbar = ({ showLinks, setShowLinks }) => {
           Yhteistiedot
         </a>
       </div>
-      <button className="burger" onClick={() => setShowLinks(!showLinks)}>
-        <div></div>
-        <div></div>
-        <div></div>
-      </button>
+      <FontAwesomeIcon
+        icon={faBars} // Use the FontAwesome icon you prefer
+        className="burger"
+        onClick={() => setShowLinks(!showLinks)}
+      />
     </div>
   );
 };

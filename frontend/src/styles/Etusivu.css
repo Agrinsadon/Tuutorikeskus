@@ -326,7 +326,7 @@
 
 
 
-@media (max-width: 960px) {
+@media (min-width: 768px) and (max-width: 1110px) {
 .content {
   display: flex;
   flex-wrap: wrap;
