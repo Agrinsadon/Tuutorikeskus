@@ -9,7 +9,7 @@ router.use(bodyParser.json());
 
 // Validation middleware (unchanged)
 function validateRequiredFields(req, res, next) {
-  const requiredFields = ['name', 'email', 'phone', 'subject', 'message'];
+  const requiredFields = ['name', 'email', 'subject', 'message'];
 
   for (const field of requiredFields) {
     if (!req.body[field]) {

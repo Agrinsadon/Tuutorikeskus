@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 function sendEmail(name, email, phone, subject, message, callback) {
-  const emailContent = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`;
+  const emailContent = `Nimi: ${name}\nSähköposti: ${email}\nPuhelin: ${phone}\nViesti: ${message}`;
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',

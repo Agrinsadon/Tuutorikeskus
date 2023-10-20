@@ -51,7 +51,7 @@ function EmailForm() {
       .catch((error) => {
         console.error(error);
         // Show an error toast notification
-        toast.error('Error sending message', { position: 'top-right' });
+        toast.error('Viestiä ei voitu lähettää!', { position: 'top-right' });
       });
   };
   
@@ -85,10 +85,9 @@ function EmailForm() {
           <input
             type="text"
             name="phone"
-            placeholder="Puhelin*"
+            placeholder="Puhelin"
             value={formData.phone}
             onChange={handleChange}
-            required
           />
         </div>
         <div className='inputs'>

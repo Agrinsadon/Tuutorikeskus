@@ -56,6 +56,7 @@
 
 /* Style the toast notifications */
 .Toastify__toast {
+    margin-top: 6rem;
     background-color: white; /* Background color */
     color: green; /* Text color */
     border-radius: 4px;
