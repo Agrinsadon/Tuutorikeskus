@@ -6,31 +6,35 @@ const Kurssit = () => {
     const [showLinks, setShowLinks] = useState(false);
   
     return (
-      <div>
+      <div class="kurssitsivu">
         <div className="kurssit">
         <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
         </div>
-        <div class="otsikko">
+        <div className="kurssiotsikko">
         <h1>Kurssitarjotin</h1>
         </div>
-      <div class="kurssitarjonta">
-        <div class="row">
-        <div class="box">
-          <p>Intensiivinen Kurssi</p>
-          <p>3,5 viikkoa</p>
+
+        <div className="row">
+        <div className="box">
+          <div className="otsikko">
+             <img src="https://media.healthecareers.com/wp-content/uploads/2022/02/11211459/medicalschool-3.jpg" alt="Example" class="kuva"></img>
+             </div>
+          <span className='teksti1'>Intensiivinen Kurssi</span>
+          <span className='teksti2'> 3,5 viikkoa </span>
+          <div className="teksti">
+          <p>1. Intensiivikurssi sisältää 54 opetustuntia.</p>
+          <p> 2. Hakemusprosessissa avustaminen.</p>
+          <p>3. Matkustamme kanssasi Romaniaan.</p>
+          </div>
+          <div className='info-container'>
+          <span className="hinta">2400€</span>
+          <span><button className="info-button">Ilmoittaudu</button></span>
+            </div>
+            </div>
+          </div>
         </div>
-        <div class="box">Super Kurssi</div>
-        <div class="box">Super-takuu Kurssi</div>
-        </div>
-       <div class="kurssitarjotin">
-        <div class="row">
-        <div class="box">Hakemuspalvelu + matka</div>
-        <div class="box">Hakemuspalvelu</div>
-        <div class="box">Knots & suture</div>
-        </div>
-        </div>
-    </div>
-    </div>
+    
+
     );
 };
 
