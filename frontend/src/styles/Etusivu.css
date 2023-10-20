@@ -215,7 +215,7 @@
   color: rgba(130, 130, 151, 1);
 }
 
-.small-card .info-button {
+.small-card .info-nappi {
   margin-left: auto;
   margin-right: 2rem;
   font-family: 'Zen Antique Soft', sans-serif;
@@ -231,7 +231,7 @@
   display: block;
 }
 
-.big-card .info-button {
+.big-card .info-nappi {
   font-family: 'Zen Antique Soft', sans-serif;
   background-color: rgba(6, 6, 64, 1);
   margin-top: 15px;

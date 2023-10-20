@@ -76,19 +76,19 @@ const Etusivu = () => {
           <p>Suomessa tiedeyliopistoihin hyväksytään vain alle 11,5 lääketieteen tasoisia hakijoita. Tästä johtuen suuri osa lääkkeistä löytyy ulkomailta, mm. Ruotsissa, Virossa, Latviassa ja Romaniassa.<br />
           <br />
           Haluamme varmistaa, että tavoittelevilla opiskelijoilla on mahdollisuus toteuttaa unelmiaan ja saavuttaa täysi potentiaalinsa lääketieteen alalla. Missiomme on tukea näitä nuoria yksilöitä hallitsemaan ratkaisevan polun, joka muokkaa heidän tulevaisuuttaan ja edistää merkittävästi heidän henkilökohtaista ja ammatillista kasvuaan. Näin toimimalla annamme heille mahdollisuuden toteuttaa toiveensa, mutta pyrimme myös luomaan lisäarvoa tuleville työtovereilleen ja koko terveydenhuoltoalalle. Sitoutumisemme perustuu huippuosaamisen, innovaatioiden ja omistautumisen edistämiseen seuraavan sukupolven terveydenhuollon ammattilaisten keskuudessa.</p>
-          <button className="info-button" onClick={handleMeistäButtonClick}>Meistä</button>
+          <button className="info-nappi" onClick={handleMeistäButtonClick}>Meistä</button>
         </div>
       <div className='small-cards-container'>
         <div className="small-card">
           <h2>Lääketiede Romaniassa</h2>
           <p>Romanian englanninkieliset lääketieteen koulutusohjelmat ovat korkeatasoisia ja täyttävät EU-maiden ja myös Suomen vaatimukset. Opinnot ovat käytännönläheisiä, ja ensimmäiset vuodet keskittyvät teoriaan (prekliininen vaihe), kun taas viimeiset kolme vuotta sisältävät intensiivistä työkokemusta (postkliininen vaihe).</p>
-          <button className="info-button" onClick={handleMeistäButtonClick}>Lue Lisää</button>
+          <button className="info-nappi" onClick={handleMeistäButtonClick}>Lue Lisää</button>
         </div>
 
         <div className="small-card">
           <h2>Tenttivaatimukset</h2>
           <p>Romanian huippuyliopistot jättävät kemian ja fysiikan väliin pääsykokeissa ja keskittyvät anatomiaan ja fysiologiaan. Kokeet vaihtelevat (suulliset tai kirjalliset), ja ne tarjoavat alustan englannin- ja ainetaitosi esittelemiseen.</p>
-          <button className="info-button" onClick={handleMeistäButtonClick}>Lue Lisää</button>
+          <button className="info-nappi" onClick={handleMeistäButtonClick}>Lue Lisää</button>
         </div>
       </div>
       </div>
