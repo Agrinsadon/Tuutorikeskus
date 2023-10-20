@@ -111,7 +111,7 @@ function EmailForm() {
           />
         </div>
         <div>
-          <button type="submit">Lähetä</button>
+          <button className='button-lähetä' type="submit">Lähetä</button>
         </div>
       </form>
       </div>

@@ -38,7 +38,7 @@
     box-shadow: none;
   }
   
-  button {
+  .button-lähetä {
     font-family: 'Zen Antique Soft', sans-serif;
     background-color: rgba(6, 6, 64, 1);
     margin-top: 20px;
