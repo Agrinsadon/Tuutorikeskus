@@ -59,13 +59,13 @@ function EmailForm() {
   return (
     <div>
       <div className='ota-yhteyttä'>
-      <h1>Contact Us</h1>
+      <h1>Ota Yhteyttä</h1>
       <form onSubmit={handleSubmit}>
         <div className='inputs'>
           <input
             type="text"
             name="name"
-            placeholder="Nimi"
+            placeholder="Nimi*"
             value={formData.name}
             onChange={handleChange}
             required
@@ -75,7 +75,7 @@ function EmailForm() {
           <input
             type="email"
             name="email"
-            placeholder="Sähköposti"
+            placeholder="Sähköposti*"
             value={formData.email}
             onChange={handleChange}
             required
@@ -85,7 +85,7 @@ function EmailForm() {
           <input
             type="text"
             name="phone"
-            placeholder="Puhelin"
+            placeholder="Puhelin*"
             value={formData.phone}
             onChange={handleChange}
             required

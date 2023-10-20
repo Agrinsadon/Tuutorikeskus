@@ -73,8 +73,8 @@ const Etusivu = () => {
       <div className='info-card'>
         <div className="big-card">
           <h2>Lääketiede ulkomailla?</h2>
-          <p>Suomessa tiedeyliopistoihin hyväksytään vain alle 11,5 lääketieteen tasoisia hakijoita. Tästä johtuen suuri osa lääkkeistä löytyy ulkomailta, mm. Ruotsissa, Virossa, Latviassa ja Romaniassa.<br>
-          </br> <br></br>
+          <p>Suomessa tiedeyliopistoihin hyväksytään vain alle 11,5 lääketieteen tasoisia hakijoita. Tästä johtuen suuri osa lääkkeistä löytyy ulkomailta, mm. Ruotsissa, Virossa, Latviassa ja Romaniassa.<br />
+          <br />
           Haluamme varmistaa, että tavoittelevilla opiskelijoilla on mahdollisuus toteuttaa unelmiaan ja saavuttaa täysi potentiaalinsa lääketieteen alalla. Missiomme on tukea näitä nuoria yksilöitä hallitsemaan ratkaisevan polun, joka muokkaa heidän tulevaisuuttaan ja edistää merkittävästi heidän henkilökohtaista ja ammatillista kasvuaan. Näin toimimalla annamme heille mahdollisuuden toteuttaa toiveensa, mutta pyrimme myös luomaan lisäarvoa tuleville työtovereilleen ja koko terveydenhuoltoalalle. Sitoutumisemme perustuu huippuosaamisen, innovaatioiden ja omistautumisen edistämiseen seuraavan sukupolven terveydenhuollon ammattilaisten keskuudessa.</p>
           <button className="info-button" onClick={handleMeistäButtonClick}>Meistä</button>
         </div>
