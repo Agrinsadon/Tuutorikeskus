@@ -4,6 +4,7 @@ import { faBook, faSearch, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { useHistory } from 'react-router-dom';
 import Navbar from './Navbar';
 import '../styles/Etusivu.css';
+import EmailForm from './EmailForm';
 
 const Etusivu = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -15,11 +16,6 @@ const Etusivu = () => {
 
   const handleMeistäButtonClick = () => {
     history.push('/Meistä');
-  };
-
-  const handleSendMessage = () => {
-    // Implement logic to send the message (e.g., using fetch to your backend)
-    // You can use the state variables for input values
   };
 
   return (
@@ -139,28 +135,7 @@ const Etusivu = () => {
       </div>
       
       {/* Ota Yhteyttä Section */}
-      <div className="ota-yhteytta">
-        <h2>Ota Yhteyttä</h2>
-        <div className="contact-form">
-        <div className="input-group">
-        <input type="text" name="name" placeholder="Name *" />
-        </div>
-        <div className="input-group">
-        <input type="email" name="email" placeholder="Email *" />
-        </div>
-        <div className="input-group">
-        <input type="text" name="phone" placeholder="Phone" />
-        </div>
-        <div className="input-group">
-        <input type="text" name="subject" placeholder="Subject *" />
-        </div>
-        <div className="input-group">
-        <textarea name="message" placeholder="Message *"></textarea>
-        </div>
-        <button className="yhteys-button" onClick={handleSendMessage}>Send</button>
-      </div>
-</div>
-
+      <EmailForm />
     </div>
   );
 };

@@ -1,0 +1,65 @@
+/* Ota-yhteyttä section */
+
+.ota-yhteyttä {
+    background-color: #ECF9FF;
+    font-family: 'Zen Antique Soft', sans-serif;
+    padding: 20px 0;
+  }
+  
+  .ota-yhteyttä h1 {
+    font-size: 2.8rem;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  
+  .inputs input {
+    border: none;
+    box-shadow: none;
+  }
+  
+  button {
+    font-family: 'Zen Antique Soft', sans-serif;
+    background-color: rgba(6, 6, 64, 1);
+    margin-top: 15px;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 7rem;
+    display: block;
+    margin-left: 7.5rem;
+  }
+
+/* Style the toast notifications */
+.Toastify__toast {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  
+  /* Style the success notification */
+  .Toastify__toast--success {
+    background-color: #28a745; /* Green color for success */
+  }
+  
+  /* Style the error notification */
+  .Toastify__toast--error {
+    background-color: #dc3545; /* Red color for error */
+  }
+  

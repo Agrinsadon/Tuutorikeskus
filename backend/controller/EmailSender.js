@@ -1,0 +1,33 @@
+const nodemailer = require('nodemailer');
+require('dotenv').config();
+
+function sendEmail(name, email, phone, subject, message, callback) {
+  const emailContent = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`;
+
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS,
+    }
+  });
+
+  const mailOptions = {
+    from: email,
+    to: 'sadon.code@gmail.com',
+    subject: subject,
+    text: emailContent
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error(error);
+      callback(error, null);
+    } else {
+      console.log('Email sent: ' + info.response);
+      callback(null, { message: 'Email sent successfully' }); // Send a success message
+    }
+  });
+}
+
+module.exports = { sendEmail };
