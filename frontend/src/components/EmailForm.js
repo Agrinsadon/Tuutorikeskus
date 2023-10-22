@@ -35,7 +35,13 @@ function EmailForm() {
         if (!response.ok) {
           throw new Error(`Request failed with status ${response.status}`);
         }
-        return response.json();
+        // Check if the response contains valid JSON
+        const contentType = response.headers.get('content-type');
+        if (contentType && contentType.includes('application/json')) {
+          return response.json();
+        } else {
+          throw new Error('Response is not valid JSON');
+        }
       })
       .then((data) => {
         console.log(data);
@@ -56,6 +62,7 @@ function EmailForm() {
         toast.error('Viestiä ei voitu lähettää!', { position: 'top-right' });
       });
   };
+  
 
   return (
     <div>
