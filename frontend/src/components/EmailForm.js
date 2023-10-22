@@ -3,7 +3,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; // Import the CSS
 import '../styles/Emailform.css'
 
-const apiUrl = 'https://tuutorikeskus.onrender.com/email/send-email';
+const apiUrl = 'http://localhost:5000/proxy';
 
 function EmailForm() {
   const [formData, setFormData] = useState({
