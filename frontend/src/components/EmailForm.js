@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
+import axios from 'axios';
 import 'react-toastify/dist/ReactToastify.css'; // Import the CSS
 import '../styles/Emailform.css'
 
@@ -19,52 +20,44 @@ function EmailForm() {
       [name]: value,
     });
   };
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('https://tuutorikeskus.onrender.com/email/send-email', {
-      method: 'POST',
+  
+    // Define your data
+    const emailData = {
+      name: 'John Doe',
+      email: 'john@example.com',
+      phone: '123-456-7890',
+      subject: 'Example Subject',
+      message: 'This is an example message.',
+    };
+  
+    axios.post('https://tuutorikeskus.onrender.com/email/send-email', emailData, {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(formData),
     })
       .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Request failed with status ${response.status}`);
-        }
-        return response.text(); // Parse the response as text
-      })
-      .then((data) => {
-        try {
-          const parsedData = JSON.parse(data);
-          console.log(parsedData);
-          // Show a success toast notification
-          toast.success('Viesti on lähetetty!', { position: 'top-right' });
-          // Clear the form fields
-          setFormData({
-            name: '',
-            email: '',
-            phone: '',
-            subject: '',
-            message: '',
-          });
-        } catch (error) {
-          // Handle the case where the response is not valid JSON
-          console.error('Invalid JSON response:', data);
-          // Show an error toast notification
-          toast.error('Viestiä ei voitu lähettää!', { position: 'top-right' });
-        }
+        console.log(response.data);
+        // Show a success toast notification
+        toast.success('Viesti on lähetetty!', { position: 'top-right' });
+        // Clear the form fields
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: '',
+        });
       })
       .catch((error) => {
         console.error(error);
         // Show an error toast notification
         toast.error('Viestiä ei voitu lähettää!', { position: 'top-right' });
       });
-    };
+  };
   
-  
-
   return (
     <div>
       <div className='ota-yhteyttä'>
