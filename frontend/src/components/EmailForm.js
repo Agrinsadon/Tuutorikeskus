@@ -22,7 +22,7 @@ function EmailForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('http://https://tuutorikeskus.onrender.com//email/send-email', {
+    fetch('https://tuutorikeskus.onrender.com/email/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
