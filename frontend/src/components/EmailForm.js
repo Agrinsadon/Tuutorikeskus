@@ -3,6 +3,8 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; // Import the CSS
 import '../styles/Emailform.css'
 
+const apiUrl = 'https://tuutorikeskus.onrender.com/email/send-email';
+
 function EmailForm() {
   const [formData, setFormData] = useState({
     name: '',
@@ -13,16 +15,16 @@ function EmailForm() {
   });
 
   const handleChange = (e) => {
-    const { email, value } = e.target;
+    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [email]: value,
+      [name]: value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('https://tuutorikeskus.onrender.com/email/send-email', formData, {
+    fetch(apiUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -54,7 +56,6 @@ function EmailForm() {
         toast.error('Viestiä ei voitu lähettää!', { position: 'top-right' });
       });
   };
-  
 
   return (
     <div>
