@@ -33,27 +33,36 @@ function EmailForm() {
         if (!response.ok) {
           throw new Error(`Request failed with status ${response.status}`);
         }
-        return response.json();
+        return response.text(); // Parse the response as text
       })
       .then((data) => {
-        console.log(data);
-        // Show a success toast notification
-        toast.success('Viesti on lähetetty!', { position: 'top-right' });
-        // Clear the form fields
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          subject: '',
-          message: '',
-        });
+        try {
+          const parsedData = JSON.parse(data);
+          console.log(parsedData);
+          // Show a success toast notification
+          toast.success('Viesti on lähetetty!', { position: 'top-right' });
+          // Clear the form fields
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            subject: '',
+            message: '',
+          });
+        } catch (error) {
+          // Handle the case where the response is not valid JSON
+          console.error('Invalid JSON response:', data);
+          // Show an error toast notification
+          toast.error('Viestiä ei voitu lähettää!', { position: 'top-right' });
+        }
       })
       .catch((error) => {
         console.error(error);
         // Show an error toast notification
         toast.error('Viestiä ei voitu lähettää!', { position: 'top-right' });
       });
-  };
+    };
+  
   
 
   return (
