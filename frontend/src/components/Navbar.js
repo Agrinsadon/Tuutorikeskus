@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import '../styles/Navbar.css';
 
 const Navbar = ({ showLinks, setShowLinks }) => {
@@ -12,21 +13,21 @@ const Navbar = ({ showLinks, setShowLinks }) => {
     <div className="navbar">
       <div className="logo">Tuutori Keskus</div>
       <div className={`nav-links ${showLinks ? 'show' : ''}`}>
-        <a href="/" onClick={closeLinks}>
+        <Link to="/" onClick={closeLinks}>
           Koti
-        </a>
-        <a href="/Kurssit" onClick={closeLinks}>
+        </Link>
+        <Link to="/Kurssit" onClick={closeLinks}>
           Kurssit
-        </a>
-        <a href="/Romania" onClick={closeLinks}>
+        </Link>
+        <Link to="/Romania" onClick={closeLinks}>
           Romania
-        </a>
-        <a href="/Meistä" onClick={closeLinks}>
+        </Link>
+        <Link to="/Meistä" onClick={closeLinks}>
           Meistä
-        </a>
-        <a href="/Yhteistiedot" onClick={closeLinks}>
+        </Link>
+        <Link to="/Yhteistiedot" onClick={closeLinks}>
           Yhteistiedot
-        </a>
+        </Link>
       </div>
       <FontAwesomeIcon
         icon={faBars} // Use the FontAwesome icon you prefer
