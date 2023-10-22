@@ -11,15 +11,6 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use('/email', emailRoutes);
 
-// Serve static files from the 'build' directory.
-app.use(express.static(path.join(__dirname, 'frontend', 'public')));
-
-// Define a catch-all route to serve the 'index.html' for all other routes.
-app.get('/*', (req, res) => {
-  // Serve the 'index.html' from the 'public' folder inside the 'frontend' directory.
-  res.sendFile(path.join(__dirname, 'frontend', 'public', 'index.html'));
-});
-
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
