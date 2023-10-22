@@ -22,7 +22,7 @@ function EmailForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('http://localhost:5000/proxy', {
+    fetch('http://localhost:5000/email/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -33,13 +33,7 @@ function EmailForm() {
         if (!response.ok) {
           throw new Error(`Request failed with status ${response.status}`);
         }
-        // Check if the response contains valid JSON
-        const contentType = response.headers.get('content-type');
-        if (contentType && contentType.includes('application/json')) {
-          return response.json();
-        } else {
-          throw new Error('Response is not valid JSON');
-        }
+        return response.json();
       })
       .then((data) => {
         console.log(data);
@@ -54,6 +48,7 @@ function EmailForm() {
           message: '',
         });
       })
+      
       .catch((error) => {
         console.error(error);
         // Show an error toast notification
