@@ -4,15 +4,15 @@ require('dotenv').config();
 function sendEmail(name, email, phone, subject, message, callback) {
   const emailContent = `Nimi: ${name}\nSähköposti: ${email}\nPuhelin: ${phone}\nViesti: ${message}`;
 
-  const transporter = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465, // Use 587 for TLS
     secure: true, // For SSL
     auth: {
-      user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_PASS,
-    },
-  });
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_PASS,
+  },
+});
 
   const mailOptions = {
     from: email,

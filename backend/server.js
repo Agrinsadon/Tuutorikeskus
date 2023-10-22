@@ -2,7 +2,6 @@ const cors = require('cors');
 require('dotenv').config();
 const express = require('express');
 const emailRoutes = require('./router/EmailRoutes');
-const path = require('path'); // Import the path module.
 
 const app = express();
 const port = process.env.PORT || 3000;

@@ -24,20 +24,12 @@ function EmailForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
   
-    // Define your data
-    const emailData = {
-      name: 'John Doe',
-      email: 'john@example.com',
-      phone: '123-456-7890',
-      subject: 'Example Subject',
-      message: 'This is an example message.',
-    };
-  
-    axios.post('https://tuutorikeskus.onrender.com/email/send-email', emailData, {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    })
+    axios
+      .post('https://tuutorikeskus.onrender.com/email/send-email', formData, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
       .then((response) => {
         console.log(response.data);
         // Show a success toast notification
@@ -57,6 +49,7 @@ function EmailForm() {
         toast.error('Viestiä ei voitu lähettää!', { position: 'top-right' });
       });
   };
+  
   
   return (
     <div>

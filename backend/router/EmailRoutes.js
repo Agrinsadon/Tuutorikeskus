@@ -29,6 +29,9 @@ function validateRequiredFields(req, res, next) {
 router.post('/send-email', validateRequiredFields, (req, res) => {
   const { name, email, phone, subject, message } = req.body;
 
+  // Logging the received data for debugging
+  console.log('Received data:', req.body);
+
   sendEmail(name, email, phone, subject, message, (error, info) => {
     if (error) {
       return res.status(500).json({ error: error.toString() }); // Send an error response
