@@ -138,8 +138,6 @@
 }
 
 .server-card {
-  display: flex;
-  flex-direction: column;
   margin: 0 10px;
   width: calc(33.33% - 20px);
   margin-top: 40px;
@@ -300,7 +298,6 @@
 
 .year {
   font-family: 'Zen Antique Soft', sans-serif;
-  display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 5%; /* Adjust as needed for responsiveness */
@@ -310,6 +307,8 @@
   margin: 0 22.7px; /* Adjust the margin for space between years */
   font-weight: bold; /* Make the text bold */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow to the text */
+  flex-wrap: wrap;
+  
 }
 
 .timeline-frame {
@@ -324,24 +323,150 @@
   border-radius: 10px;
 }
 
+@media screen and (max-width: 1200px) {
+  .server-card p {
+    font-size: 1rem;
+  }
 
+  .big-card {
+    height: 35.45rem;
+  }
+  .small-card {
+    margin-bottom: 0.65rem;
+  }
 
-@media (min-width: 768px) and (max-width: 1110px) {
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: 120px;
-  margin-right: 120px;
+  .big-card p {
+    font-size: 0.814rem;
+  }
+  .small-card p {
+    font-size: 0.814rem;
+  }
+  .timeline-frame {
+    width: 92%;
+  }
+
 }
 
-.image-container {
-  flex-shrink: 0;
-}
+@media screen and (max-width: 600px) {
+
+  .etusivu {
+    height: 40rem;
+  }
+
+  .firstpage {
+    margin-left: 49px;
+  }
+
+  .medical-image {
+    display: none;
+  }
   
+  .text-container {
+    margin-top: 1.5rem;
+  }
+
+  .text-container h1 {
+    font-size: 1.9rem;
+    width: 25rem;
+  }
+  
+  .text-container p {
+    font-size: 0.9rem;
+    width: 18rem;
+  }
+  
+  .kurssit-button {
+    font-size: 0.7rem;
+  }
+  
+  .frame-container {
+    width: 17rem;
+    flex-wrap: wrap;
+  }
+  
+  .frame-container p {
+    font-size: 0.8rem;
+    width: 15rem;
+  }
+
+  /* Palvelumme section */
+
+  .palvelumme {
+    margin: 0px 0px;
+  }
+  
+  .palvelumme h1 {
+    font-size: 1.9rem;
+  }
+  
+  .palvelumme p {
+    font-size: 0.9rem;
+  }
+  
+  .icon-frame {
+    background-color: rgba(236, 249, 255, 0.8);
+    border-radius: 10px;
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .card-logo {
+    margin-top: 0.7rem;
+    margin-left: 0.3rem;
+    font-size: 1.5rem;
+    color: rgba(79, 93, 115, 1);
+    width: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .card-container {
+    display: block;
+    flex-wrap: wrap;
+  }
+
+  .server-card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .server-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .server-card p {
+    font-size: 16px;
+  }
+
+
+
+
+
+
+
+  .big-card {
+    height: 35.45rem;
+  }
+  .small-card {
+    margin-bottom: 0.65rem;
+  }
+
+  .big-card p {
+    font-size: 0.814rem;
+  }
+  .small-card p {
+    font-size: 0.814rem;
+  }
+  .timeline-frame {
+    width: 92%;
+  }
+
+}
+
+@media (min-width: 883px) and (max-width: 1110px) {
+
 .medical-image {
-  width: 200rem;
-  max-width: 350px;
+  max-width: 293px;
   border-radius: 30px;
   margin-top: 80px;
   height: 28.9rem;

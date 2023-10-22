@@ -19,7 +19,7 @@ const Etusivu = () => {
   };
 
   return (
-    <div>
+    <div style={{ maxWidth: "100%", overflowX: "auto" }}>
       <div className="etusivu">
         <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
         <div className="firstpage">
