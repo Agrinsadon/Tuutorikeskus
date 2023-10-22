@@ -3,8 +3,6 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; // Import the CSS
 import '../styles/Emailform.css'
 
-const apiUrl = 'http://localhost:5000/proxy';
-
 function EmailForm() {
   const [formData, setFormData] = useState({
     name: '',
@@ -24,7 +22,7 @@ function EmailForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(apiUrl, {
+    fetch('http://localhost:5000/proxy', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
