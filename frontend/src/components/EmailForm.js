@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; // Import the CSS
+import React, { useState, useEffect} from 'react';
 import '../styles/Emailform.css'
 
 function EmailForm() {
@@ -11,6 +9,8 @@ function EmailForm() {
     subject: '',
     message: '',
   });
+
+  const [messageSent, setMessageSent] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -37,8 +37,6 @@ function EmailForm() {
       })
       .then((data) => {
         console.log(data);
-        // Show a success toast notification
-        toast.success('Viesti on lähetetty!', { position: 'bottom-center' });
         // Clear the form fields
         setFormData({
           name: '',
@@ -47,14 +45,23 @@ function EmailForm() {
           subject: '',
           message: '',
         });
+        setMessageSent(true);
       })
 
       .catch((error) => {
         console.error(error);
-        // Show an error toast notification
-        toast.error('Viestiä ei voitu lähettää!', { position: 'bottom-center' });
       });
   };
+
+  useEffect(() => {
+    if (messageSent) {
+      // After 5 seconds, reset the messageSent state to hide the message
+      const timer = setTimeout(() => {
+        setMessageSent(false);
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [messageSent]);
   
 
   return (
@@ -113,9 +120,9 @@ function EmailForm() {
         <div>
           <button className='button-lähetä' type="submit">Lähetä</button>
         </div>
+        {messageSent && (<div className="message-sent">Viesti Lähettetty</div>)}
       </form>
       </div>
-      <ToastContainer position='bottom-center' autoClose={3000} />
     </div>
   );
 }

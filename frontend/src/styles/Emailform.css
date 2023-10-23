@@ -59,24 +59,11 @@
     background-color: rgba(6, 6, 64, 0.8); /* Adjust the color on hover */
 }
 
-/* Style the toast notifications */
-.Toastify__toast {
-    bottom: 1.6rem;
-    right: 19rem;
-    background-color: white; /* Background color */
-    color: green; /* Text color */
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    width: 220px; /* Adjust the width as needed */
-    height: 65px; /* Adjust the height as needed */
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-  }
-
-  .Toastify__close-button {
-    display: none;
+  .message-sent {
+    font-family: 'Zen Antique Soft', sans-serif;
+    text-align: left;
+    color: green;
+    font-weight: bold;
   }
 
 @media screen and (max-width: 600px) {
@@ -111,13 +98,5 @@
   margin-left: 2rem;
 }
 
-/* Style the toast notifications */
-.Toastify__toast {
-  bottom: 3.6rem;
-  left: 10rem;
-  width: 164.1px; /* Adjust the width as needed */
-  height: 60px; /* Adjust the height as needed */
-  font-size: 0.9rem;
-}
 }
 
