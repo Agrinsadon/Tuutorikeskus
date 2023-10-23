@@ -14,10 +14,6 @@ const Etusivu = () => {
     history.push('/Kurssit');
   };
 
-  const handleMeistäButtonClick = () => {
-    history.push('/Meistä');
-  };
-
   return (
     <div style={{ maxWidth: "100%", overflowX: "auto" }}>
       <div className="etusivu">
@@ -68,32 +64,6 @@ const Etusivu = () => {
         </div>
       </div>
 
-      {/* Lisa Tietoa Section */}
-      <div className="lisa-tietoa">
-      <div className='info-card'>
-        <div className="big-card">
-          <h2>Lääketiede ulkomailla?</h2>
-          <p>Suomessa tiedeyliopistoihin hyväksytään vain alle 11,5 lääketieteen tasoisia hakijoita. Tästä johtuen suuri osa lääkkeistä löytyy ulkomailta, mm. Ruotsissa, Virossa, Latviassa ja Romaniassa.<br />
-          <br />
-          Haluamme varmistaa, että tavoittelevilla opiskelijoilla on mahdollisuus toteuttaa unelmiaan ja saavuttaa täysi potentiaalinsa lääketieteen alalla. Missiomme on tukea näitä nuoria yksilöitä hallitsemaan ratkaisevan polun, joka muokkaa heidän tulevaisuuttaan ja edistää merkittävästi heidän henkilökohtaista ja ammatillista kasvuaan. Näin toimimalla annamme heille mahdollisuuden toteuttaa toiveensa, mutta pyrimme myös luomaan lisäarvoa tuleville työtovereilleen ja koko terveydenhuoltoalalle. Sitoutumisemme perustuu huippuosaamisen, innovaatioiden ja omistautumisen edistämiseen seuraavan sukupolven terveydenhuollon ammattilaisten keskuudessa.</p>
-          <button className="info-nappi" onClick={handleMeistäButtonClick}>Meistä</button>
-        </div>
-      <div className='small-cards-container'>
-        <div className="small-card">
-          <h2>Lääketiede Romaniassa</h2>
-          <p>Romanian englanninkieliset lääketieteen koulutusohjelmat ovat korkeatasoisia ja täyttävät EU-maiden ja myös Suomen vaatimukset. Opinnot ovat käytännönläheisiä, ja ensimmäiset vuodet keskittyvät teoriaan (prekliininen vaihe), kun taas viimeiset kolme vuotta sisältävät intensiivistä työkokemusta (postkliininen vaihe).</p>
-          <button className="info-nappi" onClick={handleMeistäButtonClick}>Lue Lisää</button>
-        </div>
-
-        <div className="small-card">
-          <h2>Tenttivaatimukset</h2>
-          <p>Romanian huippuyliopistot jättävät kemian ja fysiikan väliin pääsykokeissa ja keskittyvät anatomiaan ja fysiologiaan. Kokeet vaihtelevat (suulliset tai kirjalliset), ja ne tarjoavat alustan englannin- ja ainetaitosi esittelemiseen.</p>
-          <button className="info-nappi" onClick={handleMeistäButtonClick}>Lue Lisää</button>
-        </div>
-      </div>
-      </div>
-      </div>
-
       {/* Aikajana Section */}
       <div className="aikajana">
       <h2>Aikajanamme</h2>
@@ -132,6 +102,40 @@ const Etusivu = () => {
       <span className="year">2021</span>
       <span className="year">2022</span>
       </div>
+      </div>
+
+      {/* Lisa Tietoa Section */}
+      <div className="lisa-tietoa">
+        <h1>Lisätiedot</h1>
+        <p>Some small text here...</p>
+        <div className='info-card-container'>
+        <div className="info-card">
+          <div className="pic-frame">
+          <img src="your-image-url.jpg" alt=" " className="card-pic" />
+          </div>
+          <h2>Kurssit</h2>
+          <p>Valmennuskursseillamme koulutamme tulevia kollegoitamme suoriutumaan erinomaisesti pääsykokeissa. Opetusmenetelmäämme ja pääsykokeeseen liittyvät neuvot ovat jo neljän vuoden ajan osoittautuneet kursseillemme korvaamattomiksi.</p>
+          <a href="your-link-url">Your Link Text</a>
+        </div>
+
+        <div className="info-card">
+          <div className="pic-frame">
+          <img src="your-image-url.jpg" alt=" " className="card-pic" />
+          </div>
+          <h2>Kurssit</h2>
+          <p>Valmennuskursseillamme koulutamme tulevia kollegoitamme suoriutumaan erinomaisesti pääsykokeissa. Opetusmenetelmäämme ja pääsykokeeseen liittyvät neuvot ovat jo neljän vuoden ajan osoittautuneet kursseillemme korvaamattomiksi.</p>
+          <a href="your-link-url">Your Link Text</a>
+        </div>
+
+        <div className="info-card">
+          <div className="pic-frame">
+          <img src="your-image-url.jpg" alt=" " className="card-pic" />
+          </div>
+          <h2>Kurssit</h2>
+          <p>Valmennuskursseillamme koulutamme tulevia kollegoitamme suoriutumaan erinomaisesti pääsykokeissa. Opetusmenetelmäämme ja pääsykokeeseen liittyvät neuvot ovat jo neljän vuoden ajan osoittautuneet kursseillemme korvaamattomiksi.</p>
+          <a href="your-link-url">Your Link Text</a>
+        </div>
+        </div>
       </div>
       
       {/* Ota Yhteyttä Section */}
