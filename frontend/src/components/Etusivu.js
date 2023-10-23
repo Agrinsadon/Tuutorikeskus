@@ -5,6 +5,7 @@ import { useHistory } from 'react-router-dom';
 import Navbar from './Navbar';
 import '../styles/Etusivu.css';
 import EmailForm from './EmailForm';
+import Timeline from './Timeline';
 
 const Etusivu = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -65,7 +66,8 @@ const Etusivu = () => {
       </div>
 
       {/* Aikajana Section */}
-      <div className="aikajana">
+      <div className='aikajana'>
+      <div className="aikajana-container">
       <h2>Aikajanamme</h2>
       <p>Olemme erittäin ylpeitä tilastosaavutuksistamme vuosien varrella <br /> Tutoriemme ja opiskelijoiden yhdessä saavuttamat onnistumiset</p>
       <div className="timeline">
@@ -103,7 +105,10 @@ const Etusivu = () => {
       <span className="year">2022</span>
       </div>
       </div>
+      </div>
 
+      {/* Timeline Section */}
+      <Timeline />
       {/* Lisa Tietoa Section */}
       <div className="lisa-tietoa">
         <h1>Lisätiedot</h1>
@@ -137,7 +142,6 @@ const Etusivu = () => {
         </div>
         </div>
       </div>
-      
       {/* Ota Yhteyttä Section */}
       <EmailForm />
     </div>
