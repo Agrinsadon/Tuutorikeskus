@@ -33,7 +33,7 @@ const Timeline = () => {
   return (
     <div className="aikajana-small">
       <div className="aikajana-container-small">
-        <h2>Aikajanamme</h2>
+        <h1>Aikajanamme</h1>
         <p>
           Olemme erittäin ylpeitä tilastosaavutuksistamme vuosien varrella
           <br />
@@ -42,26 +42,26 @@ const Timeline = () => {
         <div className="timeline-small">
           <div className="timeline-item-small">
             <div className="circle-small" onClick={handleNextYear}>
-              {percentage}%
+            <span className="percentage-small">{percentage}%</span>
             </div>
           </div>
         </div>
         <div className="timeline-frame-small">
           <span className="year-small">{year}</span>
         </div>
-        {currentYearIndex < yearsData.length - 1 && (
-          <FontAwesomeIcon
-            icon={faArrowRight}
-            className="arrow-right"
-            onClick={handleNextYear}
-          />
-        )}
         {currentYearIndex > 0 && (
-          <FontAwesomeIcon
-            icon={faArrowLeft}
-            className="arrow-left"
-            onClick={handlePreviousYear}
-          />
+        <FontAwesomeIcon
+        icon={faArrowLeft}
+        className="arrow-left"
+        onClick={handlePreviousYear}
+        />
+        )}
+        {currentYearIndex < yearsData.length - 1 && (
+        <FontAwesomeIcon
+        icon={faArrowRight}
+        className="arrow-right"
+        onClick={handleNextYear}
+        />
         )}
       </div>
     </div>

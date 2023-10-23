@@ -68,3 +68,38 @@
     justify-content: center;
     white-space: nowrap;
   }
+
+@media screen and (max-width: 600px) {
+
+/* Ota-yhteyttä section */
+.ota-yhteyttä {
+  background-color: #ECF9FF;
+  font-family: 'Zen Antique Soft', sans-serif;
+  padding: 17px 0;
+}
+
+.ota-yhteyttä h1 {
+  font-size: 1.9rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.inputs {
+  margin-left: 2rem;
+  margin-right: 0px;
+}
+
+.inputs input{
+  width: 85%;
+}
+
+.inputs textarea {
+  width: 85%;
+}
+
+/* Style the toast notifications */
+.Toastify__toast {
+  margin-top: 0rem;
+}
+}
+

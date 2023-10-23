@@ -415,9 +415,9 @@
   .aikajana {
     display: none;
   }
-/* CSS for the Timeline Component */
-
+  /* Timeline Section */
   .aikajana-small {
+    margin-top: 3rem;
     display: block;
     background-color: #ECF9FF;
     font-family: 'Zen Antique Soft', sans-serif;
@@ -426,18 +426,17 @@
 
   .aikajana-container-small {
     text-align: center;
-    margin: 60px 120px;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
   }
 
-  .aikajana-small h2 {
-    font-size: 2.8rem;
+  .aikajana-small h1 {
+    font-size: 1.9rem;
     color: black;
     margin-bottom: 1.5rem;
   }
 
   .aikajana-small p {
-    font-size: 1.3rem;
+    font-size: 16px;
     color: rgba(130, 130, 151, 1);
   }
 
@@ -449,7 +448,7 @@
   .timeline-item-small {
     position: relative;
     text-align: center;
-    margin: 10px 45px; /* Adjust as needed */
+    margin: 15px 0px; /* Adjust as needed */
     margin-top: 2rem;
   }
 
@@ -466,7 +465,7 @@
   .percentage-small {
     font-family: 'Zen Antique Soft', sans-serif;
     position: absolute;
-    top: 49%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold; /* Make the text bold */
@@ -486,29 +485,32 @@
     flex-wrap: wrap;
   }
 
-.timeline-frame-small {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgba(255, 255, 255, 1);
-  width: 74%;
-  margin-bottom: 5rem;
-  padding: 5px;
-  border-radius: 10px;
-}
+  .timeline-frame-small {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 1);
+    width: 30%;
+    margin-bottom: 1rem;
+    padding: 3px;
+    border-radius: 10px;
+  }
 
-/* CSS for Arrow Icons */
-.arrow-left, .arrow-right {
-  font-size: 2rem;
-  color: #3498db;
-  cursor: pointer;
-  justify-content: space-between;
-  margin: 0 10px;
-}
+  .arrow-left, .arrow-right {
+    font-size: 1.6rem;
+    color: rgba(130, 130, 151, 1);
+    cursor: not-allowed; 
+    justify-content: space-between;
+    margin: 1.5rem 10px;
+  }
 
-
+  .arrow-left:hover, .arrow-right:hover {
+    color: rgba(130, 130, 151, 1); /* Set the normal color on hover */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+  }
   
+
   /* Lisätietoa section */
   .lisa-tietoa {
     margin: 0px 0px;
@@ -540,6 +542,74 @@
   .info-card p {
     font-size: 16px;
   }
+
+/* Ota-yhteyttä section */
+
+.ota-yhteyttä {
+  background-color: #ECF9FF;
+  font-family: 'Zen Antique Soft', sans-serif;
+}
+
+.ota-yhteyttä h1 {
+  font-size: 0.2rem;
+}
+
+.inputs {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inputs input{
+
+  border-radius: 10px;
+  width: 50%;
+  padding: 10px;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 1rem;
+}
+
+.inputs textarea {
+  height: 6.5rem;
+  border-radius: 10px;
+  width: 50%;
+  padding: 8px;
+  border: none;
+  box-shadow: none;
+}
+
+.button-lähetä {
+  font-family: 'Zen Antique Soft', sans-serif;
+  background-color: rgba(6, 6, 64, 1);
+  margin-top: 20px;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 7rem;
+  display: block;
+  margin-left: 7.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Style the toast notifications */
+.Toastify__toast {
+  margin-top: 6rem;
+  background-color: white; /* Background color */
+  color: green; /* Text color */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 400px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
 
 }
 
