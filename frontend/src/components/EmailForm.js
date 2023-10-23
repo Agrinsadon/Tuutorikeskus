@@ -38,7 +38,7 @@ function EmailForm() {
       .then((data) => {
         console.log(data);
         // Show a success toast notification
-        toast.success('Viesti on lähetetty!', { position: 'top-right' });
+        toast.success('Viesti on lähetetty!', { position: 'bottom-center' });
         // Clear the form fields
         setFormData({
           name: '',
@@ -52,7 +52,7 @@ function EmailForm() {
       .catch((error) => {
         console.error(error);
         // Show an error toast notification
-        toast.error('Viestiä ei voitu lähettää!', { position: 'top-right' });
+        toast.error('Viestiä ei voitu lähettää!', { position: 'bottom-center' });
       });
   };
   
@@ -115,7 +115,7 @@ function EmailForm() {
         </div>
       </form>
       </div>
-      <ToastContainer position="top-right" autoClose={3000} />
+      <ToastContainer position='bottom-center' autoClose={3000} />
     </div>
   );
 }

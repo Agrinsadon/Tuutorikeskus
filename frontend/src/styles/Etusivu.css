@@ -45,7 +45,7 @@
 
 .text-container h1 {
   font-size: 3rem;
-  width: 100%;
+  width: 80%;
   margin-bottom: 1rem;
   max-width: 450px;
   color: black;
@@ -68,6 +68,11 @@
   border-radius: 5px;
   cursor: pointer;
   max-width: 7rem;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.kurssit-button:hover {
+  background-color: rgba(6, 6, 64, 0.8); /* Adjust the color on hover */
 }
 
 .frame-container {
@@ -327,7 +332,7 @@
   }
 
   .firstpage {
-    margin-left: 45px;
+    margin-left: 3rem;
   }
 
   .medical-image {
@@ -340,7 +345,7 @@
 
   .text-container h1 {
     font-size: 1.9rem;
-    width: 24rem;
+    width: 17rem;
   }
   
   .text-container p {
@@ -542,75 +547,6 @@
   .info-card p {
     font-size: 16px;
   }
-
-/* Ota-yhteyttä section */
-
-.ota-yhteyttä {
-  background-color: #ECF9FF;
-  font-family: 'Zen Antique Soft', sans-serif;
-}
-
-.ota-yhteyttä h1 {
-  font-size: 0.2rem;
-}
-
-.inputs {
-  display: block;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.inputs input{
-
-  border-radius: 10px;
-  width: 50%;
-  padding: 10px;
-  border: none;
-  box-shadow: none;
-  margin-bottom: 1rem;
-}
-
-.inputs textarea {
-  height: 6.5rem;
-  border-radius: 10px;
-  width: 50%;
-  padding: 8px;
-  border: none;
-  box-shadow: none;
-}
-
-.button-lähetä {
-  font-family: 'Zen Antique Soft', sans-serif;
-  background-color: rgba(6, 6, 64, 1);
-  margin-top: 20px;
-  color: white;
-  padding: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-  max-width: 7rem;
-  display: block;
-  margin-left: 7.5rem;
-  margin-bottom: 3rem;
-}
-
-/* Style the toast notifications */
-.Toastify__toast {
-  margin-top: 6rem;
-  background-color: white; /* Background color */
-  color: green; /* Text color */
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  width: 400px; /* Adjust the width as needed */
-  height: 100px; /* Adjust the height as needed */
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-}
-
 }
 
 @media (min-width: 883px) and (max-width: 1110px) {
