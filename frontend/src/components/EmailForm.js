@@ -117,10 +117,10 @@ function EmailForm() {
             required
           />
         </div>
-        <div>
-          <button className='button-lähetä' type="submit">Lähetä</button>
+        <div style={{ display: 'flex', alignItems: 'flex-start'}}>
+        <button className='button-lähetä' type="submit">Lähetä</button>
+        {messageSent && <div className="message-sent" style={{ marginTop: '35px', marginLeft: '14px' }}>✓ Viesti Lähettetty!</div>}
         </div>
-        {messageSent && (<div className="message-sent">Viesti Lähettetty</div>)}
       </form>
       </div>
     </div>

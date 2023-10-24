@@ -37,7 +37,6 @@ const Etusivu = () => {
       {/* Palvelumme Section */}
       <div className="palvelumme">
         <h1>Palvelumme</h1>
-        <p>Some small text here...</p>
         <div className='card-container'>
           <div className="server-card">
             <div className="icon-frame">
@@ -112,33 +111,38 @@ const Etusivu = () => {
       {/* Lisa Tietoa Section */}
       <div className="lisa-tietoa">
         <h1>Lisätiedot</h1>
-        <p>Some small text here...</p>
         <div className='info-card-container'>
         <div className="info-card">
           <div className="pic-frame">
-          <img src="your-image-url.jpg" alt=" " className="card-pic" />
+          <img src="Aboutus.png" alt=" " className="card-pic" />
           </div>
-          <h2>Kurssit</h2>
-          <p>Valmennuskursseillamme koulutamme tulevia kollegoitamme suoriutumaan erinomaisesti pääsykokeissa. Opetusmenetelmäämme ja pääsykokeeseen liittyvät neuvot ovat jo neljän vuoden ajan osoittautuneet kursseillemme korvaamattomiksi.</p>
+          <h2>Lääketiede ulkomailla ?</h2>
+          <p>Me haluamme olla nuorten tukena elämänsä tärkeimmän polun valitsemisessa sekä haaveiden toteuttamisessa ja mahdollistamisessa  ja tätä kautta luoda lisäarvoa tuleville kollegoille.</p>
+          <div className="card-links1">
           <a href="your-link-url">Your Link Text</a>
+          </div>
         </div>
 
         <div className="info-card">
           <div className="pic-frame">
-          <img src="your-image-url.jpg" alt=" " className="card-pic" />
+          <img src="Aboutus.png" alt=" " className="card-pic" />
           </div>
           <h2>Kurssit</h2>
           <p>Valmennuskursseillamme koulutamme tulevia kollegoitamme suoriutumaan erinomaisesti pääsykokeissa. Opetusmenetelmäämme ja pääsykokeeseen liittyvät neuvot ovat jo neljän vuoden ajan osoittautuneet kursseillemme korvaamattomiksi.</p>
+          <div className="card-links2">
           <a href="your-link-url">Your Link Text</a>
+          </div>
         </div>
 
         <div className="info-card">
           <div className="pic-frame">
-          <img src="your-image-url.jpg" alt=" " className="card-pic" />
+          <img src="Aboutus.png" alt=" " className="card-pic" />
           </div>
           <h2>Kurssit</h2>
           <p>Valmennuskursseillamme koulutamme tulevia kollegoitamme suoriutumaan erinomaisesti pääsykokeissa. Opetusmenetelmäämme ja pääsykokeeseen liittyvät neuvot ovat jo neljän vuoden ajan osoittautuneet kursseillemme korvaamattomiksi.</p>
+          <div className="card-links3">
           <a href="your-link-url">Your Link Text</a>
+          </div>
         </div>
         </div>
       </div>

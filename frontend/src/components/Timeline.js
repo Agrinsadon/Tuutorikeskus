@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../styles/Timeline.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faArrowRight,

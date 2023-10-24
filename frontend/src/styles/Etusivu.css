@@ -250,7 +250,6 @@
   border-radius: 10px;
 }
 
-
 /* Lisa Tietoa Section */
 .lisa-tietoa {
   text-align: center;
@@ -275,6 +274,14 @@
   justify-content: space-between;
 }
 
+.info-card .card-pic {
+  max-width: 100%; /* Limit the image size to the card's width */
+  height: auto; /* Maintain the image's aspect ratio */
+  border-radius: 15px;
+  mask-image: linear-gradient(transparent, to bottom white); /* Linear gradient from transparent to white */
+}
+
+
 .info-card {
   margin: 0 10px;
   width: calc(33.33% - 20px);
@@ -286,18 +293,28 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   text-align: left;
+  overflow: hidden; /* Ensure the image stays within the card's frame */
 }
 
 .info-card h2 {
-  margin-top: 2.2rem;
+  margin-top: 1rem;
   font-size: 1.5rem;
-  color: black;
 }
 
 .info-card p {
-  font-size: 1.15rem;
+  font-size: 18px;
   color: rgba(130, 130, 151, 1);
   margin-top: 0;
+}
+
+.info-card a {
+  color: rgb(124, 216, 255); /* Change the link text color */
+  text-decoration: none; /* Remove underlines from links */
+  text-align: left; /* Center the link text horizontally */
+}
+
+.card-links1 {
+  margin-top: 2.9rem;
 }
 
 
@@ -427,6 +444,7 @@
     background-color: #ECF9FF;
     font-family: 'Zen Antique Soft', sans-serif;
     padding-bottom: 1rem;
+    height: 33rem;
   }
 
   .aikajana-container-small {
@@ -443,6 +461,8 @@
   .aikajana-small p {
     font-size: 16px;
     color: rgba(130, 130, 151, 1);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 
   .timeline-small {
@@ -507,7 +527,7 @@
     color: rgba(130, 130, 151, 1);
     cursor: not-allowed; 
     justify-content: space-between;
-    margin: 1.5rem 10px;
+    margin: 0.5rem 10px;
   }
 
   .arrow-left:hover, .arrow-right:hover {
