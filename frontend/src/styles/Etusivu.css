@@ -275,8 +275,8 @@
 }
 
 .info-card .card-pic {
-  max-width: 100%; /* Limit the image size to the card's width */
-  height: auto; /* Maintain the image's aspect ratio */
+  width: 100%; /* Limit the image size to the card's width */
+  height: 20rem; /* Maintain the image's aspect ratio */
   border-radius: 15px;
   mask-image: linear-gradient(transparent, to bottom white); /* Linear gradient from transparent to white */
 }
@@ -319,25 +319,39 @@
 
 
 @media screen and (max-width: 1200px) {
-  .server-card p {
-    font-size: 1rem;
+
+  .card-container {
+    display: block;
+    flex-wrap: wrap;
   }
 
-  .big-card {
-    height: 35.45rem;
-  }
-  .small-card {
-    margin-bottom: 0.65rem;
+  .server-card {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .big-card p {
-    font-size: 0.814rem;
+  .aikajana-container {
+    margin: 0px 0px;
+    padding-top: 1rem;
   }
-  .small-card p {
-    font-size: 0.814rem;
+
+  .timeline-item {
+    margin: 0px 0px; /* Adjust as needed */
   }
-  .timeline-frame {
-    width: 92%;
+
+  .year {
+    margin: 0 0px; /* Adjust the margin for space between years */
+  }
+
+  .info-card-container {
+    display: block;
+  }
+
+  .info-card {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
