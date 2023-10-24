@@ -112,13 +112,17 @@
 .palvelumme h1 {
   font-size: 2.8rem;
   color: black;
-  margin-bottom: 1rem;
+}
+.palvelumme h1::after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
+  width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+  position: absolute;
+  left: 25%;
+  border-radius: 15px; 
 }
 
-.palvelumme p {
-  font-size: 1rem;
-  color: rgba(130, 130, 151, 1);
-}
 
 .icon-frame {
   background-color: rgba(236, 249, 255, 0.8);
@@ -182,10 +186,20 @@
   padding-top: 1rem;
 }
 
-.aikajana h2 {
+.aikajana h1 {
   font-size: 2.8rem;
   color: black;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.aikajana h1::after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid white; /* Width (2px in this example) and color */
+  width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+  position: absolute;
+  left: 25%;
+  border-radius: 15px; 
 }
 
 .aikajana p {
@@ -260,12 +274,17 @@
 .lisa-tietoa h1 {
   font-size: 2.8rem;
   color: black;
-  margin-bottom: 1rem;
+  margin-bottom: 1.9rem;
 }
 
-.lisa-tietoa p {
-  font-size: 1rem;
-  color: rgba(130, 130, 151, 1);
+.lisa-tietoa h1::after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
+  width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+  position: absolute;
+  left: 25%;
+  border-radius: 15px; 
 }
 
 .info-card-container {
@@ -274,20 +293,20 @@
   justify-content: space-between;
 }
 
-.info-card .card-pic {
+.card-pic {
   width: 100%; /* Limit the image size to the card's width */
-  height: 20rem; /* Maintain the image's aspect ratio */
-  border-radius: 15px;
-  mask-image: linear-gradient(transparent, to bottom white); /* Linear gradient from transparent to white */
+  height: 13rem; /* Maintain the image's aspect ratio */
+  border-radius: 15px 15px 0 0;
+  mask-image: linear-gradient(to bottom, rgba(236, 249, 255, 0.9), transparent 208px);
 }
 
-
 .info-card {
+  height: 30rem;
+  font-family: 'Zen Antique Soft', sans-serif;
   margin: 0 10px;
   width: calc(33.33% - 20px);
   margin-top: 40px;
   margin-bottom: 40px;
-  padding: 20px;
   border-radius: 15px;
   background-color: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -297,29 +316,31 @@
 }
 
 .info-card h2 {
-  margin-top: 1rem;
   font-size: 1.5rem;
+  margin-left: 1rem;
 }
 
 .info-card p {
   font-size: 18px;
   color: rgba(130, 130, 151, 1);
   margin-top: 0;
+  margin-left: 1rem;
 }
 
 .info-card a {
   color: rgb(124, 216, 255); /* Change the link text color */
-  text-decoration: none; /* Remove underlines from links */
-  text-align: left; /* Center the link text horizontally */
+  margin-left: 1rem;
+  border-bottom: 2px solid transparent; /* Add a transparent border-bottom for the line */
+  transition: border-color 0.3s; /* Add a smooth transition for the border-color */
+  text-decoration: none; /* Remove the default underline */
+
 }
 
-.card-links1 {
-  margin-top: 2.9rem;
+.info-card a:hover {
+  border-color: rgb(124, 216, 255); /* Change the border color on hover */
 }
-
 
 @media screen and (max-width: 1200px) {
-
   .card-container {
     display: block;
     flex-wrap: wrap;
@@ -458,7 +479,7 @@
     background-color: #ECF9FF;
     font-family: 'Zen Antique Soft', sans-serif;
     padding-bottom: 1rem;
-    height: 33rem;
+    height: 29.8rem;
   }
 
   .aikajana-container-small {
@@ -470,6 +491,16 @@
     font-size: 1.9rem;
     color: black;
     margin-bottom: 1.5rem;
+  }
+
+  .aikajana-small h1::after {
+    content: "";
+    display: block;
+    border-bottom: 5px solid white; /* Width (2px in this example) and color */
+    width: 60%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    position: absolute;
+    left: 20%;
+    border-radius: 15px;  
   }
 
   .aikajana-small p {
@@ -488,7 +519,6 @@
     position: relative;
     text-align: center;
     margin: 15px 0px; /* Adjust as needed */
-    margin-top: 2rem;
   }
 
   .circle-small {
@@ -569,7 +599,9 @@
   }
   
   .info-card {
+    margin-top: 2.5rem;
     width: 90%;
+    height: 28rem;
     margin-left: auto;
     margin-right: auto;
   }

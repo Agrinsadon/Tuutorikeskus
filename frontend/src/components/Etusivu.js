@@ -67,7 +67,7 @@ const Etusivu = () => {
       {/* Aikajana Section */}
       <div className='aikajana'>
       <div className="aikajana-container">
-      <h2>Aikajanamme</h2>
+      <h1>Aikajanamme</h1>
       <p>Olemme erittäin ylpeitä tilastosaavutuksistamme vuosien varrella <br /> Tutoriemme ja opiskelijoiden yhdessä saavuttamat onnistumiset</p>
       <div className="timeline">
       <div className="timeline-item">
@@ -113,13 +113,11 @@ const Etusivu = () => {
         <h1>Lisätiedot</h1>
         <div className='info-card-container'>
         <div className="info-card">
-          <div className="pic-frame">
           <img src="Aboutus.png" alt=" " className="card-pic" />
-          </div>
           <h2>Lääketiede ulkomailla ?</h2>
-          <p>Me haluamme olla nuorten tukena elämänsä tärkeimmän polun valitsemisessa sekä haaveiden toteuttamisessa ja mahdollistamisessa  ja tätä kautta luoda lisäarvoa tuleville kollegoille.</p>
+          <p>Me haluamme olla nuorten tukena elämänsä tärkeimmän polun valitsemisessa sekä haaveiden toteuttamisessa ja tätä kautta luoda lisäarvoa tuleville kollegoille.</p>
           <div className="card-links1">
-          <a href="your-link-url">Your Link Text</a>
+          <a href="your-link-url">Meistä</a>
           </div>
         </div>
 
@@ -127,10 +125,10 @@ const Etusivu = () => {
           <div className="pic-frame">
           <img src="Aboutus.png" alt=" " className="card-pic" />
           </div>
-          <h2>Kurssit</h2>
-          <p>Valmennuskursseillamme koulutamme tulevia kollegoitamme suoriutumaan erinomaisesti pääsykokeissa. Opetusmenetelmäämme ja pääsykokeeseen liittyvät neuvot ovat jo neljän vuoden ajan osoittautuneet kursseillemme korvaamattomiksi.</p>
+          <h2>Lääketiede Romaniassa</h2>
+          <p>Opinnot ovat käytännönläheisiä, ja ensimmäiset vuodet keskittyvät teoriaan (prekliininen vaihe), kun taas viimeiset kolme vuotta sisältävät intensiivistä työkokemusta (postkliininen vaihe).</p>
           <div className="card-links2">
-          <a href="your-link-url">Your Link Text</a>
+          <a href="your-link-url">Lue Lisää</a>
           </div>
         </div>
 
@@ -138,10 +136,10 @@ const Etusivu = () => {
           <div className="pic-frame">
           <img src="Aboutus.png" alt=" " className="card-pic" />
           </div>
-          <h2>Kurssit</h2>
-          <p>Valmennuskursseillamme koulutamme tulevia kollegoitamme suoriutumaan erinomaisesti pääsykokeissa. Opetusmenetelmäämme ja pääsykokeeseen liittyvät neuvot ovat jo neljän vuoden ajan osoittautuneet kursseillemme korvaamattomiksi.</p>
+          <h2>Tenttivaatimukset</h2>
+          <p>Romanian huippuyliopistot jättävät kemian ja fysiikan väliin. Pääsykokeissa keskittyvät anatomiaan ja fysiologiaan. Kokeet yleensä vaihtelevat (suulliset tai kirjalliset).</p>
           <div className="card-links3">
-          <a href="your-link-url">Your Link Text</a>
+          <a href="your-link-url">Lue Lisää</a>
           </div>
         </div>
         </div>
