@@ -14,7 +14,6 @@
   font-family: 'Zen Antique Soft', sans-serif;
   background-color: #ECF9FF;
   padding-top: 2rem;
-  height: 50rem;
 }
 
 .firstpage {
@@ -85,6 +84,7 @@
   padding: 28px;
   background-color: white;
   border-radius: 20px;
+  margin-bottom: 5rem;
 }
 
 .frame-container p {
