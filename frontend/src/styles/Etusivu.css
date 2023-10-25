@@ -411,7 +411,7 @@
   
   .frame-container {
     width: 17rem;
-    flex-wrap: wrap;
+    margin-bottom: 5rem;
   }
   
   .frame-container p {
