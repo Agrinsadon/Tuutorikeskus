@@ -33,6 +33,7 @@ const Etusivu = () => {
           </div>
         </div>
       </div>
+      <br />
 
       {/* Palvelumme Section */}
       <div className="palvelumme">
