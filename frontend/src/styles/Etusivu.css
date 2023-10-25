@@ -395,7 +395,8 @@
 
   .text-container h1 {
     font-size: 1.9rem;
-    width: 18rem;
+    width: 18.5rem;
+    margin-top: 0;
   }
   
   .text-container p {
