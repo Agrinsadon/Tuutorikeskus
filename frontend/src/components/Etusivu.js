@@ -27,13 +27,15 @@ const Etusivu = () => {
             <div className="frame-container">
               <p>Siellä missä lääketieteen taidetta rakastetaan, siellä rakastetaan myös ihmiskuntaa - Hippocrates</p>
             </div>
+            <br />
+            <br />
+            <br />
           </div>
           <div className="image-container">
             <img src="medical center.png" alt="Medical Center" className="medical-image" />
           </div>
         </div>
       </div>
-      <br />
 
       {/* Palvelumme Section */}
       <div className="palvelumme">
