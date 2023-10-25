@@ -339,6 +339,12 @@
 }
 
 @media screen and (max-width: 1200px) {
+
+  .firstpage {
+    margin-left: 4rem;
+    margin-right: 0;
+  }
+
   .card-container {
     display: block;
     flex-wrap: wrap;
@@ -351,16 +357,29 @@
   }
 
   .aikajana-container {
-    margin: 0px 0px;
+    margin: 8px 8px;
     padding-top: 1rem;
   }
 
+  .aikajana p {
+    font-size: 16px;
+    color: rgba(130, 130, 151, 1);
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .timeline-item {
-    margin: 0px 0px; /* Adjust as needed */
+    margin: 8px 8px; /* Adjust as needed */
+  }
+
+  .timeline-frame {
+    width: 80%;
+    padding: 2px;
+    border-radius: 10px;
   }
 
   .year {
-    margin: 0 0px; /* Adjust the margin for space between years */
+    margin: 3px 0px; /* Adjust the margin for space between years */
   }
 
   .info-card-container {
@@ -684,6 +703,8 @@
 
 }
 
-@media (max-width: 420px) {
-
+@media (max-width: 882px) {
+  .image-container {
+    display: none;
+  }
 }
