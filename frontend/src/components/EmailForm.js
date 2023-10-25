@@ -37,7 +37,7 @@ function EmailForm() {
       })
       .then((data) => {
         console.log(data);
-        // Clear the form fields
+        setMessageSent(true);
         setFormData({
           name: '',
           email: '',
@@ -45,7 +45,6 @@ function EmailForm() {
           subject: '',
           message: '',
         });
-        setMessageSent(true);
       })
 
       .catch((error) => {
