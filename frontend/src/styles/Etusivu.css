@@ -18,7 +18,6 @@
 
 .firstpage {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 120px;
   margin-right: 120px;
@@ -396,7 +395,7 @@
 
   .text-container h1 {
     font-size: 1.9rem;
-    width: 17rem;
+    width: 19rem;
   }
   
   .text-container p {
