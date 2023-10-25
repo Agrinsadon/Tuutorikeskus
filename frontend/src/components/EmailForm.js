@@ -20,9 +20,11 @@ function EmailForm() {
     });
   };
 
+  const apiUrl = process.env.REACT_APP_API_URL_EMAIL;
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('https://tuutorikeskus-kugb.onrender.com/email/send-email', {
+    fetch( apiUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
