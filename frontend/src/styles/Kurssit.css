@@ -1,100 +1,127 @@
 @font-face {
-    font-family: 'Zen Antique Soft';
-    src: url('../font/ZenAntiqueSoft-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  .kurssitsivu {
-    background-color: #ECF9FF;
-  }
-  
-  .kurssit {
-    font-family: 'Zen Antique Soft', sans-serif;
-    background-color: #ECF9FF;
-    padding-top: 2rem;
-    height: 10rem;
-  }
-.kurssiotsikko {
-margin-left: 40px;
+  font-family: 'Zen Antique Soft';
+  src: url('../font/ZenAntiqueSoft-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
-.box {
-  width: 20rem;
-  height: 28rem;
-  color: black;
-  margin: 40px;
-  border-radius: 20px;
-  background-color: white;
+  
+* {
+  box-sizing: border-box;
+}
+.kurssitsivu {
+  font-family: 'Zen Antique Soft', sans-serif;
+  background-color: #ECF9FF;
+  padding-top: 2rem;
 }
 
-.row {
+.kurssit {
+  text-align: center;
+  margin: 60px 120px;
+  font-family: 'Zen Antique Soft', sans-serif;
+}
+
+.kurssit h1 {
+  font-size: 2.8rem;
+  color: black;
+  margin-bottom: 1.9rem;
+}
+
+.kurssit h1::after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid white; /* Width (2px in this example) and color */
+  width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+  position: absolute;
+  left: 25%;
+  border-radius: 15px; 
+}
+
+.kurssi-card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
-.otsikko {
-  margin-left: 20px;
-}
-.kuva {
-  max-width: 80%;
-  padding-left: 65px;
-  padding-top: 10px;
+  justify-content: space-between;
 }
 
-.info-button {
+.kurssi-card-pic {
+  width: 100%; /* Limit the image size to the card's width */
+  height: 13rem; /* Maintain the image's aspect ratio */
+  border-radius: 15px 15px 0 0;
+  mask-image: linear-gradient(to bottom, rgba(236, 249, 255, 0.9), transparent 208px);
+}
+
+.kurssi-card {
+  height: 32rem;
+  font-family: 'Zen Antique Soft', sans-serif;
+  margin: 0 10px;
+  width: calc(33.33% - 20px);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  text-align: left;
+  overflow: hidden; /* Ensure the image stays within the card's frame */
+}
+
+.kurssi-header {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically align items */
+}
+
+.kurssi-header h2 {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.kurssi-header p {
+  margin-top: 1.37rem;
+  font-size: 16px;
+  color: rgba(6, 6, 64, 1);
+  margin-left: 2rem;
+}
+
+.kurssi-text p {
+  margin-top: 0rem;
+  font-size: 18px;
+  color: rgba(130, 130, 151, 1);
+  margin-left: 1rem;
+}
+
+.p-with-dots::before {
+  content: '\2022'; /* Unicode character for a bullet (dot) */
+  color: rgba(6, 6, 64, 1); /* Dot color */
+  font-size: 1rem; /* Adjust the dot size as needed */
+  margin-right: 0.5rem; /* Adjust the spacing between the dot and the text */
+}
+
+.ilmottaudu-button-container {
+  display: flex;
+  align-items: center; /* Align children vertically center */
+  margin-top: 1.5rem;
+}
+
+.price-label {
+  font-family: 'Zen Antique Soft', sans-serif;
+  margin-right: 7rem; /* Add space between the price and the button */
+  margin-left: 3rem;
+  font-size: 26px;
+  color: rgba(0, 229, 204, 1);
+}
+
+.ilmottaudu-button {
+  width: 17rem;
+  justify-content: flex-end; /* Move the button to the right */
   font-family: 'Zen Antique Soft', sans-serif;
   background-color: rgba(6, 6, 64, 1);
-  margin-top: 15px;
   color: white;
-  padding: 1rem;
+  padding: 0.8rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   max-width: 7rem;
+  transition: background-color 0.3s; /* Smooth transition for background color */
 }
-
-.hinta {
-  font-size: 30px;
-  color: aqua;
-  margin-left: 10px;
-  margin-top: 100px;
-}
-
-
-.box span {
-  padding-left: 25px;
-}
-.kurssiotsikko {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.teksti {
-  margin-top: 50px;
-  padding-left: 10%;
-  line-height: normal;
-}
-
-.luelisää {
-  padding-top: 13rem;
-  text-align: center;
-}
-
-span {
-margin-right: 20px;
-display: inline;
-}
-
-.teksti1 {
-  font-size: 20px;
-font-weight: bolder;
-}
-.teksti2 {
-  font-size: 12px;
-}
-.hinta, .info-button {
-display: inline-block;
+.ilmottaudu-button:hover {
+  background-color: rgba(6, 6, 64, 0.8); /* Adjust the color on hover */
 }
