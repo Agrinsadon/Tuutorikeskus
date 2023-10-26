@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Emailform.css'
 
 function EmailForm() {
@@ -11,6 +11,7 @@ function EmailForm() {
   });
 
   const [messageSent, setMessageSent] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,7 +25,9 @@ function EmailForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch( apiUrl, {
+    setIsSubmitting(true); // Set loading state
+
+    fetch(apiUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -48,81 +51,87 @@ function EmailForm() {
           message: '',
         });
       })
-
       .catch((error) => {
         console.error(error);
+      })
+      .finally(() => {
+        setIsSubmitting(false); // Reset loading state
       });
   };
 
   useEffect(() => {
     if (messageSent) {
-      // After 5 seconds, reset the messageSent state to hide the message
       const timer = setTimeout(() => {
         setMessageSent(false);
       }, 5000);
       return () => clearTimeout(timer);
     }
   }, [messageSent]);
-  
 
   return (
     <div>
       <div className='ota-yhteyttä'>
-      <h1>Ota Yhteyttä</h1>
-      <form onSubmit={handleSubmit}>
-        <div className='inputs'>
-          <input
-            type="text"
-            name="name"
-            placeholder="Nimi*"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className='inputs'>
-          <input
-            type="email"
-            name="email"
-            placeholder="Sähköposti*"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className='inputs'>
-          <input
-            type="text"
-            name="phone"
-            placeholder="Puhelin"
-            value={formData.phone}
-            onChange={handleChange}
-          />
-        </div>
-        <div className='inputs'>
-          <input
-            type="text"
-            name="subject"
-            placeholder="Otsikko*"
-            value={formData.subject}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className='inputs'>
-          <textarea
-            name="message"
-            placeholder="Viesti*"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div style={{ display: 'flex', alignItems: 'flex-start'}}>
-        <button className='button-lähetä' type="submit">Lähetä</button>
-        {messageSent && <div className="message-sent" style={{ marginTop: '35px', marginLeft: '14px' }}>✓ Viesti Lähettetty!</div>}
-        </div>
-      </form>
+        <h1>Ota Yhteyttä</h1>
+        <form onSubmit={handleSubmit}>
+          <div className='inputs'>
+            <input
+              type="text"
+              name="name"
+              placeholder="Nimi*"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className='inputs'>
+            <input
+              type="email"
+              name="email"
+              placeholder="Sähköposti*"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className='inputs'>
+            <input
+              type="text"
+              name="phone"
+              placeholder="Puhelin"
+              value={formData.phone}
+              onChange={handleChange}
+            />
+          </div>
+          <div className='inputs'>
+            <input
+              type="text"
+              name="subject"
+              placeholder="Otsikko*"
+              value={formData.subject}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className='inputs'>
+            <textarea
+              name="message"
+              placeholder="Viesti*"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+            <button className='button-lähetä' type="submit" disabled={isSubmitting}>
+              {isSubmitting ? "Lähetetään..." : "Lähetä"}
+            </button>
+            {messageSent && !isSubmitting && (
+              <div className="message-sent" style={{ marginTop: '35px', marginLeft: '14px' }}>
+                ✓ Viesti Lähettetty!
+              </div>
+            )}
+          </div>
+        </form>
       </div>
     </div>
   );
