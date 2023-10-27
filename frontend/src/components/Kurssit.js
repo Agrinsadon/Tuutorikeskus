@@ -46,7 +46,7 @@ const Kurssit = () => {
           </div>
           <div className="ilmottaudu-button-container">
           <span className="price-label">2400€</span>
-          <button onClick={() => handleIlmottauduButtonClick({ title: 'Intensiivinenkurssi' })}>Ilmottaudu</button>
+          <button onClick={() => handleIlmottauduButtonClick({ title: 'Intensiivinenkurssi' })} className='ilmottaudu-button'>Ilmottaudu</button>
           </div>
         </div>
 
@@ -73,7 +73,7 @@ const Kurssit = () => {
           </div>
           <div className="ilmottaudu-button-container">
           <span className="price-label">4500€</span>
-          <button className="ilmottaudu-button" onClick={handleIlmottauduButtonClick}>Ilmottaudu</button>
+          <button onClick={() => handleIlmottauduButtonClick({ title: 'Superkurssi' })} className='ilmottaudu-button'>Ilmottaudu</button>
           </div>
         </div>
 
@@ -100,7 +100,7 @@ const Kurssit = () => {
           </div>
           <div className="ilmottaudu-button-container">
           <span className="price-label">5500€</span>
-          <button className="ilmottaudu-button" onClick={handleIlmottauduButtonClick}>Ilmottaudu</button>
+          <button onClick={() => handleIlmottauduButtonClick({ title: 'Super-Takuu kurssi' })} className='ilmottaudu-button'>Ilmottaudu</button>
           </div>
         </div>
 
@@ -118,9 +118,9 @@ const Kurssit = () => {
           <span className="p-with-dots"></span>Matkustamme kanssasi Romaniaan
           </p>
           </div>
-          <div className="ilmottaudu-button-container">
-          <span className="price-label">499€</span>
-          <button className="ilmottaudu-button" onClick={handleIlmottauduButtonClick}>Ilmottaudu</button>
+          <div className="ilmottaudu-button-container-small">
+          <span className="price-label-small">499€</span>
+          <button onClick={() => handleIlmottauduButtonClick({ title: 'Hakemuspalvelu + matka' })} className='ilmottaudu-button'>Ilmottaudu</button>
           </div>
         </div>
 
@@ -137,9 +137,9 @@ const Kurssit = () => {
           hakemuksen toimitus yliopistoon.
           </p>
           </div>
-          <div className="ilmottaudu-button-container">
-          <span className="price-label">299€</span>
-          <button className="ilmottaudu-button" onClick={handleIlmottauduButtonClick}>Ilmottaudu</button>
+          <div className="ilmottaudu-button-container-small">
+          <span className="price-label-small">299€</span>
+          <button onClick={() => handleIlmottauduButtonClick({ title: 'Hakemuspalvelu' })} className='ilmottaudu-button'>Ilmottaudu</button>
           </div>
         </div>
 
@@ -155,9 +155,9 @@ const Kurssit = () => {
           <span className="p-with-dots"></span>Romaniassa 2 päivän kurssi kirurgian perusteiden teoriaan ja käytäntöön.
           </p>
           </div>
-          <div className="ilmottaudu-button-container">
-          <span className="price-label">149€</span>
-          <button className="ilmottaudu-button" onClick={handleIlmottauduButtonClick}>Ilmottaudu</button>
+          <div className="ilmottaudu-button-container-small">
+          <span className="price-label-small">149€</span>
+          <button onClick={() => handleIlmottauduButtonClick({ title: 'Knots & Suture' })} className='ilmottaudu-button'>Ilmottaudu</button>
           </div>
         </div>
         </div>

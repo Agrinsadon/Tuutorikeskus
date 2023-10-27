@@ -158,8 +158,57 @@
   background-color: rgba(6, 6, 64, 0.8); /* Adjust the color on hover */
 }
 
-/* CSS for the enrollment form */
+/* Small version of cards Section */
+
+.kurssi-card-small {
+  height: 27rem;
+  font-family: 'Zen Antique Soft', sans-serif;
+  margin: 0 10px;
+  width: calc(33.33% - 20px);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  text-align: left;
+  overflow: hidden; /* Ensure the image stays within the card's frame */
+}
+
+.ilmottaudu-button-container-small {
+  display: flex;
+  align-items: center; /* Align children vertically center */
+  margin-top: 1.5rem;
+}
+
+.price-label-small {
+  font-family: 'Zen Antique Soft', sans-serif;
+  margin-right: 7rem; /* Add space between the price and the button */
+  margin-left: 4rem;
+  font-size: 26px;
+  color: rgba(0, 229, 204, 1);
+}
+
+.ilmottaudu-button-small {
+  width: 17rem;
+  justify-content: flex-end; /* Move the button to the right */
+  font-family: 'Zen Antique Soft', sans-serif;
+  background-color: rgba(6, 6, 64, 1);
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 7rem;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+.ilmottaudu-button-small:hover {
+  background-color: rgba(6, 6, 64, 0.8); /* Adjust the color on hover */
+}
+
+/* Enrollment Form Section */
 .enrollment-overlay {
+  font-family: 'Zen Antique Soft', sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -172,11 +221,13 @@
 }
 
 .enrollment-form {
+  font-family: 'Zen Antique Soft', sans-serif;
   background: #fff;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   position: relative;
   max-width: 400px;
+  width: 100rem;
   text-align: center;
 }
 
@@ -186,6 +237,16 @@
   right: 10px;
   font-size: 24px;
   cursor: pointer;
+}
+
+.enrollment-form h1::after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
+  width: 75%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+  position: absolute;
+  left: 12.7%;
+  border-radius: 15px; 
 }
 
 .enrollment-form h2 {
@@ -203,11 +264,12 @@
   padding: 10px;
   width: 100%;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .submit-button {
-  background: #007bff;
+  font-family: 'Zen Antique Soft', sans-serif;
+  background-color: rgba(6, 6, 64, 1);
   color: #fff;
   padding: 10px;
   border: none;
@@ -216,7 +278,12 @@
   width: 100%;
 }
 
+.submit-button:hover {
+  background-color: rgba(6, 6, 64, 0.8); /* Adjust the color on hover */
+}
+
 .success-message {
+  font-family: 'Zen Antique Soft', sans-serif;
   background: #2ecc71;
   color: #fff;
   padding: 10px;

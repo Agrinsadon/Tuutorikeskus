@@ -31,11 +31,12 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                 <button className="close-button" onClick={handleCloseForm}>
                     X
                 </button>
+                <h1>Ilmottautuminen</h1>
                 <h2>{courseInfo.title}</h2>
                 <form onSubmit={handleSubmit}>
                     <input
                         type="text"
-                        placeholder="First Name"
+                        placeholder="Etunimi"
                         value={formData.firstName}
                         onChange={(e) =>
                             setFormData({ ...formData, firstName: e.target.value })
@@ -44,7 +45,7 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                     />
                     <input
                         type="text"
-                        placeholder="Surname"
+                        placeholder="Sukunimi"
                         value={formData.surname}
                         onChange={(e) =>
                             setFormData({ ...formData, surname: e.target.value })
@@ -53,7 +54,7 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                     />
                     <input
                         type="text"
-                        placeholder="Birthday"
+                        placeholder="Syntymäpäivä (10.06.1999)"
                         value={formData.birthday}
                         onChange={(e) =>
                             setFormData({ ...formData, birthday: e.target.value })
@@ -62,7 +63,7 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                     />
                     <input
                         type="email"
-                        placeholder="Email"
+                        placeholder="Sähköposti"
                         value={formData.email}
                         onChange={(e) =>
                             setFormData({ ...formData, email: e.target.value })
@@ -71,7 +72,7 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                     />
                     <input
                         type="tel"
-                        placeholder="Phone"
+                        placeholder="Puhelin"
                         value={formData.phone}
                         onChange={(e) =>
                             setFormData({ ...formData, phone: e.target.value })
