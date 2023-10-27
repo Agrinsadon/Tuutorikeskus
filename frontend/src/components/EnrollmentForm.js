@@ -1,27 +1,41 @@
 import React, { useState } from 'react';
 
 const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
-    const [formData, setFormData] = useState({
+    const [enrollData, setEnrollData] = useState({
         firstName: '',
         surname: '',
         birthday: '',
         email: '',
         phone: '',
+        education: '', // New input for "Tutkinnot"
+        hasCompletedEducation: '', // New input for "Oletko suorittanut tutkinnon"
+        completionDate: '', // New input for "Milloin suoritit"
+        graduationDate: '', // New input for "Milloin valmistut"
     });
+    const [showEducationOptions, setShowEducationOptions] = useState(false);
     const [successMessage, setSuccessMessage] = useState(false);
+    const [isEducationSelected, setIsEducationSelected] = useState(false); // Added state to track education selection
 
     const handleCloseForm = () => {
         onEnrollmentSuccess();
     };
 
+    const handleEducationClick = () => {
+        setShowEducationOptions(!showEducationOptions);
+    };
+
+    const handleSelectEducation = (selectedOption) => {
+        setEnrollData({ ...enrollData, education: selectedOption });
+        setShowEducationOptions(false);
+        setIsEducationSelected(true); // Mark education as selected
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        // You can add form validation and submission logic here.
-        // On successful enrollment, show the success message.
-        // You can also make an API call to submit the form data.
-
-        // For the sake of this example, we'll just display the success message.
+        if (!isEducationSelected) {
+            return;
+        }
+        // Form submission logic here
         setSuccessMessage(true);
     };
 
@@ -37,48 +51,69 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                     <input
                         type="text"
                         placeholder="Etunimi"
-                        value={formData.firstName}
+                        value={enrollData.firstName}
                         onChange={(e) =>
-                            setFormData({ ...formData, firstName: e.target.value })
+                            setEnrollData({ ...enrollData, firstName: e.target.value })
                         }
                         required
                     />
                     <input
                         type="text"
                         placeholder="Sukunimi"
-                        value={formData.surname}
+                        value={enrollData.surname}
                         onChange={(e) =>
-                            setFormData({ ...formData, surname: e.target.value })
+                            setEnrollData({ ...enrollData, surname: e.target.value })
                         }
                         required
                     />
                     <input
                         type="text"
                         placeholder="Syntymäpäivä (10.06.1999)"
-                        value={formData.birthday}
+                        value={enrollData.birthday}
                         onChange={(e) =>
-                            setFormData({ ...formData, birthday: e.target.value })
+                            setEnrollData({ ...enrollData, birthday: e.target.value })
                         }
                         required
                     />
                     <input
                         type="email"
                         placeholder="Sähköposti"
-                        value={formData.email}
+                        value={enrollData.email}
                         onChange={(e) =>
-                            setFormData({ ...formData, email: e.target.value })
+                            setEnrollData({ ...enrollData, email: e.target.value })
                         }
                         required
                     />
                     <input
                         type="tel"
                         placeholder="Puhelin"
-                        value={formData.phone}
+                        value={enrollData.phone}
                         onChange={(e) =>
-                            setFormData({ ...formData, phone: e.target.value })
+                            setEnrollData({ ...enrollData, phone: e.target.value })
                         }
                         required
                     />
+                    <div className="custom-dropdown">
+                        <input
+                            type="text"
+                            placeholder={isEducationSelected ? "Tutkinnot" : "Tutkinnot*"}
+                            value={enrollData.education}
+                            onClick={handleEducationClick}
+                            readOnly
+                        />
+                        {showEducationOptions && (
+                            <div className="options-list">
+                                <div onClick={() => handleSelectEducation('Ammattikoulu')}>Ammattikoulu</div>
+                                <div onClick={() => handleSelectEducation('Lukio')}>Lukio</div>
+                                <div onClick={() => handleSelectEducation('Ylioppilas')}>Ylioppilas</div>
+                            </div>
+                        )}
+                    </div>
+                    {enrollData.education && (
+                        <div>
+                            {/* ... Additional input fields based on education */}
+                        </div>
+                    )}
                     <button type="submit" className="submit-button">
                         Lähetä
                     </button>

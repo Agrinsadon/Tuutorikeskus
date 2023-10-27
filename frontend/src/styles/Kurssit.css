@@ -246,7 +246,7 @@
   width: 75%; /* Adjust the length (width) as a percentage or other valid CSS width value */
   position: absolute;
   left: 12.7%;
-  border-radius: 15px; 
+  border-radius: 15px;
 }
 
 .enrollment-form h2 {
@@ -266,6 +266,55 @@
   border: 1px solid #ccc;
   border-radius: 15px;
 }
+
+/* Style for the custom dropdown */
+.custom-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.custom-dropdown input {
+  margin: 5px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-dropdown::after {
+  content: "▼"; /* Down arrow character */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.options-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.options-list div {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.options-list div:hover {
+  background-color: #f0f0f0;
+  border-radius: 15px;
+}
+
 
 .submit-button {
   font-family: 'Zen Antique Soft', sans-serif;
