@@ -368,7 +368,7 @@
   color: #fff;
   padding: 10px;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .error-message {
@@ -412,6 +412,7 @@
 
 .kurssi-header p {
   font-size: 14px;
+  margin-left: 1.5rem;
 }
 
 .kurssi-header1 h2 {
@@ -419,7 +420,7 @@
 }
 
 .kurssi-header1 p {
-  margin-left: 6.80rem;
+  margin-left: 6.83rem;
   font-size: 14px;
 }
 
