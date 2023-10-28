@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
     const [enrollData, setEnrollData] = useState({
@@ -22,6 +24,8 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
     const [isEducationSelected, setIsEducationSelected] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
     const [milloinDropdownErrorMessage, setMilloinDropdownErrorMessage] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
 
     const handleCloseForm = () => {
         onEnrollmentSuccess();
@@ -59,11 +63,15 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        setIsSubmitting(true);
+
         if (!isEducationSelected) {
             setErrorMessage('Valitse tutkinto.');
             setTimeout(() => {
                 setErrorMessage('');
             }, 3000);
+            setIsSubmitting(false); // Set isSubmitting to false when the submission is complete
             return;
         }
 
@@ -72,20 +80,23 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
             setTimeout(() => {
                 setErrorMessage('');
             }, 3000);
+            setIsSubmitting(false); // Set isSubmitting to false when the submission is complete
             return;
         }
 
         // Form submission logic here
-
+        setIsSubmitting(false);
         setSuccessMessage(true);
     };
 
     return (
         <div className="enrollment-overlay">
             <div className="enrollment-form">
-                <button className="close-button" onClick={handleCloseForm}>
-                    X
-                </button>
+            <FontAwesomeIcon
+            icon={faTimes} // Use the FontAwesome icon you prefer
+            className="close-button"
+            onClick={handleCloseForm}
+            />
                 <h1>Ilmoittautuminen</h1>
                 <h2>{courseInfo.title}</h2>
                 <form onSubmit={handleSubmit}>
@@ -144,9 +155,9 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                         />
                         {showEducationOptions && (
                             <div className="options-list">
-                                <div onClick={() => handleSelectEducation('Ammattikoulu')}>Ammattikoulu</div>
-                                <div onClick={() => handleSelectEducation('Lukio')}>Lukio</div>
-                                <div onClick={() => handleSelectEducation('Ylioppilas')}>Ylioppilas</div>
+                                <div className="option" onClick={() => handleSelectEducation('Ammattikoulu')}>Ammattikoulu</div>
+                                <div className="option" onClick={() => handleSelectEducation('Lukio')}>Lukio</div>
+                                <div className="option" onClick={() => handleSelectEducation('Ylioppilas')}>Ylioppilas</div>
                             </div>
                         )}
                     </div>
@@ -166,8 +177,8 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                             />
                             {showDegreeOptions && (
                                 <div className="options-list">
-                                    <div onClick={() => handleSelectDegree('Kyllä')}>Kyllä</div>
-                                    <div onClick={() => handleSelectDegree('En')}>En</div>
+                                    <div className="option" onClick={() => handleSelectDegree('Kyllä')}>Kyllä</div>
+                                    <div className="option" onClick={() => handleSelectDegree('En')}>En</div>
                                 </div>
                             )}
                         </div>
@@ -195,8 +206,8 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                             required
                         />
                     )}
-                    <button type="submit" className="submit-button">
-                        Lähetä
+                    <button type="submit" className="submit-button" disabled={isSubmitting}>
+                    {isSubmitting ? "Lähetetään..." : "Lähetä"}
                     </button>
                 </form>
                 {successMessage && (
