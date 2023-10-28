@@ -411,7 +411,7 @@
 }
 
 .kurssi-header p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .kurssi-header1 h2 {
@@ -419,8 +419,8 @@
 }
 
 .kurssi-header1 p {
-  margin-left: 6.85rem;
-  font-size: 16px;
+  margin-left: 6.80rem;
+  font-size: 14px;
 }
 
 .kurssi-text p {
@@ -482,102 +482,10 @@
   font-size: 16px;
 }
 
-.tutkinto-dropdown input {
-  margin: 5px 0;
-  padding: 10px;
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  cursor: pointer;
-  position: relative;
-}
-
-.tutkinto-dropdown::after {
-  content: "▼"; /* Down arrow character */
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-}
-
-.milloin-dropdown {
-  position: relative;
-  width: 100%;
-}
-
-.milloin-dropdown input {
-  margin: 5px 0;
-  padding: 10px;
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  cursor: pointer;
-  position: relative;
-}
-
-.milloin-dropdown::after {
-  content: "▼"; /* Down arrow character */
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-}
-
-.options-list {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  z-index: 1;
-}
-
 .options-list div {
-  padding: 10px;
+  padding: 7px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.options-list div:hover {
-  background-color: #f0f0f0;
-  border-radius: 15px;
-}
-
-
-.submit-button {
-  font-family: 'Zen Antique Soft', sans-serif;
-  background-color: rgba(6, 6, 64, 1);
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-}
-
-.submit-button:hover {
-  background-color: rgba(6, 6, 64, 0.8); /* Adjust the color on hover */
-}
-
-.success-message {
-  font-family: 'Zen Antique Soft', sans-serif;
-  background: #2ecc71;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
-.error-message {
-  color: #ff0000; /* Red text color for error messages */
-  font-size: 14px; /* Adjust the font size as needed */
-  margin-top: 5px; /* Spacing from the input fields */
-  margin-bottom: 5px;
-}
-  
-  
 }
