@@ -93,7 +93,7 @@
   margin-top: 1.37rem;
   font-size: 16px;
   color: rgba(6, 6, 64, 1);
-  margin-left: 2rem;
+  margin-left: 1.6rem;
 }
 
 .kurssi-header1 {
@@ -268,12 +268,12 @@
 }
 
 /* Style for the custom dropdown */
-.custom-dropdown {
+.tutkinto-dropdown {
   position: relative;
   width: 100%;
 }
 
-.custom-dropdown input {
+.tutkinto-dropdown input {
   margin: 5px 0;
   padding: 10px;
   width: 100%;
@@ -283,7 +283,30 @@
   position: relative;
 }
 
-.custom-dropdown::after {
+.tutkinto-dropdown::after {
+  content: "▼"; /* Down arrow character */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.milloin-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.milloin-dropdown input {
+  margin: 5px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.milloin-dropdown::after {
   content: "▼"; /* Down arrow character */
   position: absolute;
   top: 50%;
@@ -339,4 +362,12 @@
   border-radius: 5px;
   margin-top: 20px;
 }
+
+.error-message {
+  color: #ff0000; /* Red text color for error messages */
+  font-size: 14px; /* Adjust the font size as needed */
+  margin-top: 5px; /* Spacing from the input fields */
+  margin-bottom: 5px;
+}
+
 

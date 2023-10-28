@@ -7,14 +7,21 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
         birthday: '',
         email: '',
         phone: '',
-        education: '', // New input for "Tutkinnot"
-        hasCompletedEducation: '', // New input for "Oletko suorittanut tutkinnon"
-        completionDate: '', // New input for "Milloin suoritit"
-        graduationDate: '', // New input for "Milloin valmistut"
+        education: '',
+        hasCompletedEducation: '',
+        completionDate: '', 
+        graduationDate: '',
     });
     const [showEducationOptions, setShowEducationOptions] = useState(false);
+    const [showDegreeOptions, setShowDegreeOptions] = useState(false);
+    const [showCompletionDateInput, setShowCompletionDateInput] = useState(false);
+    const [showGraduationDateInput, setShowGraduationDateInput] = useState(false);
+    const [completionDateValue, setCompletionDateValue] = useState('');
+    const [graduationDateValue, setGraduationDateValue] = useState('');
     const [successMessage, setSuccessMessage] = useState(false);
-    const [isEducationSelected, setIsEducationSelected] = useState(false); // Added state to track education selection
+    const [isEducationSelected, setIsEducationSelected] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
+    const [milloinDropdownErrorMessage, setMilloinDropdownErrorMessage] = useState('');
 
     const handleCloseForm = () => {
         onEnrollmentSuccess();
@@ -27,15 +34,49 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
     const handleSelectEducation = (selectedOption) => {
         setEnrollData({ ...enrollData, education: selectedOption });
         setShowEducationOptions(false);
-        setIsEducationSelected(true); // Mark education as selected
+        setIsEducationSelected(true);
+        setErrorMessage('');
+    };
+
+    const handleDegreeClick = () => {
+        setShowDegreeOptions(!showDegreeOptions);
+    };
+
+    const handleSelectDegree = (selectedOption) => {
+        setEnrollData({ ...enrollData, hasCompletedEducation: selectedOption });
+        setShowDegreeOptions(false);
+        setMilloinDropdownErrorMessage('');
+
+        // Depending on the selected option, show the relevant input field(s)
+        if (selectedOption === 'Kyllä') {
+            setShowCompletionDateInput(true);
+            setShowGraduationDateInput(false);
+        } else {
+            setShowCompletionDateInput(false);
+            setShowGraduationDateInput(true);
+        }
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!isEducationSelected) {
+            setErrorMessage('Valitse tutkinto.');
+            setTimeout(() => {
+                setErrorMessage('');
+            }, 3000);
             return;
         }
+
+        if (!enrollData.hasCompletedEducation) {
+            setMilloinDropdownErrorMessage('Valitse vaihtoehto "Kyllä" tai "En".');
+            setTimeout(() => {
+                setErrorMessage('');
+            }, 3000);
+            return;
+        }
+
         // Form submission logic here
+
         setSuccessMessage(true);
     };
 
@@ -45,7 +86,7 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                 <button className="close-button" onClick={handleCloseForm}>
                     X
                 </button>
-                <h1>Ilmottautuminen</h1>
+                <h1>Ilmoittautuminen</h1>
                 <h2>{courseInfo.title}</h2>
                 <form onSubmit={handleSubmit}>
                     <input
@@ -93,7 +134,7 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                         }
                         required
                     />
-                    <div className="custom-dropdown">
+                    <div className="tutkinto-dropdown">
                         <input
                             type="text"
                             placeholder={isEducationSelected ? "Tutkinnot" : "Tutkinnot*"}
@@ -109,10 +150,50 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                             </div>
                         )}
                     </div>
-                    {enrollData.education && (
-                        <div>
-                            {/* ... Additional input fields based on education */}
+                    {errorMessage && (
+                        <div className="error-message">
+                            {errorMessage}
                         </div>
+                    )}
+                    {enrollData.education && (
+                        <div className="milloin-dropdown">
+                            <input
+                                type="text"
+                                placeholder="Oletko suorittanut tutkinnon"
+                                value={enrollData.hasCompletedEducation}
+                                onClick={handleDegreeClick}
+                                readOnly
+                            />
+                            {showDegreeOptions && (
+                                <div className="options-list">
+                                    <div onClick={() => handleSelectDegree('Kyllä')}>Kyllä</div>
+                                    <div onClick={() => handleSelectDegree('En')}>En</div>
+                                </div>
+                            )}
+                        </div>
+                    )}
+                    {milloinDropdownErrorMessage && (
+                    <div className="error-message">
+                        {milloinDropdownErrorMessage}
+                    </div>
+                    )}
+                    {showCompletionDateInput && (
+                        <input
+                            type="text"
+                            placeholder="Milloin suoritit?"
+                            value={completionDateValue}
+                            onChange={(e) => setCompletionDateValue(e.target.value)}
+                            required
+                        />
+                    )}
+                    {showGraduationDateInput && (
+                        <input
+                            type="text"
+                            placeholder="Milloin valmistut?"
+                            value={graduationDateValue}
+                            onChange={(e) => setGraduationDateValue(e.target.value)}
+                            required
+                        />
                     )}
                     <button type="submit" className="submit-button">
                         Lähetä
@@ -120,7 +201,7 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                 </form>
                 {successMessage && (
                     <div className="success-message">
-                        Ilmottautuminen hyväksytty
+                        Ilmoittautuminen hyväksytty
                     </div>
                 )}
             </div>
