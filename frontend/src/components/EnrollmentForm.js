@@ -61,6 +61,8 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
         }
     };
 
+    const enrollUrl = process.env.REACT_APP_API_URL_EMAIL
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -84,7 +86,7 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
             return;
         }
                 // Form submission logic here
-        fetch('/enrollment/send-enrollment', {
+        fetch(enrollUrl, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
