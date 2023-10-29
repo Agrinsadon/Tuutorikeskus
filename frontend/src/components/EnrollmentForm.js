@@ -83,10 +83,27 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
             setIsSubmitting(false); // Set isSubmitting to false when the submission is complete
             return;
         }
-
-        // Form submission logic here
-        setIsSubmitting(false);
-        setSuccessMessage(true);
+                // Form submission logic here
+        fetch('/enrollment/send-enrollment', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(enrollData),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                setIsSubmitting(false);
+                if (data.message === 'Emails sent successfully') {
+                    setSuccessMessage(true);
+                } else {
+                    // Handle error here, you can display an error message to the user
+                }
+            })
+            .catch((error) => {
+                setIsSubmitting(false);
+                // Handle network or other errors here
+            });
     };
 
     return (
