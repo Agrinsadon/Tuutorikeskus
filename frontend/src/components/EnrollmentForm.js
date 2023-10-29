@@ -61,7 +61,7 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
         }
     };
 
-    const enrollUrl = process.env.REACT_APP_API_URL_EMAIL
+    const enrollUrl = process.env.REACT_APP_API_URL_ENROLL
 
     const handleSubmit = (e) => {
         e.preventDefault();
