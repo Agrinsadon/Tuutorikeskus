@@ -1,5 +1,12 @@
 const nodemailer = require('nodemailer');
 require('dotenv').config();
+const path = require('path'); // Import the path module
+
+
+function sendEnroll(name, surname, birthday, email, phone, tutkinto, milloin, callback) {
+  const emailContent = `Ilmottautuiminen:\nEtunimi: ${name}\nSukunimi: ${surname}\nSyntymäpäivä: ${birthday}\nSähköposti: ${email}\nPuhelin: ${phone}\nTutkinto: ${tutkinto}\nValmistuu/Valmistunut: ${milloin}`;
+
+  const pdfFilePath = path.join(__dirname,'contract.pdf');
 
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
@@ -11,45 +18,52 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const sendEnrollment = (req, res) => {
-    const userData = req.body;
+  const mailOptions = {
+    from: email,
+    to: process.env.GMAIL_USER,
+    subject: 'Ilmottautuminen',
+    text: emailContent
+  };
 
-    // Define the email content for the user
-    const userMailOptions = {
-        from: process.env.GMAIL_USER,
-        to: userData.email,
-        subject: 'Welcome to the Class',
-        text: 'Welcome to the class. Please find the attached contract PDF.',
-        attachments: [
-            {
-                filename: 'contract.pdf',
-                path: '/path/to/your/contract.pdf', // Provide the path to your contract PDF file
-            },
-        ],
-    };
+  const enrollOptions = {
+    from: process.env.GMAIL_USER,
+    to: email,
+    subject: 'Ilmottautuminen',
+    text: emailContent,
+    attachments: [
+      {
+        filename: 'contract.pdf', // Name of the attached file
+        path: pdfFilePath, // Path to the PDF file
+      },
+    ],
+    html: `
+      <p>Tervetuloa kurssillemme, ${name}!</p>
+      <p>Olemme iloisia, että päätit liittyä meidän kurssille.</p>
+      <p>Liitteenä on kurssisopimus (PDF-tiedosto), joka tulee täyttää ja palauttaa meille.</p>
+      <p>Kiitos ja tervetuloa!</p>
+    `,
+  };
+  
 
-    // Define the email content for yourself
-    const yourMailOptions = {
-        from: process.env.GMAIL_USER,
-        to: 'process.env.GMAIL_USER', // Your email address
-        subject: 'New Enrollment',
-        text: `New enrollment from ${userData.firstName} ${userData.surname} (${userData.email}).`,
-    };
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error(error);
+      callback(error, null);
+    } else {
+      console.log('Enroll sent: ' + info.response);
+      callback(null, { message: 'Enroll sent successfully' }); // Send a success message
+    }
+  });
 
-    // Send emails to the user and yourself
-    transporter.sendMail(userMailOptions, (userError, userInfo) => {
-        if (userError) {
-            return res.status(500).json({ error: 'Failed to send email to the user' });
-        }
+  transporter.sendMail(enrollOptions, (error, info) => {
+    if (error) {
+      console.error(error);
+      callback(error, null);
+    } else {
+      console.log('Enroll sent: ' + info.response);
+      callback(null, { message: 'Enroll sent successfully' });
+    }
+  });
+}
 
-        transporter.sendMail(yourMailOptions, (yourError, yourInfo) => {
-            if (yourError) {
-                return res.status(500).json({ error: 'Failed to send email to yourself' });
-            }
-
-            res.status(200).json({ message: 'Emails sent successfully' });
-        });
-    });
-};
-
-module.exports = { sendEnrollment };
+module.exports = { sendEnroll };
