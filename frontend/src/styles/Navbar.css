@@ -71,8 +71,8 @@
     flex-direction: column;
     text-align: center;
     position: absolute;
-    top: 100px;
-    right: 7px;
+    top: 60px;
+    left: 193px;
     padding: 1rem;
     max-width: 200px;
     border-radius: 10px;
@@ -80,8 +80,8 @@
   }
 
   .navbar {
-    margin-right: 21px;
-    margin-left: 21px;
+    margin-right: 19px;
+    margin-left: 19px;
   }
 
   .nav-links.show {
