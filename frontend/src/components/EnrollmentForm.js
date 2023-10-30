@@ -133,6 +133,7 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
         }
     
         setIsSubmitting(false);
+        setSuccessMessage(false);
     };
     
     
