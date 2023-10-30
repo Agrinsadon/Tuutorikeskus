@@ -12,7 +12,6 @@ function EmailForm() {
 
   const [messageSent, setMessageSent] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,14 +26,6 @@ function EmailForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true); // Set loading state
-
-    // Check if the phone number contains only numbers and the "+" symbol
-    if (!/^\+\d+(\s\d+)*$/.test(formData.phone)) {
-      // Set an error message for the user
-      setErrorMessage(true);
-      setIsSubmitting(false); // Reset loading state
-      return;
-    }
 
     fetch(apiUrl, {
       method: 'POST',
@@ -59,11 +50,9 @@ function EmailForm() {
           subject: '',
           message: '',
         });
-        setErrorMessage(''); // Clear any previous error message
       })
       .catch((error) => {
         console.error(error);
-        setErrorMessage('Tuli virhe! Yritä uudelleen.');
       })
       .finally(() => {
         setIsSubmitting(false); // Reset loading state
@@ -141,11 +130,6 @@ function EmailForm() {
                 ✓ Viesti Lähettetty!
               </div>
             )}
-            {errorMessage && (
-            <div className="phone-error-message" style={{ color: 'red' }}>
-              Väärä puhelinnumero!<br />Käytä vain numeroita
-            </div>
-          )}
           </div>
         </form>
       </div>

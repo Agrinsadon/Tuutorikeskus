@@ -221,7 +221,7 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                         <div className="milloin-dropdown">
                             <input
                                 type="text"
-                                placeholder="Oletko suorittanut tutkinnon"
+                                placeholder="Oletko suorittanut tutkinnon?"
                                 value={enrollData.hasCompletedEducation}
                                 onClick={handleDegreeClick}
                                 readOnly
@@ -242,7 +242,7 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                     {showCompletionDateInput && (
                         <input
                             type="text"
-                            placeholder="Milloin suoritit?"
+                            placeholder="Milloin suoritit? (20.09.2022)"
                             value={completionDateValue}
                             onChange={(e) => setCompletionDateValue(e.target.value)}
                             required
@@ -251,7 +251,7 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                     {showGraduationDateInput && (
                         <input
                             type="text"
-                            placeholder="Milloin valmistut?"
+                            placeholder="Milloin valmistut? (20.09.2024)"
                             value={graduationDateValue}
                             onChange={(e) => setGraduationDateValue(e.target.value)}
                             required
