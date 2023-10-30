@@ -38,9 +38,7 @@ const Kurssit = () => {
           <br />
           <span className="p-with-dots"></span>Matkustamme kanssasi Romaniaan
           <br />
-          <span className="p-with-dots"></span>Hakemusprosessissa avustaminen
           <br />
-          <span className="p-with-dots"></span>Hakemusprosessissa avustaminen
           <br />
           </p>
           </div>

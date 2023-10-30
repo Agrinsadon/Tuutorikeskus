@@ -9,7 +9,7 @@ router.use(bodyParser.json());
 
 // Validation middleware (unchanged)
 function validateRequiredFields(req, res, next) {
-  const requiredFields = ['name','surname','birthday','email','phone','tutkinto','milloin'];
+  const requiredFields = ['name', 'surname', 'birthday', 'email', 'phone', 'tutkinto', 'milloin'];
 
   for (const field of requiredFields) {
     if (!req.body[field]) {
@@ -23,8 +23,15 @@ function validateRequiredFields(req, res, next) {
     return res.status(400).json({ error: 'Invalid email format' });
   }
 
+  // Check for a valid phone format (only digits and optional plus symbol)
+  const phonePattern = /^[0-9+]+$/;
+  if (!phonePattern.test(req.body.phone)) {
+    return res.status(400).json({ error: 'Invalid phone format. Only numbers and + are allowed.' });
+  }
+
   next();
 }
+
 
 router.post('/send-enroll', validateRequiredFields, (req, res) => {
   const { name, surname, birthday, email, phone, tutkinto, milloin } = req.body;

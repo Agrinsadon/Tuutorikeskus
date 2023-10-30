@@ -123,6 +123,9 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                 setShowGraduationDateInput(false);
                 setCompletionDateValue('');
                 setGraduationDateValue('');
+                setTimeout(() => {
+                    setSuccessMessage(false);
+                }, 3000);
             } else {
                 // Handle the case where the backend request fails
                 // You can display an error message or take other appropriate action
@@ -133,7 +136,6 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
         }
     
         setIsSubmitting(false);
-        setSuccessMessage(false);
     };
     
     
