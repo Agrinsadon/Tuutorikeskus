@@ -22,12 +22,6 @@ function validateRequiredFields(req, res, next) {
   if (!emailPattern.test(req.body.email)) {
     return res.status(400).json({ error: 'Invalid email format' });
   }
-
-  const phonePattern = /^(\+\d{1,12}(\s\d+)?)|\d{1,12}$/;
-  if (!phonePattern.test(req.body.phone)) {
-    return res.status(400).json({ error: 'Invalid phone format. Only numbers and + are allowed (up to 12 digits).' });
-  }
-
   next();
 }
 
