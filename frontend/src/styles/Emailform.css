@@ -65,6 +65,14 @@
     font-weight: bold;
   }
 
+  .phone-error-message {
+    color: red;
+    font-family: 'Zen Antique Soft', sans-serif;
+    font-weight: bolt;
+    margin-top: 1.3rem;
+    margin-left: 1rem;
+  }
+
 @media screen and (max-width: 600px) {
 
 /* Ota-yhteyttä section */

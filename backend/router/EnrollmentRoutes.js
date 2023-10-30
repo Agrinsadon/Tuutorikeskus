@@ -23,10 +23,9 @@ function validateRequiredFields(req, res, next) {
     return res.status(400).json({ error: 'Invalid email format' });
   }
 
-  // Check for a valid phone format (only digits and optional plus symbol)
-  const phonePattern = /^[0-9+]+$/;
+  const phonePattern = /^(\+\d{1,12}(\s\d+)?)|\d{1,12}$/;
   if (!phonePattern.test(req.body.phone)) {
-    return res.status(400).json({ error: 'Invalid phone format. Only numbers and + are allowed.' });
+    return res.status(400).json({ error: 'Invalid phone format. Only numbers and + are allowed (up to 12 digits).' });
   }
 
   next();
