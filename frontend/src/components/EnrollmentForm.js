@@ -63,50 +63,63 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
 
     const enrollUrl = process.env.REACT_APP_API_URL_ENROLL
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-
+    
         setIsSubmitting(true);
-
+    
         if (!isEducationSelected) {
             setErrorMessage('Valitse tutkinto.');
             setTimeout(() => {
                 setErrorMessage('');
             }, 3000);
-            setIsSubmitting(false); // Set isSubmitting to false when the submission is complete
+            setIsSubmitting(false);
             return;
         }
-
+    
         if (!enrollData.hasCompletedEducation) {
             setMilloinDropdownErrorMessage('Valitse vaihtoehto "Kyllä" tai "En".');
             setTimeout(() => {
                 setErrorMessage('');
             }, 3000);
-            setIsSubmitting(false); // Set isSubmitting to false when the submission is complete
+            setIsSubmitting(false);
             return;
         }
-                // Form submission logic here
-        fetch(enrollUrl, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(enrollData),
-        })
-            .then((response) => response.json())
-            .then((data) => {
-                setIsSubmitting(false);
-                if (data.message === 'Emails sent successfully') {
-                    setSuccessMessage(true);
-                } else {
-                    // Handle error here, you can display an error message to the user
-                }
-            })
-            .catch((error) => {
-                setIsSubmitting(false);
-                // Handle network or other errors here
+    
+        // Prepare the data to send to the backend
+        const data = {
+            name: enrollData.firstName,
+            surname: enrollData.surname,
+            birthday: enrollData.birthday,
+            email: enrollData.email,
+            phone: enrollData.phone,
+            tutkinto: enrollData.education,
+            milloin: showCompletionDateInput ? completionDateValue : graduationDateValue,
+        };
+    
+        try {
+            const response = await fetch(enrollUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
             });
+    
+            if (response.status === 200) {
+                setSuccessMessage(true);
+            } else {
+                // Handle the case where the backend request fails
+                // You can display an error message or take other appropriate action
+            }
+        } catch (error) {
+            // Handle any network errors or other issues
+            // You can display an error message or take other appropriate action
+        }
+    
+        setIsSubmitting(false);
     };
+    
 
     return (
         <div className="enrollment-overlay">
