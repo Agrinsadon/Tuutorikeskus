@@ -80,13 +80,12 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
         if (!enrollData.hasCompletedEducation) {
             setMilloinDropdownErrorMessage('Valitse vaihtoehto "Kyllä" tai "En".');
             setTimeout(() => {
-                setErrorMessage('');
+                setMilloinDropdownErrorMessage('');
             }, 3000);
             setIsSubmitting(false);
             return;
         }
     
-        // Prepare the data to send to the backend
         const data = {
             name: enrollData.firstName,
             surname: enrollData.surname,
@@ -108,6 +107,22 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
     
             if (response.status === 200) {
                 setSuccessMessage(true);
+                
+                // Clear user's information and reset form fields
+                setEnrollData({
+                    firstName: '',
+                    surname: '',
+                    birthday: '',
+                    email: '',
+                    phone: '',
+                    education: '',
+                    hasCompletedEducation: '',
+                });
+    
+                setShowCompletionDateInput(false);
+                setShowGraduationDateInput(false);
+                setCompletionDateValue('');
+                setGraduationDateValue('');
             } else {
                 // Handle the case where the backend request fails
                 // You can display an error message or take other appropriate action
@@ -119,6 +134,7 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
     
         setIsSubmitting(false);
     };
+    
     
 
     return (
