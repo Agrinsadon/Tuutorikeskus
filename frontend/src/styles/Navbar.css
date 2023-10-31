@@ -87,7 +87,6 @@
   }
 
   .nav-links a {
-    z-index: 1; /* Set a high value, like 999, to ensure it appears above other elements */
     margin: 0.5rem 0;
     padding: 0.8rem;
     text-align: center;
