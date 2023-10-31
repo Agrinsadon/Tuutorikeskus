@@ -218,6 +218,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1100; /* Set a lower z-index value than the navbar */
+
 }
 
 .enrollment-form {
