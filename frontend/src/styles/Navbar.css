@@ -38,8 +38,6 @@
 
 .nav-links a {
   font-family: 'Zen Antique Soft', sans-serif; /* Add font-family */
-  margin-left: 1.5rem;
-  padding-left: 1rem;
   color: rgba(130, 130, 151, 1);
   text-decoration: none;
   transition: color 0.3s ease;
@@ -71,8 +69,8 @@
     flex-direction: column;
     text-align: center;
     position: absolute;
+    right: -0.7rem;
     top: 60px;
-    left: 193px;
     padding: 1rem;
     max-width: 200px;
     border-radius: 10px;
