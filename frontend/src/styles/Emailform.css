@@ -1,11 +1,20 @@
 /* Ota-yhteyttä section */
+  .contact-container {
+    position: relative; /* Needed for absolute positioning */
+  }
 
-.ota-yhteyttä {
+  .contact-image {
+    position: absolute;
+    top: 90px;
+    right: 60px; /* Adjust this value as needed for spacing */
+  }
+
+  .ota-yhteyttä {
     background-color: #ECF9FF;
     font-family: 'Zen Antique Soft', sans-serif;
     padding: 20px 0;
   }
-  
+
   .ota-yhteyttä h1 {
     font-size: 2.8rem;
     margin-left: 120px;
@@ -16,12 +25,12 @@
     display: flex;
     flex-direction: column;
     margin-left: 120px;
-    margin-right: 120px;
+    width: 35%;
   }
   
   .inputs input{
     border-radius: 10px;
-    width: 50%;
+    width: 100%;
     padding: 10px;
     border: none;
     box-shadow: none;
@@ -31,7 +40,7 @@
   .inputs textarea {
     height: 6.5rem;
     border-radius: 10px;
-    width: 50%;
+    width: 100%;
     padding: 8px;
     border: none;
     box-shadow: none;
@@ -56,7 +65,7 @@
   
   .button-lähetä:hover {
     background-color: rgba(6, 6, 64, 0.8); /* Adjust the color on hover */
-}
+  }
 
   .message-sent {
     font-family: 'Zen Antique Soft', sans-serif;

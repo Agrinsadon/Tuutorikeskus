@@ -69,7 +69,7 @@ function EmailForm() {
   }, [messageSent]);
 
   return (
-    <div>
+    <div className='contact-container'>
       <div className='ota-yhteyttä'>
         <h1>Ota Yhteyttä</h1>
         <form onSubmit={handleSubmit}>
@@ -132,6 +132,9 @@ function EmailForm() {
             )}
           </div>
         </form>
+        <div className='contact-image'>
+        <img src="animated-doctor.png" alt=" " />
+      </div>
       </div>
     </div>
   );
