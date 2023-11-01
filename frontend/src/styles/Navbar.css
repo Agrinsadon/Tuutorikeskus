@@ -42,6 +42,7 @@
   text-decoration: none;
   transition: color 0.3s ease;
   border-radius: 5px;
+  margin: 0px 15px;
 }
 
 .nav-links a:hover {

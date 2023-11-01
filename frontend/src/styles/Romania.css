@@ -13,6 +13,98 @@
     font-family: 'Zen Antique Soft', sans-serif;
     background-color: #ECF9FF;
     padding-top: 2rem;
-    height: 50rem;
+    height: 55rem;
     max-width: 100%;
   }
+
+  .romania-card {
+    padding-top: 7rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  .romania-card h1{
+    text-align: center;
+    font-size: 2.8rem;
+    color: black;
+    margin-bottom: 2.2rem;
+  }
+
+  .romania-card h1::after {
+    content: "";
+    display: block;
+    border-bottom: 5px solid white; /* Width (2px in this example) and color */
+    width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    position: absolute;
+    left: 25%;
+    border-radius: 15px; 
+  }
+
+  .romania-card-pic {
+    width: 100%; /* Limit the image size to the card's width */
+    height: 15rem; /* Maintain the image's aspect ratio */
+    border-radius: 15px 15px 0 0;
+    mask-image: linear-gradient(to bottom, rgba(236, 249, 255, 1), transparent 230px);
+  }
+
+  .outside-romania {
+    font-family: 'Zen Antique Soft', sans-serif;
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0px 0px 15px 15px;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    mask-image: linear-gradient(to top, rgba(236, 249, 255, 5), transparent 800px);
+  }
+  
+  
+  .lääketiede-text {
+    flex: 1; /* Takes up 50% of the available space */
+    padding: 20px; /* Add padding to both sides */
+    text-align: left; /* Align text to the left within the sections */
+  }
+
+  .tentti-text {
+    flex: 1; /* Takes up 50% of the available space */
+    padding: 20px; /* Add padding to both sides */
+    border-left: 1px solid #ddd; /* Add a border to both sides */
+    text-align: left; /* Align text to the left within the sections */
+  }
+  
+  .lääketiede-text h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .tentti-text h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .lääketiede-text p {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  .tentti-text p {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .lääketiede-text a {
+    text-decoration: none;
+    color: #007bff; /* Blue color for links */
+  }
+  .tentti-text a {
+    text-decoration: none;
+    color: #007bff; /* Blue color for links */
+  }
+  
+  .lääketiede-text a:hover,
+  .tentti-text a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+  
+  
