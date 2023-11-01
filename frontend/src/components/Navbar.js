@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'; // Import both icons
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
-  const [showLinks, setShowLinks] = useState(false); // State variable to control link visibility
+  const [showLinks, setShowLinks] = useState(false);
 
   const toggleLinks = () => {
     setShowLinks(!showLinks);
+    // Scroll to the top of the page
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -32,8 +34,8 @@ const Navbar = () => {
         </Link>
       </div>
       <FontAwesomeIcon
-        icon={showLinks ? faTimes : faBars} // Toggle between "x" and "burger" icons
-        className={`burger ${showLinks ? 'active' : ''}`} // Add "active" class when links are shown
+        icon={showLinks ? faTimes : faBars}
+        className={`burger ${showLinks ? 'active' : ''}`}
         onClick={toggleLinks}
       />
     </div>
