@@ -14,9 +14,11 @@
   font-family: 'Zen Antique Soft', sans-serif;
   background-color: #ECF9FF;
   padding-top: 5rem;
+  height: 48rem;
 }
 
 .firstpage {
+  margin-top: 60px;
   display: flex;
   justify-content: space-between;
   margin-left: 120px;
@@ -36,16 +38,15 @@
 }
 
 .video-container iframe{
-  margin-top: 288px;
-  margin-right: 10.55rem;
-  position: relative;
+  bottom: 16.9rem;
+  right: 18rem;
+  position: absolute;
   z-index: 1;
   width: 289px;
   height: 176px;
 }
 
 .text-container {
-  margin-top: 60px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -412,6 +413,7 @@
   .firstpage {
     display: block;
     margin-left: 2.5rem;
+    margin-top: 2rem;
   }
 
   .medical-image {
@@ -419,20 +421,20 @@
   }
   
   .video-container iframe{
-    margin-top: 0px;
-    margin-right: 0rem;
-    width: 270px;
-    height: 170px;
+    bottom: 0rem;
+    top: 37.5rem;
+    right: 0;
+    left: 2.45rem;
+    position: absolute;
+    z-index: 1;
+    width: 289px;
+    height: 176px;
   }
   
-  .text-container {
-    margin-top: 1.5rem;
-  }
 
   .text-container h1 {
     font-size: 1.9rem;
     width: 19rem;
-    margin-top: 1.5rem;
   }
   
   .text-container p {

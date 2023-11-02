@@ -31,8 +31,8 @@ const Etusivu = () => {
             <br />
           </div>
           <div className="image-container">
-            <Video />
             <img src="Video.png" alt=" " className="medical-image" />
+            <Video />
           </div>
         </div>
       </div>
