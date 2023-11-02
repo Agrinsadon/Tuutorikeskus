@@ -80,6 +80,11 @@
 @media screen and (max-width: 600px) {
 
 /* Ota-yhteyttä section */
+
+.contact-image {
+  display: none;
+}
+
 .ota-yhteyttä {
   background-color: #ECF9FF;
   font-family: 'Zen Antique Soft', sans-serif;
@@ -95,19 +100,11 @@
 .inputs {
   margin-left: 2rem;
   margin-right: 0px;
-}
-
-.inputs input{
-  width: 85%;
-}
-
-.inputs textarea {
-  width: 85%;
+  width: 75%;
 }
 
 .button-lähetä {
   margin-left: 2rem;
 }
-
 }
 

@@ -28,10 +28,20 @@
 }
 
 .medical-image {
-  width: 100%;
-  max-width: 420px;
-  border-radius: 30px;
-  margin-top: 80px;
+  max-width: 600px;
+  bottom: 13rem;
+  right: 8rem;
+  position: absolute;
+  z-index: 0;
+}
+
+.video-container iframe{
+  margin-top: 288px;
+  margin-right: 10.55rem;
+  position: relative;
+  z-index: 1;
+  width: 289px;
+  height: 176px;
 }
 
 .text-container {
@@ -396,15 +406,23 @@
 @media screen and (max-width: 600px) {
 
   .etusivu {
-    height: 37rem;
+    height: 50.5rem;
   }
 
   .firstpage {
+    display: block;
     margin-left: 2.5rem;
   }
 
   .medical-image {
     display: none;
+  }
+  
+  .video-container iframe{
+    margin-top: 0px;
+    margin-right: 0rem;
+    width: 270px;
+    height: 170px;
   }
   
   .text-container {
@@ -414,7 +432,7 @@
   .text-container h1 {
     font-size: 1.9rem;
     width: 19rem;
-    margin-top: 0;
+    margin-top: 1.5rem;
   }
   
   .text-container p {
@@ -631,13 +649,7 @@
 
 @media (min-width: 883px) and (max-width: 1110px) {
 
-.medical-image {
-  max-width: 293px;
-  border-radius: 30px;
-  margin-top: 80px;
-  height: 28.9rem;
-}
-  
+
 .text-container {
   margin-top: 60px;
   display: flex;
@@ -695,10 +707,4 @@
   bottom: 45px;
   left: 10px;
 }
-}
-
-@media (max-width: 882px) {
-  .image-container {
-    display: none;
-  }
 }

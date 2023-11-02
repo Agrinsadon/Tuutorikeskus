@@ -6,6 +6,7 @@ import Navbar from './Navbar';
 import '../styles/Etusivu.css';
 import EmailForm from './EmailForm';
 import Timeline from './Timeline';
+import Video from './Video';
 
 const Etusivu = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -28,11 +29,10 @@ const Etusivu = () => {
               <p>Siellä missä lääketieteen taidetta rakastetaan, siellä rakastetaan myös ihmiskuntaa - Hippocrates</p>
             </div>
             <br />
-            <br />
-            <br />
           </div>
           <div className="image-container">
-            <img src="medical center.png" alt="Medical Center" className="medical-image" />
+            <Video />
+            <img src="Video.png" alt=" " className="medical-image" />
           </div>
         </div>
       </div>
