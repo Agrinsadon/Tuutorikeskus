@@ -83,6 +83,7 @@
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
+    margin-left: 1rem;
   }
   
   .lääketiede-text p {
@@ -92,6 +93,7 @@
   .tentti-text p {
     color: #555;
     margin-bottom: 20px;
+    margin-left: 1rem;
   }
   
   .lääketiede-text a {
@@ -105,6 +107,7 @@
     border-color: rgb(124, 216, 255); /* Change the border color on hover */
   }
   .tentti-text a {
+    margin-left: 1rem;
     color: rgb(124, 216, 255); /* Change the link text color */
     border-bottom: 2px solid transparent; /* Add a transparent border-bottom for the line */
     transition: border-color 0.3s; /* Add a smooth transition for the border-color */
@@ -180,6 +183,175 @@
   .vapaa-aika-image {
     width: 450px;
     height: 300px;
+}
+
+.loma-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  margin-top: 4rem;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 20rem;
+}
+
+.loma-text {
+  margin-left: 3rem;
+  width: 65%;
+}
+
+.loma-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px; 
+}
+
+.loma-text h2::after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
+  width: 6.6%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+  position: absolute;
+  left: 41.5%;
+  border-radius: 15px; 
+}
+
+.loma-text p{
+  width: 90%;
+  color: #555;
+  font-size: 22px; 
+}
+
+.loma-image {
+  width: 480px;
+  height: 400px;
+}
+
+.harrastus-content {
+  display: block;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  margin-top: 5rem;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.harrastus-text {
+  text-align: center;
+}
+
+.harrastus-text h2 {
+  font-size: 24px;
+  margin-bottom: 15px; 
+}
+
+.harrastus-text h2::after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
+  width: 29%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+  position: absolute;
+  left: 35.4%;
+  border-radius: 15px; 
+}
+
+.harrastus-text p{
+  color: #555;
+  font-size: 16px; 
+}
+
+.show-form-button {
+  font-family: 'Zen Antique Soft', sans-serif;
+  background-color: rgba(6, 6, 64, 1);
+  margin-top: 8px;
+  margin-bottom: 15px;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 10rem;
+  max-width: 10rem;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1300;
+}
+
+.form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 1350;
+  border-radius: 15px;
+}
+
+.x-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.myForm {
+  font-family: 'Zen Antique Soft', sans-serif;
+}
+
+.myForm .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.myForm h1 {
+  text-align: center;
+  font-size: 24px;
+  color: black; /* Change the color to your preference */
+  margin: 10px 0;
+}
+
+.myForm h1::after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
+  width: 43%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+  position: absolute;
+  left: 28.6%;
+  border-radius: 15px;
+}
+
+/* Style for the text inside the form */
+.myForm p {
+  margin-top: 2rem;
+  font-size: 16px;
+  color: #555;
+  width: 50%;
+}
+
+.myForm .additional-content {
+  width: 45%;
+}
+
+.additional-content p {
+  width: 100%;
 }
 
     
