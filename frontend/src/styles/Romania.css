@@ -354,4 +354,245 @@
   width: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  .romania {
+    height: 68rem;
+  }
+
+  .romania-card {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 26.7rem;
+    padding-top: 5.5rem;
+  }
+
+  .romania-card h1{
+    font-size: 1.9rem;
+  }
+
+  .outside-romania {
+    margin-bottom: 6rem;
+    display: block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .lääketiede-text {
+    padding: 0px;
+    margin-left: 1rem;
+  }
+
+  .tentti-text {
+    margin-top: 1.8rem;
+    padding: 0px;
+    border-left: 0px solid #ddd; /* Add a border to both sides */
+    border-top: 1px solid #ddd;
+    text-align: left; /* Align text to the left within the sections */
+  }
+  
+  .lääketiede-text h2 {
+    font-size: 20px;
+  }
+
+  .tentti-text h2 {
+    font-size: 20px;
+    margin-top: 1.7rem;
+  }
+  
+  .lääketiede-text p {
+    font-size: 16px;
+  }
+  .tentti-text p {
+    font-size: 16px;
+  }
+
+
+  .vapaa-aika {
+    padding-top: 0rem;
+  }
+
+
+  .centered-header h1 {
+    font-size: 1.9rem;
+  }
+
+  .centered-header h1::after {
+    left: 25.5%;
+  }
+
+  .centered-header p {
+    font-size: 16px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .vapaa-aika-content {
+    display: block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+  }
+
+  .vapaa-aika-text {
+    margin-left: 1.5rem;
+  }
+
+  .vapaa-aika-text h2 {
+    font-size: 20px;
+  }
+
+  .vapaa-aika-text h2::after {
+    width: 62%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    left: 12%;
+  }
+
+  .vapaa-aika-text p{
+    width: 95%;
+    font-size: 15px; 
+    margin-bottom: 1.5rem;
+  }
+
+  .vapaa-aika-image {
+    display: none;
+}
+
+.loma-content {
+  display: block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+  height: 15rem;
+}
+
+.loma-text {
+  margin-left: 1.5rem;
+  width: 95%;
+}
+
+.loma-text h2 {
+  font-size: 20px;
+}
+
+.loma-text h2::after {
+  width: 18.7%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+  left: 9.6%;
+}
+
+.loma-text p{
+  font-size: 16px; 
+}
+
+.loma-image {
+  display: none;
+}
+
+.harrastus-content {
+  display: block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.harrastus-text {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.harrastus-text h2 {
+  font-size: 19px;
+}
+
+.harrastus-text h2::after {
+  width: 84.3%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+  left: 8%;
+}
+
+.harrastus-text p{
+  color: #555;
+  font-size: 16px; 
+}
+
+.show-form-button {
+  margin-top: 3px;
+  padding: 0.6rem;
+  width: 7rem;
+  max-width: 7rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1300;
+}
+
+.form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 1350;
+  border-radius: 15px;
+  overflow: scroll;
+}
+
+.x-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.myForm {
+  font-family: 'Zen Antique Soft', sans-serif;
+}
+
+.myForm .content-wrapper {
+  display: block;
+  justify-content: space-between;
+}
+
+.myForm h1 {
+  text-align: center;
+  font-size: 24px;
+  color: black; /* Change the color to your preference */
+  margin: 10px 0;
+}
+
+.myForm h1::after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
+  width: 43%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+  position: absolute;
+  left: 28.6%;
+  border-radius: 15px;
+}
+
+/* Style for the text inside the form */
+.myForm p {
+  margin-top: 2rem;
+  font-size: 16px;
+  color: #555;
+  width: 50%;
+}
+
+.myForm .additional-content {
+  width: 45%;
+}
+
+.additional-content p {
+  width: 100%;
+}
+
+}
     
