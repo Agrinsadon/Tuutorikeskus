@@ -391,11 +391,6 @@
     font-size: 20px;
   }
 
-  .vapaa-aika-text h2::after {
-    width: 62%; /* Adjust the length (width) as a percentage or other valid CSS width value */
-    left: 10.5%;
-  }
-
   .vapaa-aika-text p{
     width: 95%;
     font-size: 15px; 
@@ -423,11 +418,6 @@
   font-size: 20px;
 }
 
-.loma-text h2::after {
-  width: 18.7%; /* Adjust the length (width) as a percentage or other valid CSS width value */
-  left: 9.6%;
-}
-
 .loma-text p{
   font-size: 16px; 
 }
@@ -441,7 +431,6 @@
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 1.5rem;
-  margin-bottom: 3rem;
 }
 
 .harrastus-text {
@@ -450,13 +439,9 @@
 }
 
 .harrastus-text h2 {
-  font-size: 19px;
+  font-size: 18px;
 }
 
-.harrastus-text h2::after {
-  width: 84.3%; /* Adjust the length (width) as a percentage or other valid CSS width value */
-  left: 8%;
-}
 
 .harrastus-text p{
   color: #555;
@@ -496,11 +481,6 @@
 
 .myForm h1 {
   font-size: 20px;
-}
-
-.myForm h1::after {
-  width: 48%; /* Adjust the length (width) as a percentage or other valid CSS width value */
-  left: 26%;
 }
 
 /* Style for the text inside the form */
