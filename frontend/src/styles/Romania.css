@@ -8,6 +8,12 @@
   * {
     box-sizing: border-box;
   }
+
+  .screen {
+    max-width: 1433px;
+    max-height: 891px;
+    margin: 0 auto;
+  }
   
   .romania {
     font-family: 'Zen Antique Soft', sans-serif;
@@ -132,16 +138,6 @@
     margin-bottom: 20px; 
   }
 
-  .centered-header h1::after {
-    content: "";
-    display: block;
-    border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
-    width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
-    position: absolute;
-    left: 25%;
-    border-radius: 15px; 
-  }
-
   .vapaa-aika-content {
     display: flex;
     justify-content: space-between;
@@ -162,16 +158,6 @@
   .vapaa-aika-text h2 {
     font-size: 24px;
     margin-bottom: 15px; 
-  }
-
-  .vapaa-aika-text h2::after {
-    content: "";
-    display: block;
-    border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
-    width: 19%; /* Adjust the length (width) as a percentage or other valid CSS width value */
-    position: absolute;
-    left: 10%;
-    border-radius: 15px; 
   }
 
   .vapaa-aika-text p{
@@ -209,15 +195,6 @@
   margin-bottom: 15px; 
 }
 
-.loma-text h2::after {
-  content: "";
-  display: block;
-  border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
-  width: 6.6%; /* Adjust the length (width) as a percentage or other valid CSS width value */
-  position: absolute;
-  left: 41.5%;
-  border-radius: 15px; 
-}
 
 .loma-text p{
   width: 90%;
@@ -234,12 +211,11 @@
   display: block;
   margin-left: 7rem;
   margin-right: 7rem;
-  margin-top: 5rem;
+  margin-top: 4rem;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  margin-bottom: 3rem;
 }
 
 .harrastus-text {
@@ -249,16 +225,6 @@
 .harrastus-text h2 {
   font-size: 24px;
   margin-bottom: 15px; 
-}
-
-.harrastus-text h2::after {
-  content: "";
-  display: block;
-  border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
-  width: 29%; /* Adjust the length (width) as a percentage or other valid CSS width value */
-  position: absolute;
-  left: 35.4%;
-  border-radius: 15px; 
 }
 
 .harrastus-text p{
@@ -328,16 +294,6 @@
   margin: 10px 0;
 }
 
-.myForm h1::after {
-  content: "";
-  display: block;
-  border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
-  width: 43%; /* Adjust the length (width) as a percentage or other valid CSS width value */
-  position: absolute;
-  left: 28.6%;
-  border-radius: 15px;
-}
-
 /* Style for the text inside the form */
 .myForm p {
   margin-top: 2rem;
@@ -368,16 +324,6 @@
 
   .romania-card h1{
     font-size: 1.9rem;
-  }
-
-  .romania-card h1::after {
-    content: "";
-    display: block;
-    border-bottom: 5px solid white; /* Width (2px in this example) and color */
-    width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
-    position: absolute;
-    left: 24.7%;
-    border-radius: 15px; 
   }
 
   .outside-romania {
@@ -416,18 +362,12 @@
     font-size: 16px;
   }
 
-
   .vapaa-aika {
     padding-top: 0rem;
   }
 
-
   .centered-header h1 {
     font-size: 1.9rem;
-  }
-
-  .centered-header h1::after {
-    left: 25.5%;
   }
 
   .centered-header p {

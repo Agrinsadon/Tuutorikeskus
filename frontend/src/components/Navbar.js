@@ -14,6 +14,7 @@ const Navbar = () => {
   };
 
   return (
+    <div className='screen'>
     <div className="navbar">
       <div className="logo">Tuutori Keskus</div>
       <div className={`nav-links ${showLinks ? 'show' : ''}`}>
@@ -38,6 +39,7 @@ const Navbar = () => {
         className={`burger ${showLinks ? 'active' : ''}`}
         onClick={toggleLinks}
       />
+    </div>
     </div>
   );
 };

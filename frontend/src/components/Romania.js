@@ -17,7 +17,7 @@ const Romania = () => {
     };
 
     return (
-        <div>
+        <div className='screen'>
             <div className="romania">
                 <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
                 <div className="romania-card">
@@ -94,6 +94,7 @@ const Romania = () => {
                     </>
                 )}
                 </div>
+                <br /> <br />
             </div>
         </div>
     );

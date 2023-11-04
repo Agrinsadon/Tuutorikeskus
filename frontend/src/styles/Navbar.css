@@ -7,6 +7,11 @@
   font-style: normal;
 }
 
+.screen {
+  max-width: 1433px;
+  max-height: 891px;
+  margin: 0 auto;
+}
 
 .navbar {
   font-family: 'Zen Antique Soft', sans-serif; /* Add font-family */

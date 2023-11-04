@@ -17,6 +17,7 @@ const Kurssit = () => {
     };
   
     return (
+      <div className='screen'>
       <div className="kurssitsivu">
         <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
         <div className="kurssit">
@@ -162,6 +163,7 @@ const Kurssit = () => {
         </div>
         <EmailForm />
         {enrollmentInfo && (<EnrollmentForm courseInfo={enrollmentInfo} onEnrollmentSuccess={handleEnrollmentSuccess}/>)}
+      </div>
       </div>
     );
 };

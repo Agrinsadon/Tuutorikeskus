@@ -17,7 +17,7 @@ const Etusivu = () => {
   };
 
   return (
-    <div>
+    <div className='screen'>
       <div className="etusivu">
         <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
         <div className="firstpage">
