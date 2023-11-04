@@ -138,6 +138,16 @@
     margin-bottom: 20px; 
   }
 
+  .centered-header h1::after {
+    content: "";
+    display: block;
+    border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
+    width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    position: absolute;
+    left: 25%;
+    border-radius: 15px; 
+  }
+
   .vapaa-aika-content {
     display: flex;
     justify-content: space-between;
@@ -331,6 +341,15 @@
     display: block;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  .centered-header h1::after {
+    content: "";
+    display: block;
+    border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
+    width: 52%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    position: relative;
+    left: 24.8%;
   }
 
   .lääketiede-text {
