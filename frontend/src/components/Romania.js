@@ -21,8 +21,13 @@ const Romania = () => {
             <div className="romania">
                 <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
                 <div className="romania-card">
-                    <h1>Romania</h1>
-                    <img src="Romania.png" alt=" " className="romania-card-pic" />
+                <h1>Romania</h1>
+                <img
+                    src="Romania.png"
+                    alt=""
+                    className="romania-card-pic"
+                    loading="lazy"
+                />
                 </div>
                 <div className="outside-romania">
                     <div className="lääketiede-text">
