@@ -31,7 +31,7 @@ const Etusivu = () => {
             <br />
           </div>
           <div className="image-container">
-            <img src="Video.png" alt=" " className="medical-image" />
+            <img src="Video.png" alt=" " className="medical-image" loading="lazy" />
             <Video />
           </div>
         </div>
@@ -116,7 +116,7 @@ const Etusivu = () => {
         <h1>Lisätiedot</h1>
         <div className='info-card-container'>
         <div className="info-card">
-          <img src="Aboutus.png" alt=" " className="card-pic" />
+          <img src="Aboutus.png" alt=" " className="card-pic" loading="lazy" />
           <h2>Lääketiede ulkomailla ?</h2>
           <p>Me haluamme olla nuorten tukena elämänsä tärkeimmän polun valitsemisessa sekä haaveiden toteuttamisessa ja tätä kautta luoda lisäarvoa tuleville kollegoille.</p>
           <div className="card-links1">
@@ -126,7 +126,7 @@ const Etusivu = () => {
 
         <div className="info-card">
           <div className="pic-frame">
-          <img src="Aboutus.png" alt=" " className="card-pic" />
+          <img src="Aboutus.png" alt=" " className="card-pic" loading="lazy" />
           </div>
           <h2>Lääketiede Romaniassa</h2>
           <p>Opinnot ovat käytännönläheisiä, ja ensimmäiset vuodet keskittyvät teoriaan (prekliininen vaihe), kun taas viimeiset kolme vuotta sisältävät intensiivistä työkokemusta (postkliininen vaihe).</p>
@@ -137,7 +137,7 @@ const Etusivu = () => {
 
         <div className="info-card">
           <div className="pic-frame">
-          <img src="Aboutus.png" alt=" " className="card-pic" />
+          <img src="Aboutus.png" alt=" " className="card-pic" loading="lazy" />
           </div>
           <h2>Tenttivaatimukset</h2>
           <p>Romanian huippuyliopistot jättävät kemian ja fysiikan väliin. Pääsykokeissa keskittyvät anatomiaan ja fysiologiaan. Kokeet yleensä vaihtelevat (suulliset tai kirjalliset).</p>
