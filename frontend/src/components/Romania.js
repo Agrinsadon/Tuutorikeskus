@@ -33,12 +33,12 @@ const Romania = () => {
                     <div className="lääketiede-text">
                         <h2>Lääketiede Romaniassa</h2>
                         <p>Opinnot ovat käytännönläheisiä, ja ensimmäiset vuodet keskittyvät teoriaan (prekliininen vaihe), kun taas viimeiset kolme vuotta sisältävät intensiivistä työkokemusta (postkliininen vaihe).</p>
-                        <a href="your-link-url">Lue Lisää</a>
+                        <a href="/LääketiedeRomania">Lue Lisää</a>
                     </div>
                     <div className="tentti-text">
                         <h2>Tenttivaatimukset</h2>
                         <p>Romanian huippuyliopistot jättävät kemian ja fysiikan väliin. Pääsykokeissa keskittyvät anatomiaan ja fysiologiaan. Kokeet yleensä vaihtelevat (suulliset tai kirjalliset).</p>
-                        <a href="your-link-url">Lue Lisää</a>
+                        <a href="/Tenttivaatimukset">Lue Lisää</a>
                     </div>
                 </div>
             </div>

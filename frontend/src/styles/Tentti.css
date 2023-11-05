@@ -9,9 +9,147 @@
     box-sizing: border-box;
   }
   
+  .screen {
+    max-width: 1433px;
+    max-height: 891px;
+    margin: 0 auto;
+  }
+  
   .tentti {
     font-family: 'Zen Antique Soft', sans-serif;
     background-color: #ECF9FF;
     padding-top: 2rem;
-    height: 50rem;
+    height: 55rem;
+    max-width: 100%;
   }
+
+  .tentti-card {
+    padding-top: 6rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    height: 35rem;
+    z-index: 2; /* Make it appear above other elements */
+  }
+
+  .tentti-card h1{
+    text-align: center;
+    font-size: 2.8rem;
+    color: black;
+    margin-bottom: 2.2rem;
+  }
+
+  .tentti-card h1::after {
+    content: "";
+    display: block;
+    border-bottom: 5px solid white; /* Width (2px in this example) and color */
+    width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    position: absolute;
+    left: 25%;
+    border-radius: 15px; 
+  }
+
+  .tentti-card-pic {
+    width: 100%;
+    height: 21rem; 
+    border-radius: 15px 15px 0 0;
+    mask-image: linear-gradient(to bottom, rgba(236, 249, 255, 1), transparent 350px);
+  }
+
+  .outside-tentti {
+    font-family: 'Zen Antique Soft', sans-serif;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0px 0px 15px 15px;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .tenttivaatimus-text {
+    padding: 20px; /* Add padding to both sides */
+  }
+
+  .tenttivaatimus-text p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .myTentti {
+    font-family: 'Zen Antique Soft', sans-serif;
+  }
+
+  .myTentti h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    color: black; /* Change the color to your preference */
+    margin-top: 2.5rem;
+  }
+
+  .myTentti h1::after {
+    content: "";
+    display: block;
+    border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
+    width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    position: relative;
+    left: 25%;
+    border-radius: 15px; 
+  }
+
+  .tentti-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 3rem;
+  }
+
+  .tentti-text1 {
+    width: 45%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+  }
+
+  .tentti-text2 {
+    width: 45%;
+    margin-left: 3rem;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+
+  .tentti-text1 h2 {
+    text-align: center;
+  }
+
+  .tentti-text2 h2 {
+    text-align: center;
+  }
+
+  .tentti-text1 h2::after{
+    content: "";
+    display: block;
+    border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
+    width: 45.5%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    position: relative;
+    left: 27.2%;
+    border-radius: 15px; 
+  }
+ 
+  .tentti-text2 h2::after{
+    content: "";
+    display: block;
+    border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
+    width: 61.5%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    position: relative;
+    left: 19%;
+    border-radius: 15px; 
+  }
+
+  .tentti-text1,
+   .tentti-text2 p {
+    text-align: left;
+  }
+
