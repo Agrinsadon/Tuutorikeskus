@@ -120,7 +120,7 @@ const Etusivu = () => {
           <h2>Lääketiede ulkomailla ?</h2>
           <p>Me haluamme olla nuorten tukena elämänsä tärkeimmän polun valitsemisessa sekä haaveiden toteuttamisessa ja tätä kautta luoda lisäarvoa tuleville kollegoille.</p>
           <div className="card-links1">
-          <a href="your-link-url">Meistä</a>
+          <a href="/Meistä">Meistä</a>
           </div>
         </div>
 
@@ -131,7 +131,7 @@ const Etusivu = () => {
           <h2>Lääketiede Romaniassa</h2>
           <p>Opinnot ovat käytännönläheisiä, ja ensimmäiset vuodet keskittyvät teoriaan (prekliininen vaihe), kun taas viimeiset kolme vuotta sisältävät intensiivistä työkokemusta (postkliininen vaihe).</p>
           <div className="card-links2">
-          <a href="your-link-url">Lue Lisää</a>
+          <a href="/LääketiedeRomania">Lue Lisää</a>
           </div>
         </div>
 
@@ -142,7 +142,7 @@ const Etusivu = () => {
           <h2>Tenttivaatimukset</h2>
           <p>Romanian huippuyliopistot jättävät kemian ja fysiikan väliin. Pääsykokeissa keskittyvät anatomiaan ja fysiologiaan. Kokeet yleensä vaihtelevat (suulliset tai kirjalliset).</p>
           <div className="card-links3">
-          <a href="your-link-url">Lue Lisää</a>
+          <a href="/Tenttivaatimukset">Lue Lisää</a>
           </div>
         </div>
         </div>
