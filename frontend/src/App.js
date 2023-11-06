@@ -1,29 +1,25 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
-// Lazy load your components
-const Koti = lazy(() => import('./components/Etusivu'));
-const Kurssit = lazy(() => import('./components/Kurssit'));
-const Romania = lazy(() => import('./components/Romania'));
-const Meistä = lazy(() => import('./components/Meistä'));
-const Yhteistiedot = lazy(() => import('./components/Yhteistiedot'));
-const Tentti = lazy(() => import('./components/Tentti'));
-const LääkeRomania = lazy(() => import('./components/LääkeRomania'));
+import Koti from './components/Etusivu';
+import Kurssit from './components/Kurssit';
+import Romania from './components/Romania';
+import Meistä from './components/Meistä';
+import Yhteistiedot from './components/Yhteistiedot';
+import Tentti from './components/Tentti';
+import LääkeRomania from './components/LääkeRomania'
 
 const App = () => {
   return (
     <Router>
-      <Suspense fallback={<div></div>}>
-        <Switch>
-          <Route path="/LääketiedeRomaniassa" component={LääkeRomania} />
-          <Route path="/Tenttivaatimukset" component={Tentti} />
-          <Route path="/Kurssit" component={Kurssit} />
-          <Route path="/Romania" component={Romania} />
-          <Route path="/Meistä" component={Meistä} />
-          <Route path="/Yhteistiedot" component={Yhteistiedot} />
-          <Route path="/" component={Koti} />
-        </Switch>
-      </Suspense>
+      <Switch>
+        <Route path="/LääketiedeRomaniassa" component={LääkeRomania} />
+        <Route path="/Tenttivaatimukset" component={Tentti} />
+        <Route path="/Kurssit" component={Kurssit} />
+        <Route path="/Romania" component={Romania} />
+        <Route path="/Meistä" component={Meistä} />
+        <Route path="/Yhteistiedot" component={Yhteistiedot} />
+        <Route path="/" component={Koti} />
+      </Switch>
     </Router>
   );
 };
