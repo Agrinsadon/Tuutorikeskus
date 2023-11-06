@@ -7,7 +7,6 @@
     "build": "npm-run-all build:frontend build:backend"
   },
   "dependencies": {
-    "axios": "^1.5.1",
     "concurrently": "^6.2.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
