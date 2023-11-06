@@ -77,24 +77,24 @@ const Romania = () => {
                     <>
                         <div className="overlay" onClick={hideForm}></div>
                         <div className="form-container">
-                            <form className='myForm'>
+                            <div className='myForm'>
                             <FontAwesomeIcon
                             icon={faTimes} // Use the FontAwesome icon you prefer
                             className="x-button"
                             onClick={hideForm}
                             />
                             <h1>Harrastaminen & kustannusarviot</h1>
-                            <div class="content-wrapper">
+                            <div className="content-wrapper">
                                 <p>Opiskelijalle matkakortti maksaa 7€/kk alle 27 vuotiaille opiskelijalle. Opiskelijakortilla pääset matkustamaan maan sisällä ilmaiseksi junalla. Romaniasta pääset myös muihin Euroopan maihin tosi edullisesti ja kätevästi, mm. Lontooseen tosi alle 20 punnalla ajoittain, Espanjaan 10€ jos haluat seikkailla, vaikka syyslomalla. Koti-ikävän tullessa Bukarestista lentää Suomeen suoralla lennolla kahdessa tunnissa. <br /> <br />
                                 Romanian sisällä sekä naapurimaissa on paljon hienoja matkailukohteita, mihin pääset helposti junalla tai paikallisella bussilla. Kauniita aurinko kohteita ovat, Constantan ranta sekä upeat maisemat, Pääkaupungissa Bukarestissa viihtyy kovempikin bailaaja, Cluj-Napocassa on hienoimpia taidepiirteitä, Sighisoarassa on Euroopan parhaiten säilynyt keskiaikainen keskusta ja kaupungin kadut täyttyvät markkinahumusta joka viikonloppu. <br /> <br />
                                 Romanian ilmasto on aivan mahtava! Niin kuin varmasti tiedät meillä Suomessa on 2-3 viikkoa vuodessa hyvät helteet, täällä Romaniassa se menee toisin päin. Romaniassa hellettä riittää ympäri vuoden. Romanian yliopistossa saat hyvät lomat, mikäli hoidat sinun työsi hyvinkoulussa.Koulun lomien pituuksiin pystyt vaikuttamaan itse, mikäli hoidatkaikki kurssisi hyvin ettet joudu uusimaan mitään niin voit päästä lomalle jo muutamaa viikkoa aikaisemmin.</p>
-                            <div class="additional-content">
+                            <div className="additional-content">
                                 <p>Romaniassa harrastukset maksavat suunnilleen:<br />• Kuntosali jäsenyys, 10€/kk<br />• Elokuvat 4€ • Nyrkkeily kurssi 15-20€/kk <br />• Vapaaottelu kurssi 15-20€/kk<br /> • Ravintolat: Laadusta riippuen 3-15€<br /> • Kahvilat: 2-5€ <br />• Jalkapallo, koripallo, lentopallo, sulkapallo noin 15€/kk<br />
                                 <br />Ilmaista harrastettavaa löytyy muun muassa:<br /> • Jalkapallo, koripallo, tennis mm. ulkotiloissa<br /> • Kirjastot <br />• Vaeltelu Romanian luonnon ympäristössä / vuoristoissa.<br /> • Opastetut turistikiertueet kaupungeissa<br /> • Koulun ohjelmat, joissa esimerkiksi jokainen halutessaan pukeutuu kulttuuri vaatetukseen, halloween juhlat, tanssiaiset, kulttuuri ruoka päivät tai koulun tanssiaiset.
                                 </p>
                             </div>
                             </div>
-                            </form> 
+                            </div> 
                         </div>
                     </>
                 )}
