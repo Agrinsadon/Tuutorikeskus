@@ -9,6 +9,7 @@ const port = process.env.PORT || 3000;
 
 app.get('/Etusivu.css', function(req, res) {
   res.setHeader('Content-Type', 'text/css');
+  res.sendFile('../frontend/styles/Etusivu.css');
 });
 
 app.use(cors());
