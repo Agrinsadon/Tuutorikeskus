@@ -24,7 +24,7 @@ const Tentti = () => {
           </div>
         </div>
         </div>
-        <form className='myTentti'>
+        <div className='myTentti'>
         <h1>Pääsykoe koostuu kahdesta vaiheesta</h1>
         <div className='tentti-container'>
         <div class="tentti-text1">
@@ -38,7 +38,7 @@ const Tentti = () => {
             <p>Suullinen pääsykoe kestää koko päivän tyypillisesti klo 9-21. Tämä johtuu siitä, että kaikki hakijat täytyy ehtiä haastatella läpi. Pidä huoli siitä, että tiedät, milloin sinut kutsutaan haastatteluun ja missä välissä on taukoja. Koska odotukset kokeiden välillä kestävät useita tunteja. Odottaessa voit myös käydä lepäämässä, tankkaamassa tai lukemassa. Kirjallinen pääsykoe tilaisuus on suomalaisille opiskelijoille tuttua. Eli koe alkaa 9:ltä aamulla ja kestää klo 12:00 asti . Kokeet ovat monivalinta kysymyksiä anatomian ja physiologian opinnoista.</p>
         </div>
         </div>
-        </form> 
+        </div> 
     </div>
 
     );
