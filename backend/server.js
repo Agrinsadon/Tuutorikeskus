@@ -11,6 +11,11 @@ app.get('/Etusivu.css', function(req, res) {
   res.setHeader('Content-Type', 'text/css');
 });
 
+app.get('/Tentti.css', function(req, res) {
+  res.setHeader('Content-Type', 'text/css');
+});
+
+
 app.use(cors());
 app.use('/email', emailRoutes);
 app.use('/enroll', enrollRoutes);
