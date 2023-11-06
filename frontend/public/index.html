@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script>
-      if (navigator.share) {
-        navigator.share({ title: 'My title', text: 'My text', url: 'https://tuutorikeskus.onrender.com' })
-          .then(() => console.log('Shared successfully'))
-          .catch((error) => console.error('Error sharing:', error));
-      } else {
-        // Fallback: Provide a shareable link
-        const shareableLink = 'https://tuutorikeskus.onrender.com'; // Replace with the actual URL you want to share
-        alert('Web Share API is not supported in this browser. You can manually share this link:\n' + shareableLink);
-      }
-    </script>
     <meta charset="utf-8" />
     <link rel="icon" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
