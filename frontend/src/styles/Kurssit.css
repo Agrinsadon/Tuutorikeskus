@@ -1,13 +1,9 @@
-@font-face {
-  font-family: 'Zen Antique Soft';
-  src: url('../font/ZenAntiqueSoft-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+.screen {
+  max-width: 1433px;
+  max-height: 891px;
+  margin: 0 auto;
 }
-  
-* {
-  box-sizing: border-box;
-}
+
 .kurssitsivu {
   font-family: 'Zen Antique Soft', sans-serif;
   background-color: #ECF9FF;
