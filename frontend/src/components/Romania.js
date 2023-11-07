@@ -20,26 +20,27 @@ const Romania = () => {
         <div className='screen'>
             <div className="romania">
                 <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
-                <div className="romania-card">
+                <div className="romania-main">
                 <h1>Romania</h1>
-                <img
-                    src="Romania.png"
-                    alt=""
-                    className="romania-card-pic"
-                    loading="lazy"
-                />
+                <div className='romania-card-container'>
+                <div className="romania-card">
+                <div className="romania-pic-frame">
+                <img src="Romania.png" alt="" className="romania-card-pic" loading="lazy" />
                 </div>
                 <div className="outside-romania">
-                    <div className="lääketiede-text">
+                    <div className="lääketiede-romania-text">
                         <h2>Lääketiede Romaniassa</h2>
                         <p>Opinnot ovat käytännönläheisiä, ja ensimmäiset vuodet keskittyvät teoriaan (prekliininen vaihe), kun taas viimeiset kolme vuotta sisältävät intensiivistä työkokemusta (postkliininen vaihe).</p>
-                        <a href="/LääketiedeRomania">Lue Lisää</a>
+                        <a href="/LääketiedeRomaniassa">Lue Lisää</a>
                     </div>
-                    <div className="tentti-text">
+                    <div className="tentti-romania-text">
                         <h2>Tenttivaatimukset</h2>
                         <p>Romanian huippuyliopistot jättävät kemian ja fysiikan väliin. Pääsykokeissa keskittyvät anatomiaan ja fysiologiaan. Kokeet yleensä vaihtelevat (suulliset tai kirjalliset).</p>
                         <a href="/Tenttivaatimukset">Lue Lisää</a>
                     </div>
+                </div>
+                </div>
+                </div>
                 </div>
             </div>
 

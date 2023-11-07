@@ -146,7 +146,7 @@
   @media screen and (max-width: 600px) {
 
     .tentti {
-      padding-top: 2rem;
+      padding-top: 1rem;
       height: 50rem;
     }
   
@@ -191,8 +191,10 @@
     }
 
     .myTentti h1 {
-      font-size: 1.9rem;
+      font-size: 1.8rem;
       margin-top: 2.3rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
     }
   
     .myTentti h1::after {
@@ -215,6 +217,7 @@
       border-radius: 15px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       padding: 15px;
+      margin-bottom: 3rem;
     }
   
     .tentti-text2 {
@@ -229,19 +232,21 @@
   
     .tentti-text1 h2 {
       text-align: center;
+      font-size: 20px;
     }
   
     .tentti-text2 h2 {
       text-align: center;
+      font-size: 20px;
     }
   
     .tentti-text1 h2::after{
       content: "";
       display: block;
       border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
-      width: 45.5%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+      width: 69.5%; /* Adjust the length (width) as a percentage or other valid CSS width value */
       position: relative;
-      left: 27.2%;
+      left: 15.5%;
       border-radius: 15px; 
     }
    
@@ -249,9 +254,9 @@
       content: "";
       display: block;
       border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
-      width: 61.5%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+      width: 99%; /* Adjust the length (width) as a percentage or other valid CSS width value */
       position: relative;
-      left: 19%;
+      left: 0.5%;
       border-radius: 15px; 
     }
   

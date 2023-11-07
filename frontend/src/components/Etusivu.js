@@ -132,7 +132,7 @@ const Etusivu = () => {
           <h2>Lääketiede Romaniassa</h2>
           <p>Opinnot ovat käytännönläheisiä, ja ensimmäiset vuodet keskittyvät teoriaan (prekliininen vaihe), kun taas viimeiset kolme vuotta sisältävät intensiivistä työkokemusta (postkliininen vaihe).</p>
           <div className="card-links2">
-          <a href="/LääketiedeRomania">Lue Lisää</a>
+          <a href="/LääketiedeRomaniassa">Lue Lisää</a>
           </div>
         </div>
 

@@ -1,6 +1,71 @@
+  .screen {
+    max-width: 1433px;
+    max-height: 891px;
+    margin: 0 auto;
+  }
+
   .lääketiede {
     font-family: 'Zen Antique Soft', sans-serif;
     background-color: #ECF9FF;
-    padding-top: 2rem;
-    height: 50rem;
+    padding-top: 6.5rem;
+    height: 80rem;
+    max-width: 100%;
   }
+  
+  .lääketiede-main {
+    text-align: center;
+    margin: 60px 120px;
+    font-family: 'Zen Antique Soft', sans-serif;
+  }
+  
+  .lääketiede-main h1 {
+    font-size: 2.8rem;
+    color: black;
+    margin-bottom: 1.9rem;
+  }
+  
+  .lääketiede-main h1::after {
+    content: "";
+    display: block;
+    border-bottom: 5px solid white; /* Width (2px in this example) and color */
+    width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    position: absolute;
+    left: 25%;
+    border-radius: 15px; 
+  }
+  
+  .lääketiede-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+  }
+  
+  .lääketiede-card-pic {
+    width: 100%; /* Limit the image size to the card's width */
+    height: 475px; /* Maintain the image's aspect ratio */
+    border-radius: 15px 15px 0 0;
+    mask-image: linear-gradient(to bottom, rgba(236, 249, 255, 0.9), transparent 475px);
+  }
+  
+  .lääketiede-card {
+    width: 90%;
+    height: 50rem;
+    font-family: 'Zen Antique Soft', sans-serif;
+    margin-top: 5px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: left;
+    overflow: hidden; /* Ensure the image stays within the card's frame */
+  }
+  
+  .lääketiede-text p {
+    margin-top: 0rem;
+    font-size: 17px;
+    color: rgba(130, 130, 151, 1);
+    margin-left: 1rem;
+  }
+  
+ 
