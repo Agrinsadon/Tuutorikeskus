@@ -1,12 +1,12 @@
 /* Ota-yhteyttä section */
   .contact-container {
-    position: relative; /* Needed for absolute positioning */
+    position: relative;
   }
 
   .contact-image {
     position: absolute;
     top: 90px;
-    right: 60px; /* Adjust this value as needed for spacing */
+    right: 60px; 
   }
 
   .ota-yhteyttä {
@@ -60,11 +60,11 @@
     display: block;
     margin-left: 7.5rem;
     margin-bottom: 3rem;
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    transition: background-color 0.3s;
   }
   
   .button-lähetä:hover {
-    background-color: rgba(6, 6, 64, 0.8); /* Adjust the color on hover */
+    background-color: rgba(6, 6, 64, 0.8);
   }
 
   .message-sent {

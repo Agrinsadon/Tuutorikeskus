@@ -25,8 +25,8 @@
 .kurssit h1::after {
   content: "";
   display: block;
-  border-bottom: 5px solid white; /* Width (2px in this example) and color */
-  width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+  border-bottom: 5px solid white;
+  width: 50%;
   position: absolute;
   left: 25%;
   border-radius: 15px; 
@@ -39,8 +39,8 @@
 }
 
 .kurssi-card-pic {
-  width: 100%; /* Limit the image size to the card's width */
-  height: 13rem; /* Maintain the image's aspect ratio */
+  width: 100%;
+  height: 13rem;
   border-radius: 15px 15px 0 0;
   mask-image: linear-gradient(to bottom, rgba(236, 249, 255, 0.9), transparent 208px);
 }
@@ -57,7 +57,7 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   text-align: left;
-  overflow: hidden; /* Ensure the image stays within the card's frame */
+  overflow: hidden; 
 }
 
 .kurssi-card-small {
@@ -72,12 +72,12 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   text-align: left;
-  overflow: hidden; /* Ensure the image stays within the card's frame */
+  overflow: hidden; 
 }
 
 .kurssi-header {
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Vertically align items */
+  display: flex; 
+  align-items: center;
 }
 
 .kurssi-header h2 {
@@ -93,8 +93,8 @@
 }
 
 .kurssi-header1 {
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Vertically align items */
+  display: flex;
+  align-items: center;
 }
 
 .kurssi-header1 h2 {
@@ -117,21 +117,21 @@
 }
 
 .p-with-dots::before {
-  content: '\2022'; /* Unicode character for a bullet (dot) */
-  color: rgba(6, 6, 64, 1); /* Dot color */
-  font-size: 1rem; /* Adjust the dot size as needed */
-  margin-right: 0.5rem; /* Adjust the spacing between the dot and the text */
+  content: '\2022'; 
+  color: rgba(6, 6, 64, 1);
+  font-size: 1rem; 
+  margin-right: 0.5rem;
 }
 
 .ilmottaudu-button-container {
   display: flex;
-  align-items: center; /* Align children vertically center */
+  align-items: center; 
   margin-top: 1.5rem;
 }
 
 .price-label {
   font-family: 'Zen Antique Soft', sans-serif;
-  margin-right: 7rem; /* Add space between the price and the button */
+  margin-right: 7rem; 
   margin-left: 3rem;
   font-size: 26px;
   color: rgba(0, 229, 204, 1);
@@ -139,7 +139,7 @@
 
 .ilmottaudu-button {
   width: 17rem;
-  justify-content: flex-end; /* Move the button to the right */
+  justify-content: flex-end;
   font-family: 'Zen Antique Soft', sans-serif;
   background-color: rgba(6, 6, 64, 1);
   color: white;
@@ -148,10 +148,10 @@
   border-radius: 5px;
   cursor: pointer;
   max-width: 7rem;
-  transition: background-color 0.3s; /* Smooth transition for background color */
+  transition: background-color 0.3s; 
 }
 .ilmottaudu-button:hover {
-  background-color: rgba(6, 6, 64, 0.8); /* Adjust the color on hover */
+  background-color: rgba(6, 6, 64, 0.8);
 }
 
 /* Small version of cards Section */
@@ -168,18 +168,18 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   text-align: left;
-  overflow: hidden; /* Ensure the image stays within the card's frame */
+  overflow: hidden; 
 }
 
 .ilmottaudu-button-container-small {
   display: flex;
-  align-items: center; /* Align children vertically center */
+  align-items: center;
   margin-top: 1.5rem;
 }
 
 .price-label-small {
   font-family: 'Zen Antique Soft', sans-serif;
-  margin-right: 7rem; /* Add space between the price and the button */
+  margin-right: 7rem; 
   margin-left: 4rem;
   font-size: 26px;
   color: rgba(0, 229, 204, 1);
@@ -187,7 +187,7 @@
 
 .ilmottaudu-button-small {
   width: 17rem;
-  justify-content: flex-end; /* Move the button to the right */
+  justify-content: flex-end; 
   font-family: 'Zen Antique Soft', sans-serif;
   background-color: rgba(6, 6, 64, 1);
   color: white;
@@ -196,10 +196,10 @@
   border-radius: 5px;
   cursor: pointer;
   max-width: 7rem;
-  transition: background-color 0.3s; /* Smooth transition for background color */
+  transition: background-color 0.3s;
 }
 .ilmottaudu-button-small:hover {
-  background-color: rgba(6, 6, 64, 0.8); /* Adjust the color on hover */
+  background-color: rgba(6, 6, 64, 0.8); 
 }
 
 /* Enrollment Form Section */
@@ -214,8 +214,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1100; /* Set a lower z-index value than the navbar */
-
+  z-index: 1100;
 }
 
 .enrollment-form {
@@ -240,8 +239,8 @@
 .enrollment-form h1::after {
   content: "";
   display: block;
-  border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
-  width: 75%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+  border-bottom: 5px solid #ECF9FF;
+  width: 75%;
   position: absolute;
   left: 12.7%;
   border-radius: 15px;
@@ -284,12 +283,11 @@
 }
 
 .tutkinto-dropdown::after {
-  content: "▼"; /* Down arrow character */
+  content: "▼";
   position: absolute;
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
-  cursor: pointer;
 }
 
 .milloin-dropdown {
@@ -309,12 +307,11 @@
 }
 
 .milloin-dropdown::after {
-  content: "▼"; /* Down arrow character */
+  content: "▼";
   position: absolute;
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
-  cursor: pointer;
 }
 
 .options-list {
@@ -344,7 +341,7 @@
 
 .option {
   font-family: 'Zen Antique Soft', sans-serif;
-  cursor: pointer; /* Example style: change cursor on hover */
+  cursor: pointer;
 }
 
 .submit-button {
@@ -359,7 +356,7 @@
 }
 
 .submit-button:hover {
-  background-color: rgba(6, 6, 64, 0.8); /* Adjust the color on hover */
+  background-color: rgba(6, 6, 64, 0.8);
 }
 
 .success-message {
@@ -373,9 +370,9 @@
 
 .error-message {
   font-family: 'Zen Antique Soft', sans-serif;
-  color: #ff0000; /* Red text color for error messages */
-  font-size: 14px; /* Adjust the font size as needed */
-  margin-top: 5px; /* Spacing from the input fields */
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 
@@ -430,7 +427,7 @@
 }
 
 .price-label {
-  margin-right: 5rem; /* Add space between the price and the button */
+  margin-right: 5rem;
   margin-left: 3rem;
   font-size: 25px;
 }
@@ -445,7 +442,7 @@
 }
 
 .price-label-small {
-  margin-right: 5.5rem; /* Add space between the price and the button */
+  margin-right: 5.5rem;
   margin-left: 3rem;
   font-size: 25px;
 }
@@ -453,7 +450,7 @@
 /* Enrollment Form Section */
 .enrollment-form {
   width: 22rem;
-  z-index: 1200; /* Set a lower z-index value than the navbar */
+  z-index: 1200;
 }
 
 .close-button {
@@ -467,8 +464,8 @@
 .enrollment-form h1::after {
   content: "";
   display: block;
-  border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
-  width: 80%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+  border-bottom: 5px solid #ECF9FF;
+  width: 80%;
   position: absolute;
   left: 10.3%;
   border-radius: 15px;
