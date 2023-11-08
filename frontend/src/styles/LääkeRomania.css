@@ -8,7 +8,7 @@
     font-family: 'Zen Antique Soft', sans-serif;
     background-color: #ECF9FF;
     padding-top: 6.5rem;
-    height: 80rem;
+    height: 58rem;
     max-width: 100%;
   }
   
@@ -27,8 +27,8 @@
   .lääketiede-main h1::after {
     content: "";
     display: block;
-    border-bottom: 5px solid white; /* Width (2px in this example) and color */
-    width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    border-bottom: 5px solid white;
+    width: 50%;
     position: absolute;
     left: 25%;
     border-radius: 15px; 
@@ -42,15 +42,15 @@
   }
   
   .lääketiede-card-pic {
-    width: 100%; /* Limit the image size to the card's width */
-    height: 475px; /* Maintain the image's aspect ratio */
+    width: 100%;
+    height: 475px;
     border-radius: 15px 15px 0 0;
-    mask-image: linear-gradient(to bottom, rgba(236, 249, 255, 0.9), transparent 475px);
+    mask-image: linear-gradient(to bottom, rgba(236, 249, 255, 0.9), transparent 450px);
   }
   
   .lääketiede-card {
     width: 90%;
-    height: 50rem;
+    height: 38rem;
     font-family: 'Zen Antique Soft', sans-serif;
     margin-top: 5px;
     border-radius: 15px;
@@ -58,14 +58,49 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     text-align: left;
-    overflow: hidden; /* Ensure the image stays within the card's frame */
+    overflow: hidden;
   }
   
   .lääketiede-text p {
-    margin-top: 0rem;
-    font-size: 17px;
+    margin-top: 1rem;
+    font-size: 17.5px;
     color: rgba(130, 130, 151, 1);
-    margin-left: 1rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+
+  .myRomania {
+    font-family: 'Zen Antique Soft', sans-serif;
+    margin-top: 2rem;
+  }
+
+  .myRomania h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    color: black; /* Change the color to your preference */
+  }
+
+  .myRomania h1::after {
+    content: "";
+    display: block;
+    border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
+    width: 60%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    position: relative;
+    left: 20%;
+    border-radius: 15px; 
+  }
+
+  .lääketiede-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+  }
+
+  .lääketiede-text1 {
+    width: 80%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
- 
