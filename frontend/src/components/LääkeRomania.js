@@ -39,9 +39,9 @@ const Lääketiede = () => {
                 <p>Maan yleisen alhaisen elintason vuoksi opintotuki kattaa sinun kuukauden kulut.</p>
             </div>
             <div class="text2-content">
-                <h2>Another Header</h2>
-                <p>Additional text goes here.</p>
-                <button>Button</button>
+                <h2>Lisätiedot</h2>
+                <p>awdadwadwadadadwadawdadawdawdawdawdawdawdawd</p>
+                <button>Lue Lisää</button>
             </div>
         </div>
         </div>
