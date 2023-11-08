@@ -18,7 +18,7 @@
 
 .kurssit h1 {
   font-size: 2.8rem;
-  color: black;
+  color: rgba(6, 6, 64, 1);
   margin-bottom: 1.9rem;
 }
 
@@ -83,6 +83,7 @@
 .kurssi-header h2 {
   font-size: 1.5rem;
   margin-left: 1rem;
+  color: rgba(6, 6, 64, 1);
 }
 
 .kurssi-header p {
@@ -98,6 +99,7 @@
 }
 
 .kurssi-header1 h2 {
+  color: rgba(6, 6, 64, 1);
   font-size: 1.5rem;
   margin-left: 1rem;
 }
@@ -236,6 +238,10 @@
   cursor: pointer;
 }
 
+.enrollment-form h1 {
+  color: rgba(6, 6, 64, 1);
+}
+
 .enrollment-form h1::after {
   content: "";
   display: block;
@@ -248,6 +254,7 @@
 
 .enrollment-form h2 {
   font-size: 24px;
+  color: rgba(6, 6, 64, 1);
 }
 
 .enrollment-form form {
@@ -287,6 +294,7 @@
   position: absolute;
   top: 50%;
   right: 10px;
+  color: rgba(6, 6, 64, 1);
   transform: translateY(-50%);
 }
 
@@ -312,6 +320,7 @@
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
+  color: rgba(6, 6, 64, 1);
 }
 
 .options-list {

@@ -26,16 +26,23 @@ const Lääketiede = () => {
         <div className='myRomania'>
         <h1>Miksi Romania ?</h1>
         <div className='lääketiede-text-container'>
-        <div className="lääketiede-text1">
-          <h2>Mikä hakijoita houkuttelee ensisijaisesti ?</h2>
-          <h3>Hyvät sisäänpääsymahdollisuudet</h3>
-          <p>Sisäänpääsy Romanian lääketieteelliseen on huomattavasti todennäköisempää.</p>
-          <h3>Laadukas ja käytännönläheinen opetus</h3>
-          <p>EU:n vaatimusten mukainen koulutus ja käytännön läheisempi opetus.</p>
-          <h3>Edulliset lukuvuosimaksut</h3>
-          <p>Viron, Latvian sekä muut euroopan maat veloittavat jopa 2-3 kertaisia lukuvuosi maksuja. Romanian lukuvuosi maksu on n.5 000€</p>
-          <h3>Alhainen elintaso, joka sopii hyvin opiskelijalle.</h3>
-          <p>Maan yleisen alhaisen elintason vuoksi opintotuki kattaa sinun kuukauden kulut.</p>
+        <div class="lääketiede-text1">
+            <div class="text1-content">
+                <h2>Mikä hakijoita houkuttelee ensisijaisesti ?</h2>
+                <h3>• Hyvät sisäänpääsymahdollisuudet</h3>
+                <p>Sisäänpääsy Romanian lääketieteelliseen on huomattavasti todennäköisempää.</p>
+                <h3>• Laadukas ja käytännönläheinen opetus</h3>
+                <p>EU:n vaatimusten mukainen koulutus ja käytännön läheisempi opetus.</p>
+                <h3>• Edulliset lukuvuosimaksut</h3>
+                <p>Viron, Latvian sekä muut euroopan maat veloittavat jopa 2-3 kertaisia lukuvuosi maksuja. Romanian lukuvuosi maksu on n.5 000€</p>
+                <h3>• Alhainen elintaso, joka sopii hyvin opiskelijalle.</h3>
+                <p>Maan yleisen alhaisen elintason vuoksi opintotuki kattaa sinun kuukauden kulut.</p>
+            </div>
+            <div class="text2-content">
+                <h2>Another Header</h2>
+                <p>Additional text goes here.</p>
+                <button>Button</button>
+            </div>
         </div>
         </div>
         </div>

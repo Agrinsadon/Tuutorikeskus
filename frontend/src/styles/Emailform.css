@@ -16,6 +16,7 @@
   }
 
   .ota-yhteyttä h1 {
+    color: rgba(6, 6, 64, 1);
     font-size: 2.8rem;
     margin-left: 120px;
     margin-right: 120px;

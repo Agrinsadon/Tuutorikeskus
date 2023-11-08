@@ -20,7 +20,7 @@
   
   .lääketiede-main h1 {
     font-size: 2.8rem;
-    color: black;
+    color: rgba(6, 6, 64, 1);
     margin-bottom: 1.9rem;
   }
   
@@ -72,35 +72,83 @@
   .myRomania {
     font-family: 'Zen Antique Soft', sans-serif;
     margin-top: 2rem;
-  }
+}
 
-  .myRomania h1 {
+.myRomania h1 {
     text-align: center;
     font-size: 2.3rem;
-    color: black; /* Change the color to your preference */
-  }
+    color: rgba(6, 6, 64, 1); /* Change the color to your preference */
+}
 
-  .myRomania h1::after {
+.myRomania h1::after {
     content: "";
     display: block;
     border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
     width: 60%; /* Adjust the length (width) as a percentage or other valid CSS width value */
     position: relative;
     left: 20%;
-    border-radius: 15px; 
-  }
+    border-radius: 15px;
+}
 
-  .lääketiede-text-container {
+.lääketiede-text-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
-  }
+    flex-direction: column;
+}
 
-  .lääketiede-text1 {
+.lääketiede-text1 {
     width: 80%;
+    display: flex;
+    justify-content: space-between; /* Spacing between inner elements */
+    margin-top: 2rem;
+    padding: 20px;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
+    margin-bottom: 10rem;
+}
+
+.text1-content {
+    width: 60%; /* Adjust width as needed */
+    margin-top: 0rem;
+    color: rgba(6, 6, 64, 1);
+}
+
+.text1-content p {
+  margin-bottom: 0rem;
+  color: rgba(130, 130, 151, 1);
+  margin-left: 1.5rem;
+} 
+
+.text2-content {
+    width: 40%; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.text2-content h2 {
+    margin-top: 0;
+    text-align: center;
+    color: rgba(6, 6, 64, 1);
+}
+
+.text2-content p {
+    margin-bottom: 1;
+    color: rgba(130, 130, 151, 1);
+}
+
+.text2-content button {
+    font-family: 'Zen Antique Soft', sans-serif;
+    background-color: rgba(6, 6, 64, 1);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
