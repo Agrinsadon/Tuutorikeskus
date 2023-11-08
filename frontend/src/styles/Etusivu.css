@@ -26,7 +26,7 @@
 .firstpage {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Center vertically */
+  align-items: center;
   margin-left: 120px;
   margin-right: 120px;
 }
@@ -81,11 +81,11 @@
   border-radius: 5px;
   cursor: pointer;
   max-width: 7rem;
-  transition: background-color 0.3s; /* Smooth transition for background color */
+  transition: background-color 0.3s;
 }
 
 .kurssit-button:hover {
-  background-color: rgba(6, 6, 64, 0.8); /* Adjust the color on hover */
+  background-color: rgba(6, 6, 64, 0.8);
 }
 
 .frame-container {
@@ -130,8 +130,8 @@
 .palvelumme h1::after {
   content: "";
   display: block;
-  border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
-  width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+  border-bottom: 5px solid #ECF9FF;
+  width: 50%;
   position: absolute;
   left: 25%;
   border-radius: 15px; 
@@ -208,8 +208,8 @@
 .aikajana h1::after {
   content: "";
   display: block;
-  border-bottom: 5px solid white; /* Width (2px in this example) and color */
-  width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+  border-bottom: 5px solid white; 
+  width: 50%; 
   position: absolute;
   left: 25%;
   border-radius: 15px; 
@@ -228,18 +228,18 @@
 .timeline-item {
   position: relative;
   text-align: center;
-  margin: 10px 45px; /* Adjust as needed */
+  margin: 10px 45px;
   margin-top: 2rem;
 }
 
 .circle {
   position: relative;
   display: inline-block;
-  width: 100px; /* Adjust as needed */
-  height: 100px; /* Adjust as needed */
+  width: 100px;
+  height: 100px; 
   background-color: rgba(255, 255, 255, 1);
   border-radius: 50%;
-  font-size: 1.6rem; /* Adjust as needed */
+  font-size: 1.6rem; 
 }
 
 .percentage {
@@ -248,7 +248,7 @@
   top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-weight: bold; /* Make the text bold */
+  font-weight: bold; 
   color: rgb(124, 216, 255);
 }
 
@@ -256,12 +256,12 @@
   font-family: 'Zen Antique Soft', sans-serif;
   align-items: center;
   justify-content: center;
-  padding: 0 5%; /* Adjust as needed for responsiveness */
+  padding: 0 5%;
   font-size: 1.6rem;
   color: rgb(124, 216, 255);
-  max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
-  margin: 0 22.7px; /* Adjust the margin for space between years */
-  font-weight: bold; /* Make the text bold */
+  max-width: 100%; 
+  margin: 0 22.7px;
+  font-weight: bold;
   flex-wrap: wrap;
 }
 
@@ -293,8 +293,8 @@
 .lisa-tietoa h1::after {
   content: "";
   display: block;
-  border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
-  width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+  border-bottom: 5px solid #ECF9FF;
+  width: 50%;
   position: absolute;
   left: 25%;
   border-radius: 15px; 
@@ -307,8 +307,8 @@
 }
 
 .card-pic {
-  width: 100%; /* Limit the image size to the card's width */
-  height: 13rem; /* Maintain the image's aspect ratio */
+  width: 100%;
+  height: 13rem;
   border-radius: 15px 15px 0 0;
   mask-image: linear-gradient(to bottom, rgba(236, 249, 255, 0.9), transparent 208px);
 }
@@ -325,7 +325,7 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   text-align: left;
-  overflow: hidden; /* Ensure the image stays within the card's frame */
+  overflow: hidden;
 }
 
 .info-card h2 {
@@ -341,19 +341,18 @@
 }
 
 .info-card a {
-  color: rgb(124, 216, 255); /* Change the link text color */
+  color: rgb(124, 216, 255); 
   margin-left: 1rem;
-  border-bottom: 2px solid transparent; /* Add a transparent border-bottom for the line */
-  transition: border-color 0.3s; /* Add a smooth transition for the border-color */
-  text-decoration: none; /* Remove the default underline */
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s; 
+  text-decoration: none; 
 }
 
 .info-card a:hover {
-  border-color: rgb(124, 216, 255); /* Change the border color on hover */
+  border-color: rgb(124, 216, 255);
 }
 
 @media screen and (max-width: 1200px) {
-
   .firstpage {
     margin-left: 4rem;
     margin-right: 0;
@@ -383,7 +382,7 @@
   }
 
   .timeline-item {
-    margin: 8px 8px; /* Adjust as needed */
+    margin: 8px 8px;
   }
 
   .timeline-frame {
@@ -393,7 +392,7 @@
   }
 
   .year {
-    margin: 3px 0px; /* Adjust the margin for space between years */
+    margin: 3px 0px;
   }
 
   .info-card-container {
@@ -409,7 +408,6 @@
 }
 
 @media screen and (max-width: 600px) {
-
   .etusivu {
     height: 50.5rem;
   }
@@ -460,7 +458,6 @@
   }
 
   /* Palvelumme section */
-
   .palvelumme {
     margin: 0px 0px;
   }
@@ -537,8 +534,8 @@
   .aikajana-small h1::after {
     content: "";
     display: block;
-    border-bottom: 5px solid white; /* Width (2px in this example) and color */
-    width: 60%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    border-bottom: 5px solid white;
+    width: 60%;
     position: absolute;
     left: 20%;
     border-radius: 15px;  
@@ -559,17 +556,17 @@
   .timeline-item-small {
     position: relative;
     text-align: center;
-    margin: 15px 0px; /* Adjust as needed */
+    margin: 15px 0px; 
   }
 
   .circle-small {
     position: relative;
     display: inline-block;
-    width: 100px; /* Adjust as needed */
-    height: 100px; /* Adjust as needed */
+    width: 100px;
+    height: 100px; 
     background-color: rgba(255, 255, 255, 1);
     border-radius: 50%;
-    font-size: 1.6rem; /* Adjust as needed */
+    font-size: 1.6rem;
   }
 
   .percentage-small {
@@ -578,7 +575,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-weight: bold; /* Make the text bold */
+    font-weight: bold; 
     color: rgb(124, 216, 255);
   }
 
@@ -586,12 +583,12 @@
     font-family: 'Zen Antique Soft', sans-serif;
     align-items: center;
     justify-content: center;
-    padding: 0 5%; /* Adjust as needed for responsiveness */
+    padding: 0 5%;
     font-size: 1.6rem;
     color: rgb(124, 216, 255);
-    max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
-    margin: 0 22.7px; /* Adjust the margin for space between years */
-    font-weight: bold; /* Make the text bold */
+    max-width: 100%; 
+    margin: 0 22.7px;
+    font-weight: bold;
     flex-wrap: wrap;
   }
 
@@ -616,8 +613,8 @@
   }
 
   .arrow-left:hover, .arrow-right:hover {
-    color: rgba(130, 130, 151, 1); /* Set the normal color on hover */
-    cursor: pointer; /* Change the cursor to a pointer on hover */
+    color: rgba(130, 130, 151, 1);
+    cursor: pointer;
   }
   
 
@@ -681,13 +678,10 @@
 
 .frame-container {
   position: relative;
-  /* Make the container a positioning context */
   width: 100%;
   height: 100px;
   max-width: 300px;
-  /* Adjust as needed */
   margin-top: 30px;
-  /* Adjust spacing as needed */
   padding: 25px;
   background-color: white;
   border-radius: 20px;
@@ -695,19 +689,15 @@
 
 .frame-container p {
   font-size: 0.8rem;
-  /* Adjust font size as needed */
   text-align: left;
   color: black;
   margin-left: 20px;
-  /* Adjust text color as needed */
   font-family: 'Zen Antique Soft', sans-serif;
-  /* Add font-family */
 }
 
 /* Quote icon */
 .frame-container::before {
   content: '\201C';
-  /* Unicode for left double quotation mark */
   font-size: 2.5rem;
   color: rgba(0, 229, 204, 1);
   position: absolute;
