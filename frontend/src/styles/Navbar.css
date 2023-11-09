@@ -57,10 +57,9 @@
 
 /* Add these media queries for responsive behavior */
 @media (min-width: 360px) and (max-width: 882px) {
-  .logo {
-    text-align: center;
-    padding: 0;
-    font-size: 1.3rem
+  .tuutorikeskus-logo {
+    width: 180px;
+    height: 70px;
   }
 
   .nav-links {

@@ -49,7 +49,7 @@ const Lääketiede = () => {
                 <p>Maan yleisen alhaisen elintason vuoksi opintotuki kattaa sinun kuukauden kulut.</p>
             </div>
             <div class="text2-content">
-                <h2>Tutustu muihin hyödyllisiin asioihin, kuten kansainväliset ystävyyssuhteet ja turvallisuuteen:</h2>
+                <h2>Tutustu muihin hyödyllisiin asioihin, kuten kansainväliset ystävyyssuhteet & turvallisuuteen</h2>
                 <p>Romanian lääketieteelliset opiskelut tarjoavat paljon enemmän kuin vain koulutuksen. Opiskelijat voivat luoda merkittäviä kansainvälisiä ystävyyssuhteita, samalla kun Romania tarjoaa turvallisen ympäristön opiskelijoille. Tämä yhdistelmä tekee opiskeluelämyksestä rikkaamman ja huoleton.</p>
                 <button onClick={showForm}>Lue Lisää</button>
             </div>

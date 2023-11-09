@@ -1,5 +1,5 @@
   .screen {
-    max-width: 1433px;
+    max-width: 1439px;
     max-height: 891px;
     margin: 0 auto;
   }
@@ -218,3 +218,117 @@
   margin-top: 2rem;
 }
 
+@media screen and (max-width: 600px) {
+  .lääketiede {
+    padding-top: 7rem;
+    height: 48rem;
+  }
+
+  .lääketiede-main {
+    margin: 0px 0px;
+  }
+
+  .lääketiede-main h1 {
+    font-size: 1.9rem;
+    margin-bottom: 1.9rem;
+  }
+
+  .lääketiede-main h1::after {
+    width: 93%;
+    position: relative;
+    left: 4%;
+  }
+
+  .lääketiede-card-container {
+    display: flex;
+  }
+
+  .lääketiede-card-pic {
+    height: 220px;
+    border-radius: 15px 15px 0 0;
+    mask-image: linear-gradient(to bottom, rgba(236, 249, 255, 0.9), transparent 240px);
+  }
+
+  .lääketiede-card {
+    width: 90%;
+    height: 32rem;
+    margin-top: 0px;
+  }
+
+  .lääketiede-text p {
+    margin-top: 1rem;
+    font-size: 15px;
+    color: rgba(130, 130, 151, 1);
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .myRomania h1 {
+    font-size: 1.9rem;
+  }
+
+  .myRomania h1::after {
+    width: 71.5%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    left: 14%;
+  }
+
+  .lääketiede-text-container {
+    display: block;
+    margin: 0px 0px;
+  }
+
+  .lääketiede-text1 {
+    width: 90%;
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  .text1-content {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .text1-content p {
+    font-size: 15px;
+  } 
+
+  .text2-content {
+    width: 100%;
+    padding: 15px;
+    margin-top: 2rem;
+    box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    display: block;
+  }
+
+  .text2-content h2 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .text2-content p {
+    font-size: 15px;
+  }
+
+  .form-container-lääkeromania {
+    padding: 10px;
+    overflow: scroll;
+  }
+
+  .x-button {
+    font-size: 30px;
+  }
+
+  .mylääkeromania {
+    margin-top: 0rem;
+  }
+
+  .lääkeromania-wrapper h2 {
+    font-size: 22px;
+  }
+
+  .mylääkeromania p {
+    font-size: 15px;
+  }
+}
