@@ -9,10 +9,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 0rem 2rem;
   border-radius: 20px;
   color: black;
-  margin-top: 1rem;
+  margin-top: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-right: 90px;
   margin-left: 90px;
@@ -24,9 +24,9 @@
   right: 0;
 }
 
-.logo {
-  font-size: 1.5rem;
-  padding-left: 1rem;
+.tuutorikeskus-logo {
+  width: 250px;
+  height: 90px;
 }
 
 .nav-links {

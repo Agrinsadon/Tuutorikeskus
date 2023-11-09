@@ -8,7 +8,7 @@
     font-family: 'Zen Antique Soft', sans-serif;
     background-color: #ECF9FF;
     padding-top: 6.5rem;
-    height: 58rem;
+    height: 59rem;
     max-width: 100%;
   }
   
@@ -71,11 +71,12 @@
 
   .myRomania {
     font-family: 'Zen Antique Soft', sans-serif;
-    margin-top: 2rem;
+    background-color: #ECF9FF;
 }
 
 .myRomania h1 {
     text-align: center;
+    margin: 0rem;
     font-size: 2.3rem;
     color: rgba(6, 6, 64, 1); /* Change the color to your preference */
 }
@@ -83,7 +84,7 @@
 .myRomania h1::after {
     content: "";
     display: block;
-    border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
+    border-bottom: 5px solid #fff; /* Width (2px in this example) and color */
     width: 60%; /* Adjust the length (width) as a percentage or other valid CSS width value */
     position: relative;
     left: 20%;
@@ -105,7 +106,7 @@
     padding: 20px;
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.1);
     margin-bottom: 10rem;
 }
 
@@ -126,29 +127,94 @@
     padding: 20px;
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
 }
 
 .text2-content h2 {
-    margin-top: 0;
-    text-align: center;
+    margin-top: 1rem;
     color: rgba(6, 6, 64, 1);
 }
 
 .text2-content p {
-    margin-bottom: 1;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 17.5px;
     color: rgba(130, 130, 151, 1);
 }
 
 .text2-content button {
     font-family: 'Zen Antique Soft', sans-serif;
     background-color: rgba(6, 6, 64, 1);
+    box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
+    width: 7rem;
+    max-width: 7rem;
+    display: block; /* Center the button horizontally */
+    margin: 0 auto; /* Center the button vertically and horizontally */
 }
+
+.text2-content button:hover {
+  background-color: rgba(6, 6, 64, 0.8);
+}
+
+.overlay-lääkeromania {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1300;
+}
+
+.form-container-lääkeromania {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 1350;
+  border-radius: 15px;
+}
+
+.x-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.mylääkeromania {
+  margin-top: 3rem;
+  padding: 1rem;
+  font-family: 'Zen Antique Soft', sans-serif;
+}
+
+.lääkeromania-wrapper h2 {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px 0;
+  color: rgba(6, 6, 64, 1);
+}
+
+.mylääkeromania p {
+  margin-top: 1rem;
+  font-size: 16px;
+  color: #555;
+  width: 100%;
+}
+
+.lääkeromania-content {
+  margin-top: 2rem;
+}
+

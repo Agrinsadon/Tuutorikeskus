@@ -16,7 +16,9 @@ const Navbar = () => {
   return (
     <div className='screen'>
     <div className="navbar">
-      <div className="logo">Tuutori Keskus</div>
+      <div className="logo">
+      <img src="tuutorikeskus-logo.png" alt="Tuutori Keskus Logo" className='tuutorikeskus-logo' />
+      </div>
       <div className={`nav-links ${showLinks ? 'show' : ''}`}>
         <Link to="/" onClick={toggleLinks}>
           Koti
