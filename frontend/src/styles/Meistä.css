@@ -1,6 +1,74 @@
-  .meistä {
-    font-family: 'Zen Antique Soft', sans-serif;
-    background-color: #ECF9FF;
-    padding-top: 2rem;
-    height: 50rem;
-  }
+.meistä {
+  font-family: 'Zen Antique Soft', sans-serif;
+  background-color: #ECF9FF;
+  padding-top: 9rem;
+  height: 50rem;
+}
+
+.meistä-main {
+  text-align: center;
+  position: absolute; /* Position the text absolutely within the .meistä-pic-frame */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to center properly */
+  z-index: 1; /* Ensure text is above the image */
+  max-width: 1439px; /* Set the desired maximum width for the text */
+  width: 100%; /* Ensure it takes the full width within the max-width */
+  margin: 0 auto; /* Center the text horizontally */
+}
+
+.meistä-main h1 {
+  font-size: 2.8rem;
+  color: rgba(6, 6, 64, 1);
+  margin-bottom: 1.9rem;
+}
+
+.meistä-main h1::after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid white;
+  width: 86%;
+  position: absolute;
+  left: 7%;
+  border-radius: 15px; 
+}
+
+.meistä-main p {
+  font-size: 17px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  color: rgba(130, 130, 151, 1);
+}
+
+.meistä-main h1,
+.meistä-main p {
+    opacity: 5;
+}
+
+.meistä-pic-frame {
+  margin-top: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  border-radius: 15px;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.meistä-pic-frame::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ECF9FF; /* Match the background color of the .meistä section */
+  opacity: 0.9; /* Set the desired opacity */
+  border-radius: 15px;
+}
+
+  
