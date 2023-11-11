@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import '../styles/Emailform.css'
 
 function EmailForm() {
@@ -120,6 +122,21 @@ function EmailForm() {
               onChange={handleChange}
               required
             />
+          </div>
+          <div className="company-info">
+            <p>Email: company@example.com</p>
+            <p>Phone: +123 456 7890</p>
+            <div className="social-media">
+              <a href="https://www.facebook.com/company" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
+              <a href="https://www.instagram.com/company" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              <a href="https://www.youtube.com/company" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faYoutube} />
+              </a>
+            </div>
           </div>
           <div style={{ display: 'flex', alignItems: 'flex-start' }}>
             <button className='button-lähetä' type="submit" disabled={isSubmitting}>
