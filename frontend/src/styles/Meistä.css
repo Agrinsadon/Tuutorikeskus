@@ -231,7 +231,6 @@
     padding-top: 7rem;
     height: 30rem;
     width: auto;
-    
   }
   
   .meistä-main h1 {
@@ -253,13 +252,13 @@
   
   .meistä-pic-frame {
     margin-top: 2rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     height: 100%;
   }
   
   .myMeistä {
-    padding-top: 5rem;
+    padding-top: 0rem;
     margin: 0px 0px;
   }
   
@@ -267,6 +266,7 @@
     text-align: center;
     font-size: 1.9rem;
     margin-top: 0rem;
+    padding-top: 5rem;
     color: rgba(6, 6, 64, 1);
     margin-bottom: 0.3rem;
   }
@@ -283,7 +283,7 @@
     display: block;
     align-items: center;
     margin: 0px 0px;
-    height: 32.5rem;
+    height: 31.5rem;
   }
 
   .myMeistä-text1 {
@@ -325,7 +325,7 @@
   .myMeistä-text2 {
     text-align: center;
     margin: 0 0;
-    height: 21rem;
+    height: 16rem;
     background-color: #ECF9FF;
   }
   

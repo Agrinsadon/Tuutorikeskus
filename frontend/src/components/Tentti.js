@@ -12,7 +12,8 @@ const Tentti = () => {
         <div className='tentti-pic-frame' style={{ backgroundImage: `url(/tentti-image.jpeg)`}} loading="lazy" decoding="async" >
         <div className='tentti-main'>
           <h1>Tenttivaatimukset</h1>
-          <p>Romanian arvostetuimissa yliopistoissa ei edellytetä kemiaa ja fysiikkaa valintakokeissa. Kemian ja fysiikan puolesta pääsykokeissa painotetaan anatomian ja fysiologian osaamista. Hakemaasi yliopistoon pääsykokeet ovat joko suullisia tai kirjallisia. Anatomia ja fysiologia ovat laajoja ja haastavia opintoja. Pääset koe tilaisuuksissa näyttämään vahvaa englannin kielen taitoa sekä asiantuntevaa osaamistasi anatomiassa sekä fysiologiassa</p>        </div>
+          <p>Romanian arvostetuimissa yliopistoissa ei edellytetä kemiaa ja fysiikkaa valintakokeissa. Kemian ja fysiikan puolesta pääsykokeissa painotetaan anatomian ja fysiologian osaamista.</p>
+        </div>
         </div>
         </div>
 
