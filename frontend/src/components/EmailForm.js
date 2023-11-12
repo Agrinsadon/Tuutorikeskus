@@ -126,7 +126,7 @@ function EmailForm() {
           <div className="company-info">
             <h2>Tuutorikeskus Oy</h2>
             <h3>Sähköposti</h3>
-            <p>info.tuutorikeskus.com</p>
+            <p>info.tuutorikeskus@gmail.com</p>
             <h3>Puhelin</h3>
             <p>+123 456 7890</p>
             <div className="social-media">

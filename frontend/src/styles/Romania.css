@@ -135,7 +135,7 @@
 /* Vapaa aika Section */
   .vapaa-aika {
     font-family: 'Zen Antique Soft', sans-serif;
-    padding-top: 1rem;
+    background-color: #ECF9FF;
   }
 
   .centered-header {
@@ -144,6 +144,8 @@
 
   .centered-header h1 {
     font-size: 2.8rem;
+    margin-top: 0rem;
+    padding-top: 1rem;
     color: rgba(6, 6, 64, 1);
     margin-bottom: 20px; 
   }
@@ -151,7 +153,7 @@
   .centered-header h1::after {
     content: "";
     display: block;
-    border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
+    border-bottom: 5px solid #fff; /* Width (2px in this example) and color */
     width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
     position: absolute;
     left: 25%;
@@ -164,7 +166,7 @@
     align-items: center;
     margin-left: 7rem;
     margin-right: 7rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -176,7 +178,7 @@
   }
 
   .vapaa-aika-text h2 {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 15px; 
     color: rgba(6, 6, 64, 1);
   }
@@ -184,7 +186,7 @@
   .vapaa-aika-text p{
     width: 90%;
     color: #555;
-    font-size: 16px; 
+    font-size: 17px; 
   }
 
   .vapaa-aika-image {
@@ -198,7 +200,7 @@
   align-items: center;
   margin-left: 7rem;
   margin-right: 7rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -233,7 +235,7 @@
   display: block;
   margin-left: 7rem;
   margin-right: 7rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

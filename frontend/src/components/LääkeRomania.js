@@ -19,17 +19,10 @@ const Lääketiede = () => {
       <div className='screen'>
         <div className="lääketiede">
         <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
-        <div className="lääketiede-main">
+        <div className='lääketiede-pic-frame' style={{ backgroundImage: `url(/lääketiede.jpg)`}}>
+        <div className='lääketiede-main'>
           <h1>Lääketiede Romaniassa</h1>
-        <div className='lääketiede-card-container'>
-        <div className="lääketiede-card">
-        <div className="lääketiede-pic-frame">
-          <img src="lääketiede.jpg" alt=" " className="lääketiede-card-pic" loading='lazy' />
-        </div>
-          <div className='lääketiede-text'>
-          <p> Moni suomalainen opiskelija pohtii mahdollisuuksiaan jatkaa opintojaan ulkomailla. Yhä useampi opiskelija suuntaa ulkomaille eri lääketieteellisiin yliopistoihin kansainvälistymismahdollisuuksia etsien. Jos olet harkinnut mahdollisuutta suorittaa lääketieteen tutkinnon ulkomailla englanninkielisessä opetusohjelmassa? Niin olet oikeassa paikassa!</p>
-          </div>
-        </div>
+          <p>Moni suomalainen opiskelija pohtii mahdollisuuksiaan jatkaa opintojaan ulkomailla. Yhä useampi opiskelija suuntaa ulkomaille eri lääketieteellisiin yliopistoihin kansainvälistymismahdollisuuksia etsien.</p>
         </div>
         </div>
         </div>
