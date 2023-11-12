@@ -17,7 +17,7 @@ const Meistä = () => {
       setFormVisible(false);
     };
     return (
-      <div>
+      <div className='screen'>
         <div className="meistä">
         <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
         <div className='meistä-pic-frame' style={{ backgroundImage: `url(/meistä.jpg)` }}>
