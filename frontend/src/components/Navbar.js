@@ -12,9 +12,7 @@ const Navbar = () => {
   };
 
   const handleLinkClick = () => {
-    // Close the navigation links
     setShowLinks(false);
-    // Scroll to the top of the page
     window.scrollTo(0, 0);
   };
 

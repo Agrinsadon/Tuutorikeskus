@@ -95,6 +95,7 @@
   height: 100px;
   max-width: 425px;
   margin-top: 30px;
+  margin-bottom: 30px;
   padding: 28px;
   background-color: white;
   border-radius: 20px;
@@ -425,11 +426,11 @@
   
   .video-container iframe{
     bottom: 0rem;
-    top: 37.5rem;
+    top: 37rem;
     right: 0;
-    left: 2.45rem;
+    left: 2rem;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     width: 289px;
     height: 176px;
   }
