@@ -337,67 +337,78 @@
 
 @media screen and (max-width: 600px) {
   .romania {
-    height: 68rem;
+    padding-top: 7rem;
+    height: 57em;
+  }
+
+  .romania-main {
+    margin: 0px 0px;
+  }
+
+  .romania-main h1{
+    font-size: 1.9rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .romania-card-container {
+    display: flex;
   }
 
   .romania-card {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    height: 26.1rem;
-    padding-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 91%;
+    height: 45.5rem;
   }
 
-  .romania-card h1{
-    font-size: 1.9rem;
+  .romania-card-pic {
+    height: 100%;
+    width: 100%;
+    mask-image: linear-gradient(to bottom, rgba(236, 249, 255, 1), transparent 100%);
   }
 
   .outside-romania {
-    margin-bottom: 6rem;
     display: block;
+    margin-top: 0rem;
+  }
+  
+  .lääketiede-romania-text {
+    padding: 7px; /* Add padding to both sides */
+    text-align: left; /* Align text to the left within the sections */
+    margin-bottom: 1rem;
+  }
+
+  .tentti-romania-text {
+    padding: 7px; /* Add padding to both sides */
+    border-left: 0px solid #ddd; /* Add a border to both sides */
+    border-top: 1px solid #ddd; /* Add a border to both sides */
+  }
+  
+  .lääketiede-romania-text h2 {
+    font-size: 22px;
+  }
+
+  .tentti-romania-text h2 {
+    font-size: 22px;
+    margin-top: 1rem;
+  }
+  
+  .lääketiede-romania-text p {
+    color: #555;
+    margin-bottom: 16px;
     margin-left: 1rem;
     margin-right: 1rem;
   }
 
-  .centered-header h1::after {
-    content: "";
-    display: block;
-    border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
-    width: 52%; /* Adjust the length (width) as a percentage or other valid CSS width value */
-    position: relative;
-    left: 24.8%;
-  }
-
-  .lääketiede-text {
-    padding: 0px;
+  .tentti-romania-text p {
+    color: #555;
+    margin-bottom: 16px;
     margin-left: 1rem;
   }
 
-  .tentti-text {
-    margin-top: 1.8rem;
-    padding: 0px;
-    border-left: 0px solid #ddd; /* Add a border to both sides */
-    border-top: 1px solid #ddd;
-    text-align: left; /* Align text to the left within the sections */
-  }
-  
-  .lääketiede-text h2 {
-    font-size: 20px;
-  }
-
-  .tentti-text h2 {
-    font-size: 20px;
-    margin-top: 1.7rem;
-  }
-  
-  .lääketiede-text p {
-    font-size: 16px;
-  }
-  .tentti-text p {
-    font-size: 16px;
-  }
-
   .vapaa-aika {
-    padding-top: 0rem;
+    padding-top: 2.5rem;
+    overflow: hidden;
   }
 
   .centered-header h1 {
@@ -432,7 +443,8 @@
   }
 
   .vapaa-aika-image {
-    display: none;
+    width: 100%;
+    height: auto;
 }
 
 .loma-content {
