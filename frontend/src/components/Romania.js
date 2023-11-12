@@ -25,7 +25,7 @@ const Romania = () => {
                 <div className='romania-card-container'>
                 <div className="romania-card">
                 <div className="romania-pic-frame">
-                <img src="Romania.png" alt="" className="romania-card-pic" loading="lazy" />
+                <img src="Romania.png" alt="" className="romania-card-pic" loading="lazy" decoding="async" />
                 </div>
                 <div className="outside-romania">
                     <div className="lääketiede-romania-text">

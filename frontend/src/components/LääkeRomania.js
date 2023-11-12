@@ -19,7 +19,7 @@ const Lääketiede = () => {
       <div className='screen'>
         <div className="lääketiede">
         <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
-        <div className='lääketiede-pic-frame' style={{ backgroundImage: `url(/lääketiede.jpg)`}}>
+        <div className='lääketiede-pic-frame' style={{ backgroundImage: `url(/lääketiede.jpg)`}} loading="lazy" decoding="async" >
         <div className='lääketiede-main'>
           <h1>Lääketiede Romaniassa</h1>
           <p>Moni suomalainen opiskelija pohtii mahdollisuuksiaan jatkaa opintojaan ulkomailla. Yhä useampi opiskelija suuntaa ulkomaille eri lääketieteellisiin yliopistoihin kansainvälistymismahdollisuuksia etsien.</p>
