@@ -20,14 +20,50 @@
   }
 
   .yhteistiedot-main .company-info {
+    display: block;
+    text-align: center;
     position: absolute;
-    bottom: 130px;
-    right: 160px;
+    bottom: 140px;
+    right: 140px;
     padding: 20px;
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.1);
-    height: 20rem;
+    box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    height: 19.3rem;
+    width: 28rem;
+    overflow: hidden;
+  }
+
+  .yhteistiedot-main .ota-yhteyttä .company-info h2 {
+    color: rgba(6, 6, 64, 1);
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .yhteistiedot-main .ota-yhteyttä .company-info p {
+    color: rgba(6, 6, 64, 1);
+    margin: 0;
+  }
+
+  .yhteistiedot-main .social-media {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Adjust the value to control the spacing between icons */
+  }
+  
+  .yhteistiedot-main .social-media a {
+    margin-top: 1rem;
+    font-size: 22px; /* Adjust the value to change the icon size */
+    transition: color 0.3s ease; /* Add a smooth color transition effect */
+  }
+  
+  .yhteistiedot-main .social-media a:hover {
+    color: #395697; /* Adjust the hover color */
+  }
+
+  .yhteistiedot-main .instagram-gradient {
+    background: linear-gradient(to bottom, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
   }
 
   @media screen and (max-width: 768px) {

@@ -124,17 +124,20 @@ function EmailForm() {
             />
           </div>
           <div className="company-info">
-            <p>Email: company@example.com</p>
-            <p>Phone: +123 456 7890</p>
+            <h2>Tuutorikeskus Oy</h2>
+            <h3>Sähköposti</h3>
+            <p>info.tuutorikeskus.com</p>
+            <h3>Puhelin</h3>
+            <p>+123 456 7890</p>
             <div className="social-media">
-              <a href="https://www.facebook.com/company" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faFacebook} />
+              <a href="https://www.facebook.com/profile.php?id=100063566469459" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon color='#4267B2' icon={faFacebook} />
               </a>
-              <a href="https://www.instagram.com/company" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faInstagram} />
+              <a href="https://www.instagram.com/tuutorikeskus/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon color='#212121' icon={faInstagram} />
               </a>
-              <a href="https://www.youtube.com/company" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faYoutube} />
+              <a href="https://www.youtube.com/@TuutoriKeskus" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon color='#FF0000' icon={faYoutube} />
               </a>
             </div>
           </div>

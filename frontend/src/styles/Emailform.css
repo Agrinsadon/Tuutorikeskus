@@ -3,6 +3,10 @@
     position: relative;
   }
 
+  .company-info {
+    display: none;
+  }
+
   .contact-image {
     position: absolute;
     top: 90px;
