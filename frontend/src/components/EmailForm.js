@@ -71,6 +71,7 @@ function EmailForm() {
   }, [messageSent]);
 
   return (
+    
     <div className='contact-container'>
       <div className='ota-yhteyttä'>
         <h1>Ota Yhteyttä</h1>
@@ -123,6 +124,16 @@ function EmailForm() {
               required
             />
           </div>
+          <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+            <button className='button-lähetä' type="submit" disabled={isSubmitting}>
+              {isSubmitting ? "Lähetetään..." : "Lähetä"}
+            </button>
+            {messageSent && !isSubmitting && (
+              <div className="message-sent" style={{ marginTop: '35px', marginLeft: '14px' }}>
+                ✓ Viesti Lähettetty!
+              </div>
+            )}
+          </div>
           <div className="company-info">
             <h2>Tuutorikeskus Oy</h2>
             <h3>Sähköposti</h3>
@@ -140,16 +151,6 @@ function EmailForm() {
                 <FontAwesomeIcon color='#FF0000' icon={faYoutube} />
               </a>
             </div>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-            <button className='button-lähetä' type="submit" disabled={isSubmitting}>
-              {isSubmitting ? "Lähetetään..." : "Lähetä"}
-            </button>
-            {messageSent && !isSubmitting && (
-              <div className="message-sent" style={{ marginTop: '35px', marginLeft: '14px' }}>
-                ✓ Viesti Lähettetty!
-              </div>
-            )}
           </div>
         </form>
         <div className='contact-image'>
