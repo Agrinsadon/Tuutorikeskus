@@ -1,95 +1,101 @@
-
   .screen {
     max-width: 1433px;
     max-height: 891px;
     margin: 0 auto;
   }
-  
+
   .tentti {
     font-family: 'Zen Antique Soft', sans-serif;
+    padding-top: 9rem;
+    height: 43rem;
     background-color: #ECF9FF;
-    padding-top: 6.5rem;
-    height: 51rem;
-    max-width: 100%;
   }
 
   .tentti-main {
     text-align: center;
-    margin: 60px 120px;
-    font-family: 'Zen Antique Soft', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Adjust to center properly */
+    z-index: 1; /* Ensure text is above the image */
+    max-width: 1439px; /* Set the desired maximum width for the text */
+    width: 100%; /* Ensure it takes the full width within the max-width */
+    margin: 0 auto; /* Center the text horizontally */
   }
-
-  .tentti-main h1{
+  
+  .tentti-main h1 {
     font-size: 2.8rem;
-    color: black;
+    color: rgba(6, 6, 64, 1);
     margin-bottom: 1.9rem;
   }
-
+  
   .tentti-main h1::after {
     content: "";
     display: block;
-    border-bottom: 5px solid white; /* Width (2px in this example) and color */
-    width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    border-bottom: 5px solid white;
+    width: 86%;
     position: absolute;
-    left: 25%;
+    left: 7%;
     border-radius: 15px; 
   }
-
-  .tentti-card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
-  }
-
-  .tentti-card-pic {
-    width: 100%; /* Limit the image size to the card's width */
-    height: 350px; /* Maintain the image's aspect ratio */
-    border-radius: 15px 15px 0 0;
-    mask-image: linear-gradient(to bottom, rgba(236, 249, 255, 0.9), transparent 350px);
-  }
   
-  .tentti-card {
-    width: 89.5%;
-    height: 31.5rem;
-    font-family: 'Zen Antique Soft', sans-serif;
-    margin-top: 5px;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    text-align: left;
-    overflow: hidden; /* Ensure the image stays within the card's frame */
-  }
-
-  .outside-tentti {
-    font-family: 'Zen Antique Soft', sans-serif;
-    background-color: #fff;
-  }
-  
-  .tenttivaatimus-text p {
-    margin-top: 1rem;
+  .tentti-main p {
     font-size: 17px;
+    margin-left: 5rem;
+    margin-right: 5rem;
     color: rgba(130, 130, 151, 1);
-    margin-left: 2rem;
-    margin-right: 1rem;
   }
-
+  
+  .tentti-main h1,
+  .tentti-main p {
+      opacity: 5;
+  }
+  
+  .tentti-pic-frame {
+    margin-top: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    border-radius: 15px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .tentti-pic-frame::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ECF9FF; /* Match the background color of the .meistä section */
+    opacity: 0.9; /* Set the desired opacity */
+    border-radius: 15px;
+  }
+  
   .myTentti {
     font-family: 'Zen Antique Soft', sans-serif;
-    margin-top: 4rem;
+    height: 40rem;
+    background-color: #ECF9FF;
+    margin-top: 0;
   }
 
   .myTentti h1 {
     text-align: center;
     font-size: 2.3rem;
+    padding-top: 6rem;
+    margin-top: 0rem;
     color: black; /* Change the color to your preference */
   }
 
   .myTentti h1::after {
     content: "";
     display: block;
-    border-bottom: 5px solid #ECF9FF; /* Width (2px in this example) and color */
+    border-bottom: 5px solid #fff; /* Width (2px in this example) and color */
     width: 60%; /* Adjust the length (width) as a percentage or other valid CSS width value */
     position: relative;
     left: 20%;

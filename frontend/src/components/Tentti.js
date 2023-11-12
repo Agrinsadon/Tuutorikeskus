@@ -6,22 +6,16 @@ const Tentti = () => {
     const [showLinks, setShowLinks] = useState(false);
   
     return (
-      <div>
+      <div className='screen'>
         <div className="tentti">
         <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
-        <div className="tentti-main">
-        <h1>Tenttivaatimukset</h1>
-        <div className='tentti-card-container'>
-        <div className="tentti-card">
-        <div className="tentti-pic-frame">
-        <img src="tentti-image.jpeg" alt="" className="tentti-card-pic" loading="lazy"/>
-        </div>
-        <div className="outside-tentti">
-          <div className="tenttivaatimus-text">
-              <p>Romanian arvostetuimissa yliopistoissa ei edellytetä kemiaa ja fysiikkaa valintakokeissa. Kemian ja fysiikan puolesta pääsykokeissa painotetaan anatomian ja fysiologian osaamista. Hakemaasi yliopistoon pääsykokeet ovat joko suullisia tai kirjallisia. Anatomia ja fysiologia ovat laajoja ja haastavia opintoja. Pääset koe tilaisuuksissa näyttämään vahvaa englannin kielen taitoa sekä asiantuntevaa osaamistasi anatomiassa sekä fysiologiassa</p>
-          </div>
+        <div className='tentti-pic-frame' style={{ backgroundImage: `url(/tentti-image.jpeg)`}}>
+        <div className='tentti-main'>
+          <h1>Tenttivaatimukset</h1>
+          <p>Romanian arvostetuimissa yliopistoissa ei edellytetä kemiaa ja fysiikkaa valintakokeissa. Kemian ja fysiikan puolesta pääsykokeissa painotetaan anatomian ja fysiologian osaamista. Hakemaasi yliopistoon pääsykokeet ovat joko suullisia tai kirjallisia. Anatomia ja fysiologia ovat laajoja ja haastavia opintoja. Pääset koe tilaisuuksissa näyttämään vahvaa englannin kielen taitoa sekä asiantuntevaa osaamistasi anatomiassa sekä fysiologiassa</p>        </div>
         </div>
         </div>
+
         <div className='myTentti'>
         <h1>Pääsykoe koostuu kahdesta vaiheesta</h1>
         <div className='tentti-container'>
@@ -37,9 +31,6 @@ const Tentti = () => {
         </div>
         </div>
         </div>
-        </div>
-        </div>
-        </div> 
     </div>
 
     );

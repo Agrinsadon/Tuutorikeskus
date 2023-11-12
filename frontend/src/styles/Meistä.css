@@ -1,5 +1,4 @@
 .screen {
-  background-color: #ECF9FF;
   max-width: 1433px;
   max-height: 891px;
   margin: 0 auto;
@@ -91,7 +90,8 @@
 .myMeistä h1 {
   text-align: center;
   font-size: 2.6rem;
-  margin-top: 5.5rem;
+  margin-top: 0rem;
+  padding-top: 6rem;
   color: rgba(6, 6, 64, 1);
   margin-bottom: 0.3rem;
 }
