@@ -246,15 +246,15 @@
   }
   
   .meistä-main p {
-    font-size: 15px;
+    font-size: 14px;
     margin-left: 1rem;
     margin-right: 1rem;
   }
   
   .meistä-pic-frame {
     margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     height: 100%;
   }
   
