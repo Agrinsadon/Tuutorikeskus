@@ -9,7 +9,7 @@
   font-family: 'Zen Antique Soft', sans-serif;
   background-color: #ECF9FF;
   padding-top: 9rem;
-  height: 48rem;
+  height: 43rem;
 }
 
 .meistä-main {
@@ -57,7 +57,7 @@
   margin-left: 6rem;
   margin-right: 6rem;
   border-radius: 15px;
-  height: 80%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -91,7 +91,7 @@
 .myMeistä h1 {
   text-align: center;
   font-size: 2.6rem;
-  margin-top: 0rem;
+  margin-top: 5.5rem;
   color: rgba(6, 6, 64, 1);
   margin-bottom: 0.3rem;
 }
