@@ -9,39 +9,44 @@ const Navbar = () => {
 
   const toggleLinks = () => {
     setShowLinks(!showLinks);
+  };
+
+  const handleLinkClick = () => {
+    // Close the navigation links
+    setShowLinks(false);
     // Scroll to the top of the page
     window.scrollTo(0, 0);
   };
 
   return (
-    <div className='screen'>
-    <div className="navbar">
-      <div className="logo">
-      <img src="tuutorikeskus-logo.png" alt="Tuutori Keskus Logo" className='tuutorikeskus-logo' />
+    <div className="screen">
+      <div className="navbar">
+        <div className="logo">
+          <img src="tuutorikeskus-logo.png" alt="Tuutori Keskus Logo" className="tuutorikeskus-logo" />
+        </div>
+        <div className={`nav-links ${showLinks ? 'show' : ''}`}>
+          <Link to="/" onClick={handleLinkClick}>
+            Koti
+          </Link>
+          <Link to="/Kurssit" onClick={handleLinkClick}>
+            Kurssit
+          </Link>
+          <Link to="/Romania" onClick={handleLinkClick}>
+            Romania
+          </Link>
+          <Link to="/Meistä" onClick={handleLinkClick}>
+            Meistä
+          </Link>
+          <Link to="/Yhteistiedot" onClick={handleLinkClick}>
+            Yhteistiedot
+          </Link>
+        </div>
+        <FontAwesomeIcon
+          icon={showLinks ? faTimes : faBars}
+          className={`burger ${showLinks ? 'active' : ''}`}
+          onClick={toggleLinks}
+        />
       </div>
-      <div className={`nav-links ${showLinks ? 'show' : ''}`}>
-        <Link to="/" onClick={toggleLinks}>
-          Koti
-        </Link>
-        <Link to="/Kurssit" onClick={toggleLinks}>
-          Kurssit
-        </Link>
-        <Link to="/Romania" onClick={toggleLinks}>
-          Romania
-        </Link>
-        <Link to="/Meistä" onClick={toggleLinks}>
-          Meistä
-        </Link>
-        <Link to="/Yhteistiedot" onClick={toggleLinks}>
-          Yhteistiedot
-        </Link>
-      </div>
-      <FontAwesomeIcon
-        icon={showLinks ? faTimes : faBars}
-        className={`burger ${showLinks ? 'active' : ''}`}
-        onClick={toggleLinks}
-      />
-    </div>
     </div>
   );
 };
