@@ -230,8 +230,9 @@
 .timeline-item {
   position: relative;
   text-align: center;
-  margin: 10px 45px;
+  margin: 10px auto;
   margin-top: 2rem;
+  width: 100%;
 }
 
 .circle {
@@ -262,7 +263,8 @@
   font-size: 1.6rem;
   color: rgb(124, 216, 255);
   max-width: 100%; 
-  margin: 0 22.7px;
+  width: 100%;
+  margin: 0 auto;
   font-weight: bold;
   flex-wrap: wrap;
 }
@@ -270,10 +272,9 @@
 .timeline-frame {
   display: flex;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background-color: rgba(255, 255, 255, 1);
-  width: 74%;
+  width: 100%;
   margin-bottom: 5rem;
   padding: 5px;
   border-radius: 10px;
