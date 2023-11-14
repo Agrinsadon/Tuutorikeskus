@@ -156,7 +156,6 @@
 }
 
 /* Small version of cards Section */
-
 .kurssi-card-small {
   height: 27rem;
   font-family: 'Zen Antique Soft', sans-serif;
@@ -199,6 +198,7 @@
   max-width: 7rem;
   transition: background-color 0.3s;
 }
+
 .ilmottaudu-button-small:hover {
   background-color: rgba(6, 6, 64, 0.8); 
 }
@@ -405,11 +405,11 @@
 }
 
 .kurssi-card {
-  margin-top: 1.5rem;
-  width: 90%;
+  margin-top: 0rem;
+  width: 25rem;
   height: 30.3rem;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 22rem;
+  margin: 30px auto;
 }
 
 .kurssi-header h2 {
@@ -442,11 +442,11 @@
 
 /* Small version of cards Section */
 .kurssi-card-small {
-  margin-top: 2.5rem;
-  width: 90%;
+  margin-top: 0rem;
+  width: 25rem;
   height: 26rem;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 22rem;
+  margin: 30px auto;
 }
 
 .price-label-small {
@@ -495,5 +495,107 @@
   cursor: pointer;
   transition: background-color 0.3s;
 }
+}
 
+@media (min-width: 601px) and (max-width: 768px) {
+  .kurssitsivu {
+    font-family: 'Zen Antique Soft', sans-serif;
+    background-color: #ECF9FF;
+    padding-top: 7rem;
+  }
+  
+  .kurssit {
+    margin: 30px auto;
+  }
+  
+  .kurssit h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.3rem;
+  }
+  
+  .kurssi-card-container {
+    display: block;
+  }
+  
+  .kurssi-card {
+    margin-top: 0rem;
+    width: 25rem;
+    height: 31.5rem;
+    max-width: 24rem;
+    margin: 30px auto;
+  }
+
+  /* Small version of cards Section */
+  .kurssi-card-small {
+    margin-top: 0rem;
+    width: 25rem;
+    height: 27rem;
+    max-width: 24rem;
+    margin: 30px auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .kurssit {
+    margin: 30px auto;
+  }
+  
+  .kurssit h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.3rem;
+  }
+  
+  .kurssi-card-container {
+    display: block;
+  }
+  
+  .kurssi-card {
+    margin-top: 0rem;
+    width: 25rem;
+    height: 31.5rem;
+    max-width: 24rem;
+    margin: 30px auto;
+  }
+
+  /* Small version of cards Section */
+  .kurssi-card-small {
+    margin-top: 0rem;
+    width: 25rem;
+    height: 27rem;
+    max-width: 24rem;
+    margin: 30px auto;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  .kurssit {
+    margin: 30px auto;
+    margin-top: 5rem;
+  }
+  
+  .kurssit h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.3rem;
+  }
+  
+  .kurssi-card-container {
+    display: block;
+  }
+  
+  .kurssi-card {
+    margin-top: 0rem;
+    width: 25rem;
+    height: 31.5rem;
+    max-width: 24rem;
+    margin: 30px auto;
+  }
+
+  /* Small version of cards Section */
+  .kurssi-card-small {
+    margin-top: 0rem;
+    width: 25rem;
+    height: 27rem;
+    max-width: 24rem;
+    margin: 30px auto;
+  }
 }
