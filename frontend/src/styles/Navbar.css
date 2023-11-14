@@ -13,8 +13,8 @@
   color: black;
   margin-top: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-right: 90px;
-  margin-left: 90px;
+  margin-right: 50px;
+  margin-left: 50px;
   background-color: white;
   z-index: 1000; 
   position: fixed;
@@ -55,7 +55,7 @@
 }
 
 /* Add these media queries for responsive behavior */
-@media (min-width: 360px) and (max-width: 882px) {
+@media (min-width: 360px) and (max-width: 992px) {
   .tuutorikeskus-logo {
     width: 180px;
     height: 70px;
@@ -92,15 +92,6 @@
 
   .burger {
     display: block;
-  }
-}
-
-@media (min-width: 882px) and (max-width: 992px) {
-  .logo {
-    font-size: 1.2rem; /* Adjust the font size as desired within this range */
-  }
-  .nav-links a {
-    font-size: 0.9rem; /* Adjust the font size as desired within this range */
   }
 }
 

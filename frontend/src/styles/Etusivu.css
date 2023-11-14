@@ -35,6 +35,7 @@
 }
 
 .medical-image {
+  margin-top: 11rem;
   max-width: 600px;
   position: relative;
   z-index: 0;
@@ -353,61 +354,7 @@
   border-color: rgb(124, 216, 255);
 }
 
-@media screen and (max-width: 1200px) {
-  .firstpage {
-    margin-left: 4rem;
-    margin-right: 0;
-  }
-
-  .card-container {
-    display: block;
-    flex-wrap: wrap;
-  }
-
-  .server-card {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .aikajana-container {
-    margin: 8px 8px;
-    padding-top: 1rem;
-  }
-
-  .aikajana p {
-    font-size: 16px;
-    color: rgba(130, 130, 151, 1);
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  .timeline-item {
-    margin: 8px 8px;
-  }
-
-  .timeline-frame {
-    width: 80%;
-    padding: 2px;
-    border-radius: 10px;
-  }
-
-  .year {
-    margin: 3px 0px;
-  }
-
-  .info-card-container {
-    display: block;
-  }
-
-  .info-card {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-}
-
+/* RESPONSIVE PHONE */
 @media screen and (max-width: 600px) {
   .etusivu {
     height: 51rem;
@@ -424,14 +371,13 @@
   }
   
   .video-container iframe{
-    bottom: 12rem;
+    bottom: 1.5rem;
     left: 0;
     position: relative;
     z-index: 0;
     width: 289px;
     height: 176px;
   }
-  
 
   .text-container h1 {
     font-size: 1.9rem;
@@ -616,7 +562,6 @@
     cursor: pointer;
   }
   
-
   /* Lisätietoa section */
   .lisa-tietoa {
     margin: 0px 0px;
@@ -650,57 +595,348 @@
   }
 }
 
-@media (min-width: 883px) and (max-width: 1110px) {
+/* RESPONSIVE TABLET */
+@media (min-width: 601px) and (max-width: 768px) {
+.etusivu {
+  padding-top: 7rem;
+  height: 70rem;
+}
 
+.firstpage {
+  display: block;
+  margin-left: 50px;
+  margin-right: 0px;
+}
+
+.medical-image {
+  margin-top: 0rem;
+  max-width: 550px;
+}
+
+.video-container iframe{
+  left: 8.6rem;
+  bottom: 14rem;
+  width: 265px;
+  height: 165px;
+}
 
 .text-container {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Zen Antique Soft', sans-serif;
+  display: block;
 }
-  
+
 .text-container h1 {
-  font-size: 2rem;
-  width: 100%;
-  margin-bottom: 1rem;
-  max-width: 350px;
-  color: black;
-}
-  
-.text-container p {
-  margin-top: 0;
-  width: 100%;
-  max-width: 300px;
-  color: rgba(130, 130, 151, 1);
+  font-size: 2.8rem;
+  width: 80%;
 }
 
-.frame-container {
-  position: relative;
-  width: 100%;
-  height: 100px;
-  max-width: 300px;
+.kurssit-button {
+  width: 8rem;
+  max-width: 8rem;
+}
+
+/* Palvelumme Section */
+.palvelumme {
+  margin: 0px 0px;
+}
+
+.palvelumme h1::after {
+  width: 56%;
+  left: 22%;
+}
+
+.card-container {
+  display: block;
+}
+
+.server-card {
+  margin: 0 auto;
+  width: 80%;
   margin-top: 30px;
-  padding: 25px;
-  background-color: white;
-  border-radius: 20px;
 }
 
-.frame-container p {
-  font-size: 0.8rem;
-  text-align: left;
-  color: black;
-  margin-left: 20px;
-  font-family: 'Zen Antique Soft', sans-serif;
+/* Aikajana Section */
+.aikajana-container {
+  margin: 50px auto;
+  width: 95%;
 }
 
-/* Quote icon */
-.frame-container::before {
-  content: '\201C';
-  font-size: 2.5rem;
-  color: rgba(0, 229, 204, 1);
-  position: absolute;
-  bottom: 45px;
-  left: 10px;
+.aikajana h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
 }
+
+.aikajana h1::after {
+  width: 56%; 
+  left: 22%;
+}
+
+.aikajana p {
+  font-size: 17px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.timeline-item {
+  margin: 10px auto;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.year {
+  margin: 0 auto;
+}
+
+.timeline-frame {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+/* Lisa Tietoa Section */
+.lisa-tietoa {
+  margin: 0px 0px;
+}
+
+.lisa-tietoa h1 {
+  margin-bottom: 0.5rem;
+}
+
+.lisa-tietoa h1::after {
+  width: 57.3%;
+  left: 21%;
+}
+
+.info-card-container {
+  display: block;
+}
+
+.info-card {
+  height: 28.5rem;
+  margin: 3rem auto;
+  width: 80%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+.etusivu {
+  padding-top: 7rem;
+  height: 70rem;
+}
+
+.firstpage {
+  display: block;
+  margin-left: 50px;
+  margin-right: 0px;
+}
+
+.medical-image {
+  margin-top: 0rem;
+  max-width: 550px;
+}
+
+.video-container iframe{
+  left: 8.6rem;
+  bottom: 14rem;
+  width: 265px;
+  height: 165px;
+}
+
+.text-container {
+  display: block;
+}
+
+.text-container h1 {
+  font-size: 2.8rem;
+  width: 80%;
+}
+
+.kurssit-button {
+  width: 8rem;
+  max-width: 8rem;
+}
+
+/* Palvelumme Section */
+.palvelumme {
+  margin: 0px 0px;
+}
+
+.palvelumme h1::after {
+  width: 56%;
+  left: 22%;
+}
+
+.card-container {
+  display: block;
+}
+
+.server-card {
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 30px;
+}
+
+/* Aikajana Section */
+.aikajana-container {
+  margin: 50px auto;
+  width: 95%;
+}
+
+.aikajana h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.aikajana h1::after {
+  width: 56%; 
+  left: 22%;
+}
+
+.aikajana p {
+  font-size: 17px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.timeline-item {
+  margin: 10px auto;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.year {
+  margin: 0 auto;
+}
+
+.timeline-frame {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+/* Lisa Tietoa Section */
+.lisa-tietoa {
+  margin: 0px 0px;
+}
+
+.lisa-tietoa h1 {
+  margin-bottom: 0.5rem;
+}
+
+.lisa-tietoa h1::after {
+  width: 57.3%;
+  left: 21%;
+}
+
+.info-card-container {
+  display: block;
+}
+
+.info-card {
+  height: 28.5rem;
+  margin: 3rem auto;
+  width: 80%;
+}
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .etusivu {
+    height: 43rem;
+  }
+  
+  .firstpage {
+    margin-left: 60px;
+    margin-right: 50px;
+  }
+  
+  .medical-image {
+    max-width: 500px;
+  }
+  
+  .video-container iframe{
+    left: 7.96rem;
+    bottom: 12.7rem;
+    width: 238px;
+    height: 150px;
+  }
+  
+  .text-container h1 {
+    font-size: 2.6rem;
+    width: 100%;
+  }
+  
+  .frame-container p {
+    font-size: 0.84rem;
+  }
+  
+  /* Palvelumme Section */
+  .palvelumme {
+    margin: 40px auto;
+    width: 90%;
+  }
+  
+  .palvelumme h1 {
+    font-size: 2.6rem;
+  }
+  
+  .card-container {
+    display: block;
+  }
+  
+  .server-card {
+    margin: 30px auto;
+    width: 85%;
+  }
+
+  /* Aikajana Section */
+  .aikajana-small {
+    display: none;
+  }
+  
+  .aikajana-container {
+    margin: 50px auto;
+  }
+  
+  .aikajana h1 {
+    font-size: 2.6rem;
+  }
+  
+  .aikajana h1::after {
+    width: 54%; 
+    left: 23%;
+  }
+  
+  .timeline-item {
+    margin: 10px 0px;
+    margin-top: 2rem;
+    width: 19%;
+  }
+  
+  .year {
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .timeline-frame {
+    width: 95%;
+  }
+
+  /* Lisa Tietoa Section */
+  .lisa-tietoa {
+    text-align: center;
+    margin: 50px auto;
+  }
+  
+  .lisa-tietoa h1 {
+    font-size: 2.6rem;
+  }
+  
+  .info-card-container {
+    display: block;
+  }
+
+  .info-card {
+    height: 27rem;
+    margin: 30px auto;
+    width: 65%;
+  }
 }
