@@ -1,3 +1,8 @@
+  .screen {
+    max-width: 1433px;
+    margin: 0 auto;
+  }
+
   .yhteistiedot {
     font-family: 'Zen Antique Soft', sans-serif;
     background-color: #ECF9FF;

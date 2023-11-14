@@ -71,7 +71,7 @@ function EmailForm() {
   }, [messageSent]);
 
   return (
-    
+    <div className='screen'>
     <div className='contact-container'>
       <div className='ota-yhteyttä'>
         <h1>Ota Yhteyttä</h1>
@@ -157,6 +157,7 @@ function EmailForm() {
         <img src="animated-doctor.png" alt=" " />
       </div>
       </div>
+    </div>
     </div>
   );
 }

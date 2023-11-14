@@ -4,7 +4,7 @@
 }
 
 .navbar {
-  font-family: 'Zen Antique Soft', sans-serif; /* Add font-family */
+  font-family: 'Zen Antique Soft', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,8 +13,9 @@
   color: black;
   margin-top: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-right: 50px;
-  margin-left: 50px;
+  margin: 40px auto;
+  max-width: 1350px; /* Set the maximum width to 1439px */
+  width: 90%; 
   background-color: white;
   z-index: 1000; 
   position: fixed;

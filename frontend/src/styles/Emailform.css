@@ -1,4 +1,10 @@
 /* Ota-yhteyttä section */
+
+  .screen {
+    max-width: 1433px;
+    margin: 0 auto;
+  }
+
   .contact-container {
     position: relative;
   }

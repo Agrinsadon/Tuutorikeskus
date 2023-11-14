@@ -7,7 +7,7 @@ const Yhteistiedot = () => {
   const [showLinks, setShowLinks] = useState(false);
 
   return (
-    <div>
+    <div className='screen'>
       <div className="yhteistiedot">
         <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
         <div className='yhteistiedot-main'>
