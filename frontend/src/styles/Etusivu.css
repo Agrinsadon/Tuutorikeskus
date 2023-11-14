@@ -410,7 +410,7 @@
 
 @media screen and (max-width: 600px) {
   .etusivu {
-    height: 52rem;
+    height: 51rem;
   }
 
   .firstpage {
@@ -435,7 +435,7 @@
 
   .text-container h1 {
     font-size: 1.9rem;
-    width: 19rem;
+    width: 21rem;
   }
   
   .text-container p {
