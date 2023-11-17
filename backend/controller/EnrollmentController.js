@@ -3,7 +3,7 @@ require('dotenv').config();
 const path = require('path');
 
 function sendEnroll(name, surname, birthday, email, phone, tutkinto, milloin, courseTitle, callback) {
-  const emailContent = `Ilmottautuiminen ${courseTitle} kurssille:\nEtunimi: ${name}\nSukunimi: ${surname}\nSyntymäpäivä: ${birthday}\nSähköposti: ${email}\nPuhelin: ${phone}\nTutkinto: ${tutkinto}\nValmistuu/Valmistunut: ${milloin}`;
+  const emailContent = `Ilmottautuiminen ${courseTitle}lle:\nEtunimi: ${name}\nSukunimi: ${surname}\nSyntymäpäivä: ${birthday}\nSähköposti: ${email}\nPuhelin: ${phone}\nTutkinto: ${tutkinto}\nValmistuu/Valmistunut: ${milloin}`;
 
   const pdfFilePath = path.join(__dirname, 'contract.pdf');
 
