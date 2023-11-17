@@ -20,14 +20,14 @@ function sendEnroll(name, surname, birthday, email, phone, tutkinto, milloin, co
   const mailOptions = {
     from: email,
     to: process.env.GMAIL_USER,
-    subject: `Ilmottautuminen ${courseTitle} kurssille`,
+    subject: `Ilmottautuminen ${courseTitle}lle`,
     text: emailContent,
   };
 
   const enrollOptions = {
     from: process.env.GMAIL_USER,
     to: email,
-    subject: `Ilmottautuminen ${courseTitle} kurssille`,
+    subject: `Ilmottautuminen ${courseTitle}lle`,
     text: emailContent,
     attachments: [
       {
@@ -37,7 +37,7 @@ function sendEnroll(name, surname, birthday, email, phone, tutkinto, milloin, co
     ],
     html: `
       <p>Tervetuloa kurssillemme, ${name}!</p>
-      <p>Olemme iloisia, että päätit liittyä meidän ${courseTitle} kurssille:</p>
+      <p>Olemme iloisia, että päätit liittyä meidän ${courseTitle}lle:</p>
       <p>Liitteenä on kurssisopimus (PDF-tiedosto), joka tulee täyttää ja palauttaa meille.</p>
       <p>Kiitos ja tervetuloa!</p>
     `,
