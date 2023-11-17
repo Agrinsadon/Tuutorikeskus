@@ -15,11 +15,11 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Adjust to center properly */
-  z-index: 1; /* Ensure text is above the image */
-  max-width: 1439px; /* Set the desired maximum width for the text */
-  width: 100%; /* Ensure it takes the full width within the max-width */
-  margin: 0 auto; /* Center the text horizontally */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  max-width: 1439px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .meistä-main h1 {
@@ -71,8 +71,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ECF9FF; /* Match the background color of the .meistä section */
-  opacity: 0.9; /* Set the desired opacity */
+  background-color: #ECF9FF;
+  opacity: 0.9;
   border-radius: 15px;
 }
 
@@ -102,9 +102,9 @@
 }
 
 .myMeistä-text1-container {
-  position: relative; /* Set the container as a positioning context for absolute positioning */
+  position: relative;
   display: flex;
-  align-items: center; /* Align items vertically */
+  align-items: center;
   margin: 30px 90px;
   height: 30rem;
 }
@@ -128,9 +128,9 @@
 }
 
 .myMeistä-text2-container {
-  position: relative; /* Set the container as a positioning context for absolute positioning */
+  position: relative;
   display: flex;
-  align-items: center; /* Align items vertically */
+  align-items: center;
   margin: 0px 90px;
   height: auto;
 }
@@ -250,9 +250,8 @@
   }
   
   .meistä-pic-frame {
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 2rem auto;
+    width: 85%;
     height: 100%;
   }
   
@@ -310,12 +309,309 @@
     margin-top: 2rem;
     width: 70%;
     height: 14.5rem;
+    max-width: 17rem;
     margin-left: auto;
     margin-right: auto;
   }
   
   .myMeistä-text2-container {
-    position: static; /* Set the container as a positioning context for absolute positioning */
+    position: static;
+    display: block;
+    margin: 0px 0px;
+    height: 10rem;
+  }
+  
+  .myMeistä-text2 {
+    text-align: center;
+    margin: 0 0;
+    height: 16rem;
+    background-color: #ECF9FF;
+  }
+  
+  .myMeistä-text2 h2 {
+    margin-top: 0;
+    color: rgba(6, 6, 64, 1);
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+  }
+  
+  .myMeistä-text2 p {
+    font-size: 1rem;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .box2 {
+    display: none;
+  }
+  
+  .myMeistä-text2 button {
+    padding: 9px;
+  }
+  
+  .form-container-meistä {
+    overflow: scroll;
+  }
+  
+  .myFormeistä {
+    margin-top: 0rem;
+    padding: 0.5rem;
+  }
+  
+  .meistä-wrapper h2 {
+    font-size: 22px;
+  }
+  
+  .myFormeistä p {
+    margin-top: 1rem;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .myMeistä-frame {
+    height: auto;
+  }
+
+  .meistä {
+    padding-top: 7rem;
+    height: 30rem;
+    width: auto;
+  }
+  
+  .meistä-main h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.3rem;
+  }
+  
+  .meistä-main h1::after {
+    width: 86%;
+    position: relative;
+    left: 7%;
+  }
+  
+  .meistä-main p {
+    font-size: 14px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .meistä-pic-frame {
+    margin: 2rem auto;
+    width: 85%;
+    height: 100%;
+  }
+  
+  .myMeistä {
+    padding-top: 0rem;
+    margin: 0px 0px;
+  }
+  
+  .myMeistä h1 {
+    text-align: center;
+    font-size: 1.9rem;
+    margin-top: 0rem;
+    padding-top: 5rem;
+    color: rgba(6, 6, 64, 1);
+    margin-bottom: 0.3rem;
+  }
+  
+  .underline {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+  }
+  
+  .myMeistä-text1-container {
+    position: static;
+    display: block;
+    align-items: center;
+    margin: 0px 0px;
+    height: 27rem;
+  }
+
+  .myMeistä-text1 {
+    text-align: center;
+    margin: 0 0;
+  }
+  
+  .myMeistä-text1 h2 {
+    margin-top: 4.8rem;
+    color: rgba(6, 6, 64, 1);
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+  }
+  
+  .myMeistä-text1 p {
+    margin-top: 0rem;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+  
+  .box1 {
+    display: block;
+    margin-top: 2rem;
+    width: 45%;
+    height: 14.5rem;
+    max-width: 17rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .myMeistä-text2-container {
+    position: static;
+    display: block;
+    margin: 0px 0px;
+    height: 10rem;
+  }
+  
+  .myMeistä-text2 {
+    text-align: center;
+    margin: 0 0;
+    height: 16rem;
+    background-color: #ECF9FF;
+  }
+  
+  .myMeistä-text2 h2 {
+    margin-top: 0;
+    color: rgba(6, 6, 64, 1);
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+  }
+  
+  .myMeistä-text2 p {
+    font-size: 1rem;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .box2 {
+    display: none;
+  }
+  
+  .myMeistä-text2 button {
+    padding: 9px;
+  }
+  
+  .form-container-meistä {
+    overflow: scroll;
+  }
+  
+  .myFormeistä {
+    margin-top: 0rem;
+    padding: 0.5rem;
+  }
+  
+  .meistä-wrapper h2 {
+    font-size: 22px;
+  }
+  
+  .myFormeistä p {
+    margin-top: 1rem;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1230px) {
+  .myMeistä-frame {
+    height: auto;
+  }
+
+  .meistä {
+    padding-top: 7rem;
+    height: 30rem;
+    width: auto;
+  }
+  
+  .meistä-main h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.3rem;
+  }
+  
+  .meistä-main h1::after {
+    width: 86%;
+    position: relative;
+    left: 7%;
+  }
+  
+  .meistä-main p {
+    font-size: 14px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .meistä-pic-frame {
+    margin: 2.5rem auto;
+    width: 85%;
+    height: 100%;
+  }
+  
+  .myMeistä {
+    padding-top: 0rem;
+    margin: 0px 0px;
+  }
+  
+  .myMeistä h1 {
+    text-align: center;
+    font-size: 1.9rem;
+    margin-top: 0rem;
+    padding-top: 5rem;
+    color: rgba(6, 6, 64, 1);
+    margin-bottom: 0.3rem;
+  }
+  
+  .underline {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+  }
+  
+  .myMeistä-text1-container {
+    position: static;
+    display: block;
+    align-items: center;
+    margin: 0px 0px;
+    height: 27rem;
+  }
+
+  .myMeistä-text1 {
+    text-align: center;
+    margin: 0 0;
+  }
+  
+  .myMeistä-text1 h2 {
+    margin-top: 4.8rem;
+    color: rgba(6, 6, 64, 1);
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+  }
+  
+  .myMeistä-text1 p {
+    margin-top: 0rem;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+  
+  .box1 {
+    display: block;
+    margin-top: 2rem;
+    width: 45%;
+    height: 14.5rem;
+    max-width: 17rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .myMeistä-text2-container {
+    position: static;
     display: block;
     margin: 0px 0px;
     height: 10rem;
