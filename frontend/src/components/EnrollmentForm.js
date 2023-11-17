@@ -94,6 +94,7 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
             phone: enrollData.phone,
             tutkinto: enrollData.education,
             milloin: showCompletionDateInput ? completionDateValue : graduationDateValue,
+            courseTitle: courseInfo.title
         };
     
         try {

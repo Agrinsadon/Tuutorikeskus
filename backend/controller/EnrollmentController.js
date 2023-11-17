@@ -3,7 +3,7 @@ require('dotenv').config();
 const path = require('path');
 
 function sendEnroll(name, surname, birthday, email, phone, tutkinto, milloin, courseTitle, callback) {
-  const emailContent = `Ilmottautuiminen kurssille ${courseTitle}:\nEtunimi: ${name}\nSukunimi: ${surname}\nSyntymäpäivä: ${birthday}\nSähköposti: ${email}\nPuhelin: ${phone}\nTutkinto: ${tutkinto}\nValmistuu/Valmistunut: ${milloin}`;
+  const emailContent = `Ilmottautuiminen ${courseTitle} kurssille:\nEtunimi: ${name}\nSukunimi: ${surname}\nSyntymäpäivä: ${birthday}\nSähköposti: ${email}\nPuhelin: ${phone}\nTutkinto: ${tutkinto}\nValmistuu/Valmistunut: ${milloin}`;
 
   const pdfFilePath = path.join(__dirname, 'contract.pdf');
 
@@ -20,7 +20,7 @@ function sendEnroll(name, surname, birthday, email, phone, tutkinto, milloin, co
   const mailOptions = {
     from: email,
     to: process.env.GMAIL_USER,
-    subject: `Ilmottautuminen kurssille ${courseTitle}`,
+    subject: `Ilmottautuminen ${courseTitle} kurssille`,
     text: emailContent,
   };
 
@@ -37,7 +37,7 @@ function sendEnroll(name, surname, birthday, email, phone, tutkinto, milloin, co
     ],
     html: `
       <p>Tervetuloa kurssillemme, ${name}!</p>
-      <p>Olemme iloisia, että päätit liittyä meidän ${courseTitle} kurssille:.</p>
+      <p>Olemme iloisia, että päätit liittyä meidän ${courseTitle} kurssille:</p>
       <p>Liitteenä on kurssisopimus (PDF-tiedosto), joka tulee täyttää ja palauttaa meille.</p>
       <p>Kiitos ja tervetuloa!</p>
     `,
