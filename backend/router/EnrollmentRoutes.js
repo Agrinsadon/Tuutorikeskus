@@ -7,7 +7,6 @@ const router = express.Router();
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
 
-// Validation middleware (unchanged)
 function validateRequiredFields(req, res, next) {
   const requiredFields = ['name', 'surname', 'birthday', 'email', 'phone', 'tutkinto', 'milloin'];
 
@@ -27,14 +26,13 @@ function validateRequiredFields(req, res, next) {
 
 
 router.post('/send-enroll', validateRequiredFields, (req, res) => {
-  const { name, surname, birthday, email, phone, tutkinto, milloin } = req.body;
+  const { name, surname, birthday, email, phone, tutkinto, milloin, courseTitle } = req.body;
 
-  // Logging the received data for debugging
   console.log('Received data:', req.body);
 
-  sendEnroll(name, surname, birthday, email, phone, tutkinto, milloin, (error, info) => {
+  sendEnroll(name, surname, birthday, email, phone, tutkinto, milloin, courseTitle, (error, info) => {
     if (error) {
-      return res.status(500).json({ error: error.toString() }); // Send an error response
+      return res.status(500).json({ error: error.toString() });
     }
 
     // Send a success response with a message
