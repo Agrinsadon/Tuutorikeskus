@@ -39,6 +39,7 @@
   max-width: 600px;
   position: relative;
   z-index: 0;
+  transition: filter 0.3s;
 }
 
 .video-container iframe{

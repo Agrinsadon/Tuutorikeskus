@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faSearch, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { useHistory } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import Navbar from './Navbar';
 import '../styles/Etusivu.css';
 import EmailForm from './EmailForm';
@@ -31,7 +33,13 @@ const Etusivu = () => {
             <br />
           </div>
           <div className="image-container">
-            <img src="Video.png" alt=" " className="medical-image" loading="lazy" />
+          <LazyLoadImage
+            alt=" "
+            src="Video.png" // Replace with the actual image source
+            className="medical-image" // Apply the blur-up effect class
+            loading="lazy"
+            effect="blur" // Specify the blur effect
+          />
             <Video />
           </div>
         </div>
