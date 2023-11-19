@@ -398,6 +398,7 @@
   
   .frame-container {
     width: 17rem;
+    margin-bottom: 0rem;
   }
   
   .frame-container p {
