@@ -337,7 +337,7 @@
 @media screen and (max-width: 600px) {
   .romania {
     padding-top: 7rem;
-    height: 57em;
+    height: auto;
   }
 
   .romania-main {
@@ -354,10 +354,9 @@
   }
 
   .romania-card {
-    margin-left: auto;
-    margin-right: auto;
-    width: 91%;
-    height: 45.5rem;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
   }
 
   .romania-card-pic {
@@ -378,6 +377,7 @@
   }
 
   .tentti-romania-text {
+    margin-bottom: 1rem;
     padding: 7px; /* Add padding to both sides */
     border-left: 0px solid #ddd; /* Add a border to both sides */
     border-top: 1px solid #ddd; /* Add a border to both sides */
@@ -406,7 +406,7 @@
   }
 
   .vapaa-aika {
-    padding-top: 2.5rem;
+    padding-top: 2rem;
     overflow: hidden;
   }
 
@@ -422,9 +422,8 @@
 
   .vapaa-aika-content {
     display: block;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 2rem;
+    margin: 2rem auto;
+    width: 90%;
   }
 
   .vapaa-aika-text {
@@ -448,9 +447,8 @@
 
 .loma-content {
   display: block;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 1.5rem;
+  margin: 1.5rem auto;
+  width: 90%;
   height: 15rem;
 }
 
@@ -528,6 +526,425 @@
   font-size: 20px;
 }
 
+.myForm p {
+  margin-top: 2rem;
+  font-size: 15px;
+  width: 100%;
+}
+
+.myForm .additional-content {
+  width: 100%;
+}
+
+.additional-content p {
+  width: 100%;
+}
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .romania {
+    padding-top: 7rem;
+    height: auto;
+  }
+
+  .romania-main {
+    margin: 0px 0px;
+  }
+
+  .romania-main h1{
+    font-size: 2.1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .romania-card-container {
+    display: flex;
+  }
+
+  .romania-card {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+  }
+
+  .romania-card-pic {
+    height: 100%;
+    width: 100%;
+    mask-image: linear-gradient(to bottom, rgba(236, 249, 255, 1), transparent 100%);
+  }
+
+  .outside-romania {
+    display: block;
+    margin-top: 0rem;
+  }
+  
+  .lääketiede-romania-text {
+    padding: 7px; /* Add padding to both sides */
+    text-align: left; /* Align text to the left within the sections */
+    margin-bottom: 1rem;
+  }
+
+  .tentti-romania-text {
+    margin-bottom: 1rem;
+    padding: 7px; /* Add padding to both sides */
+    border-left: 0px solid #ddd; /* Add a border to both sides */
+    border-top: 1px solid #ddd; /* Add a border to both sides */
+  }
+  
+  .lääketiede-romania-text h2 {
+    font-size: 22px;
+  }
+
+  .tentti-romania-text h2 {
+    font-size: 22px;
+    margin-top: 1rem;
+  }
+  
+  .lääketiede-romania-text p {
+    color: #555;
+    margin-bottom: 16px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .tentti-romania-text p {
+    color: #555;
+    margin-bottom: 16px;
+    margin-left: 1rem;
+  }
+
+  .vapaa-aika {
+    padding-top: 2rem;
+    overflow: hidden;
+  }
+
+  .centered-header h1 {
+    font-size: 1.9rem;
+  }
+
+  .centered-header p {
+    font-size: 16px;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .vapaa-aika-content {
+    display: block;
+    margin: 2rem auto;
+    width: 90%;
+  }
+
+  .vapaa-aika-text {
+    margin-left: 1.5rem;
+  }
+
+  .vapaa-aika-text h2 {
+    font-size: 20px;
+  }
+
+  .vapaa-aika-text p{
+    width: 95%;
+    font-size: 15px; 
+    margin-bottom: 1.5rem;
+  }
+
+  .vapaa-aika-image {
+    width: 100%;
+    height: auto;
+}
+
+.loma-content {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  height: 20rem;
+}
+
+.loma-text {
+  margin-left: 1rem;
+  width: 100%;
+}
+
+.loma-text h2 {
+  font-size: 24px;
+}
+
+.loma-text p{
+  font-size: 18px; 
+}
+
+.loma-image {
+  width: 320px;
+  height: 100%;
+}
+
+.harrastus-content {
+  display: block;
+  margin: 1.5rem auto;
+  width: 90%;
+}
+
+.harrastus-text {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.harrastus-text h2 {
+  font-size: 18px;
+}
+
+.harrastus-text p{
+  color: #555;
+  font-size: 16px; 
+}
+
+.show-form-button {
+  margin-top: 3px;
+  padding: 0.6rem;
+  width: 7rem;
+  max-width: 7rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1300;
+}
+
+.form-container {
+  width: 90%;
+  height: 80%;
+  overflow: scroll;
+}
+
+.x-button {
+  font-size: 30px;
+}
+
+.myForm .content-wrapper {
+  display: block;
+}
+
+.myForm h1 {
+  font-size: 20px;
+}
+
+.myForm p {
+  margin-top: 2rem;
+  font-size: 15px;
+  width: 100%;
+}
+
+.myForm .additional-content {
+  width: 100%;
+}
+
+.additional-content p {
+  width: 100%;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1235px) {
+  .romania {
+    padding-top: 7rem;
+    height: auto;
+  }
+
+  .romania-main {
+    margin: 0px 0px;
+  }
+
+  .romania-main h1{
+    font-size: 2.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .romania-card-container {
+    display: flex;
+  }
+
+  .romania-card {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 40rem;
+    height: auto;
+  }
+
+  .romania-card-pic {
+    height: 100%;
+    width: 100%;
+    mask-image: linear-gradient(to bottom, rgba(236, 249, 255, 1), transparent 100%);
+  }
+
+  .outside-romania {
+    display: block;
+    margin-top: 0rem;
+  }
+  
+  .lääketiede-romania-text {
+    padding: 7px; /* Add padding to both sides */
+    text-align: left; /* Align text to the left within the sections */
+    margin-bottom: 1rem;
+  }
+
+  .tentti-romania-text {
+    padding: 7px; /* Add padding to both sides */
+    margin-bottom: 1rem;
+    border-left: 0px solid #ddd; /* Add a border to both sides */
+    border-top: 1px solid #ddd; /* Add a border to both sides */
+  }
+  
+  .lääketiede-romania-text h2 {
+    font-size: 22px;
+  }
+
+  .tentti-romania-text h2 {
+    font-size: 22px;
+    margin-top: 1rem;
+  }
+  
+  .lääketiede-romania-text p {
+    color: #555;
+    margin-bottom: 16px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .tentti-romania-text p {
+    color: #555;
+    margin-bottom: 16px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .vapaa-aika {
+    padding-top: 2rem;
+    overflow: hidden;
+  }
+
+  .centered-header h1 {
+    font-size: 2.6rem;
+  }
+
+  .centered-header p {
+    font-size: 16px;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 30rem;
+  }
+
+  .vapaa-aika-content {
+    display: block;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 40rem;
+  }
+
+  .vapaa-aika-text {
+    margin-left: 1.5rem;
+  }
+
+  .vapaa-aika-text h2 {
+    font-size: 20px;
+  }
+
+  .vapaa-aika-text p{
+    width: 95%;
+    font-size: 15px; 
+    margin-bottom: 1.5rem;
+  }
+
+  .vapaa-aika-image {
+    width: 100%;
+    height: auto;
+}
+
+.loma-content {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 40rem;
+  height: 20rem;
+}
+
+.loma-text {
+  margin-left: 3rem;
+  width: 100%;
+}
+
+.loma-text h2 {
+  font-size: 24px;
+}
+
+.loma-text p{
+  font-size: 18px; 
+}
+
+.loma-image {
+  width: 320px;
+  height: 100%;
+}
+
+.harrastus-content {
+  display: block;
+  margin: 1.5rem auto;
+  width: 90%;
+  max-width: 40rem;
+}
+
+.harrastus-text {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.harrastus-text h2 {
+  font-size: 18px;
+}
+
+
+.harrastus-text p{
+  color: #555;
+  font-size: 16px; 
+}
+
+.show-form-button {
+  margin-top: 3px;
+  padding: 0.6rem;
+  width: 7rem;
+  max-width: 7rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1300;
+}
+
+.form-container {
+  width: 90%;
+  height: 80%;
+  overflow: scroll;
+}
+
+.x-button {
+  font-size: 30px;
+}
+
+.myForm .content-wrapper {
+  display: block;
+}
+
+.myForm h1 {
+  font-size: 20px;
+}
+
 /* Style for the text inside the form */
 .myForm p {
   margin-top: 2rem;
@@ -542,6 +959,4 @@
 .additional-content p {
   width: 100%;
 }
-
 }
-    
