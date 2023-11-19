@@ -6,11 +6,12 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 const yearsData = [
-  { year: 2018, percentage: 89 },
-  { year: 2019, percentage: 100 },
+  { year: 2017, percentage: 90 },
+  { year: 2018, percentage: 100 },
+  { year: 2019, percentage: 89 },
   { year: 2020, percentage: 100 },
-  { year: 2021, percentage: 90 },
-  { year: 2022, percentage: 100 },
+  { year: 2021, percentage: 100 },
+  { year: 2023, percentage: 100 },
 ];
 
 const Timeline = () => {

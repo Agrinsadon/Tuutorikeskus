@@ -98,17 +98,22 @@ const Etusivu = () => {
         <span className="percentage">100%</span>
         </div>
       </div>
+      <div className="timeline-item">
+        <div className="circle">
+        <span className="percentage">100%</span>
+        </div>
+      </div>
       </div>
       <div className="timeline-frame">
+      <span className="year">2017</span>
       <span className="year">2018</span>
       <span className="year">2019</span>
       <span className="year">2020</span>
       <span className="year">2021</span>
-      <span className="year">2022</span>
+      <span className="year">2023</span>
       </div>
       </div>
       </div>
-
       {/* Timeline Section */}
       <Timeline />
       {/* Lisa Tietoa Section */}
@@ -117,10 +122,10 @@ const Etusivu = () => {
         <div className='info-card-container'>
         <div className="info-card">
           <img src="Aboutus.png" alt=" " className="card-pic" loading="lazy" />
-          <h2>Lääketiede ulkomailla ?</h2>
+          <h2>Meistä</h2>
           <p>Me haluamme olla nuorten tukena elämänsä tärkeimmän polun valitsemisessa sekä haaveiden toteuttamisessa ja tätä kautta luoda lisäarvoa tuleville kollegoille.</p>
           <div className="card-links1">
-          <a href="/Meistä">Meistä</a>
+          <a href="/Meistä">Lue Lisää</a>
           </div>
         </div>
 
