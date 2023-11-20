@@ -317,7 +317,6 @@
   
   .myMeistä-text1 h2 {
     margin-top: 4.8rem;
-    color: rgba(6, 6, 64, 1);
     margin-bottom: 0.5rem;
     font-size: 1.6rem;
   }
@@ -331,6 +330,37 @@
   }
   
   .box1 {
+    display: block;
+    margin-top: 2rem;
+    width: 70%;
+    height: 14.5rem;
+    max-width: 17rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .myMeistä-text3-container {
+    display: block;
+    margin: 0px 0px;
+    height: 30rem;
+    text-align: center;
+  }
+  
+  .myMeistä-text3 h2 {
+    margin-top: 10.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+  }
+  
+  .myMeistä-text3 p {
+    margin-top: 0rem;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+  
+  .box3 {
     display: block;
     margin-top: 2rem;
     width: 70%;
@@ -487,6 +517,37 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .myMeistä-text3-container {
+    display: block;
+    margin: 0px 0px;
+    height: 30rem;
+    text-align: center;
+  }
+  
+  .myMeistä-text3 h2 {
+    margin-top: 10rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+  }
+  
+  .myMeistä-text3 p {
+    margin-top: 0rem;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+  
+  .box3 {
+    display: block;
+    margin-top: 2rem;
+    width: 70%;
+    height: 14.5rem;
+    max-width: 17rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   .myMeistä-text2-container {
     position: static;
@@ -630,6 +691,37 @@
     display: block;
     margin-top: 2rem;
     width: 45%;
+    height: 14.5rem;
+    max-width: 17rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .myMeistä-text3-container {
+    display: block;
+    margin: 0px 0px;
+    height: 30rem;
+    text-align: center;
+  }
+  
+  .myMeistä-text3 h2 {
+    margin-top: 7rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+  }
+  
+  .myMeistä-text3 p {
+    margin-top: 0rem;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+  
+  .box3 {
+    display: block;
+    margin-top: 2rem;
+    width: 70%;
     height: 14.5rem;
     max-width: 17rem;
     margin-left: auto;
