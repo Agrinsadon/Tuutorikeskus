@@ -26,31 +26,31 @@ const NewsletterPopup = () => {
     setEmail(e.target.value);
   };
 
-  const apiNews = process.env.REACT_APP_API_URL_NEWS;
-
   const handleSubscribe = () => {
     setSubscribing(true);
 
-    fetch(apiNews, {
+    fetch('https://tuutorikeskus-kugb.onrender.com/news/send-news', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ email }),
     })
-      .then(response => response.json())
-      .then(data => {
-        setSubscribing(false);
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Failed to subscribe: ${response.statusText}`);
+        }
         setSubscriptionSuccessful(true);
         setEmail('');
+      })
+      .catch((error) => {
+        console.error(error);
+      })
+      .finally(() => {
+        setSubscribing(false);
         setTimeout(() => {
           setSubscriptionSuccessful(false);
         }, 2000);
-      })
-      .catch(error => {
-        console.error('Error subscribing:', error);
-        setSubscribing(false);
-        // Handle error state accordingly
       });
   };
 
