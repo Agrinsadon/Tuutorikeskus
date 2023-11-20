@@ -251,7 +251,6 @@
 }
 
 @media screen and (max-width: 600px) {
-
   .meistä {
     padding-top: 7rem;
     height: 30rem;
@@ -526,7 +525,7 @@
   }
   
   .myMeistä-text3 h2 {
-    margin-top: 10rem;
+    margin-top: 6.5rem;
     margin-bottom: 0.5rem;
     font-size: 1.6rem;
   }
