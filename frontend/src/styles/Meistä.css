@@ -78,7 +78,7 @@
 
 .myMeistä-frame {
   background-color: #ECF9FF;
-  height: 68rem;
+  height: auto;
 }
 
 .myMeistä {
@@ -123,6 +123,32 @@
 }
 
 .box1 {
+  width: 40rem;
+  height: 20rem;
+}
+
+.myMeistä-text3-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0px 90px;
+  height: 30rem;
+}
+
+.myMeistä-text3 h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.9rem;
+  color: rgba(6, 6, 64, 1);
+}
+
+.myMeistä-text3 p {
+  margin-top: 0rem;
+  font-size: 1.2rem;
+  width: 80%;
+  color: rgba(130, 130, 151, 1);
+}
+
+.box3 {
   width: 40rem;
   height: 20rem;
 }

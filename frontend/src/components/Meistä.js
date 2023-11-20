@@ -46,6 +46,7 @@ const Meistä = () => {
         <p>Havaitessamme muiden tarpeen samankaltaiseen ohjeistukseen päätimme toimia. Kesällä 2017 toteutimme intensiivikurssin, jonka 13 osallistujasta peräti 11 sai opiskelupaikan Romaniasta eri yliopistoista. Tästä syntyi idea tarjota apua ja ohjausta niille, jotka tavoittelevat kansainvälisiä jatko-opintoja.</p>
         <button onClick={showForm}>Lue Lisää</button>
         </div>
+
         {isFormVisible && ( // Used in Romania.js
         <>
             <div className="overlay-meistä" onClick={hideForm}></div>
@@ -69,6 +70,13 @@ const Meistä = () => {
             </div>
         </>
     )}
+        </div>
+        <div className='myMeistä-text3-container'>
+        <div className='myMeistä-text3'>
+        <h2>Kokemus</h2>
+        <p>Olemme perehtyneet Romanian lääketieteellisten yliopistojen valintakokeisiin, tiedämme, mitä niissä korostetaan ja mitä hakijan tulisi opiskellessaan huomioida. Ota yhteyttä, jos haluat lisätietoja Romanian lääketieteellisestä yliopistosta.</p>
+        </div>
+        <img src="box1.PNG" alt="" className="box1" loading="lazy" />
         </div>
       </div>
       </div>
