@@ -36,10 +36,10 @@ const Etusivu = () => {
           <div className="image-container">
           <LazyLoadImage
             alt=" "
-            src="Video.png" // Replace with the actual image source
-            className="medical-image" // Apply the blur-up effect class
+            src="Video.png"
+            className="medical-image"
             loading="lazy"
-            effect="blur" // Specify the blur effect
+            effect="blur"
           />
             <Video />
           </div>

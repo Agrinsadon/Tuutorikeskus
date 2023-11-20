@@ -27,7 +27,7 @@ function EmailForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setIsSubmitting(true); // Set loading state
+    setIsSubmitting(true);
 
     fetch(apiUrl, {
       method: 'POST',
