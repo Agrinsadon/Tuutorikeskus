@@ -20,8 +20,18 @@ function sendNews(email, callback) {
     subject: `Uutiskirje tilaus Tuutorikeskus`,
     text: emailContent,
     html: `
-      <p>Tähän tulee Uutiskirjeen tiedot. ${email}!</p>
-    `,
+    <h1>Tervetuloa Lääkiksen pariin</h1>
+    <br /><br />
+      <h3>Miksi juuri Romaniaan?</h3>
+        <p>Suomessa lääkäriopintoihin hyväksytään vuosittain vain noin 10 % hakijoista. Romaniaan pääsi tänä vuonna 100 % Romanian lääketieteelliseen tiedekuntaan valmistautuvista kurssilaisistamme! Koska Romania on EU-maa, saa sieltä Valviran hyväksymän koulutuksen. Kaikki eurooppalaiset työmarkkinat ovat auki vielä paremmin kuin suomalaisella diplomilla; opiskeluhan on englanniksi.</p>
+        <br />
+        <p>Työssäoppimiseen pääset mukaan jo 1. opiskeluvuoden päätyttyä (Suomessa vasta 4. opiskeluvuonna).  Valmistuessasi sinulla on siis enemmän työkokemusta kuin Suomessa opiskelleilla vastavalmistuneilla lääkäreillä.</p>
+        <br />
+        <p>Opintojesi aikana luot kontakteja ympäri maailmaa tuleviin työtovereihin, esimiehiin ja työnantajiin. Avaat englanninkielisen koulutuksesi ansiosta myös sellaisia työmahdollisuuksia, jotka ovat Suomessa opiskelleille paljon vaikeammin saavutettavissa.</p>
+        <br />
+        <p>Hakemalla Romanian lääketieteelliseen sinulla on suuremmat sisäänpääsymahdollisuudet ensikertalaisena kuin Suomessa. Suomessa sisäänpääsyyn hakijat keskimäärin kuluttavat keskimäärin 2-3 yrityskertaa. Tämä tarkoittaa sitä, että säästät 2- 3 vuotta, jos pääset Romaniaan lääketieteelliseen opiskelemaan jo heti ensimmäisellä pääsykoekierroksella. Aika on todella arvokasta. </p>
+        <br />
+    `,  
   };
 
   transporter.sendMail(newsOptions, (error, info) => {
