@@ -19,12 +19,6 @@ function sendNews(email, callback) {
     to: email,
     subject: `Uutiskirje tilaus Tuutorikeskus`,
     text: emailContent,
-    attachments: [
-      {
-        filename: 'contract.pdf',
-        path: pdfFilePath,
-      },
-    ],
     html: `
       <p>Tähän tulee Uutiskirjeen tiedot. ${email}!</p>
     `,
