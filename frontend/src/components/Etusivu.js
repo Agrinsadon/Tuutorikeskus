@@ -9,6 +9,7 @@ import '../styles/Etusivu.css';
 import EmailForm from './EmailForm';
 import Timeline from './Timeline';
 import Video from './Video';
+import NewsletterPopup from './NewsletterPopup';
 
 const Etusivu = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -162,6 +163,7 @@ const Etusivu = () => {
       </div>
       {/* Ota Yhteyttä Section */}
       <EmailForm />
+      <NewsletterPopup />
     </div>
   );
 };

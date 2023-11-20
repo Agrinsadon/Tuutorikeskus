@@ -51,7 +51,6 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
         setShowDegreeOptions(false);
         setMilloinDropdownErrorMessage('');
 
-        // Depending on the selected option, show the relevant input field(s)
         if (selectedOption === 'Kyllä') {
             setShowCompletionDateInput(true);
             setShowGraduationDateInput(false);
@@ -128,12 +127,8 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
                     setSuccessMessage(false);
                 }, 3000);
             } else {
-                // Handle the case where the backend request fails
-                // You can display an error message or take other appropriate action
             }
         } catch (error) {
-            // Handle any network errors or other issues
-            // You can display an error message or take other appropriate action
         }
     
         setIsSubmitting(false);
@@ -145,7 +140,7 @@ const EnrollmentForm = ({ courseInfo, onEnrollmentSuccess }) => {
         <div className="enrollment-overlay">
             <div className="enrollment-form">
             <FontAwesomeIcon
-            icon={faTimes} // Use the FontAwesome icon you prefer
+            icon={faTimes}
             className="close-button"
             onClick={handleCloseForm}
             />
