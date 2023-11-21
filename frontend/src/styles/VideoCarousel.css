@@ -1,47 +1,53 @@
 .carousel-container {
-    font-family: 'Zen Antique Soft', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-  
-  .header {
-    font-size: 28px;
-    margin-top: 20px;
-  }
-  
-  .video-container-small {
-    position: relative;
-    margin: 3rem auto;
-  }
+  font-family: 'Zen Antique Soft', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
 
-  .video-container-small iframe {
-    width: 289px;
-    height: 176px;
-    border-radius: 15px;
-  }
-  
-  .arrow-icon {
-    font-size: 24px;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .left-arrow {
-    right: 350px;
-  }
-  
-  .right-arrow {
-    left: 350px;
-  }
-  
+.video-container-small {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-right: 4rem;
+  position: relative;
+  text-align: center;
+}
+
+.video-container-small iframe {
+  width: 350px;
+  height: 180px;
+  border-radius: 15px;
+}
+
+.arrow-container {
+  margin-top: 15px; 
+}
+
+.arrow-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 25px;
+}
+
+.text-container {
+  padding: 30px;
+}
+
+.text-container h2 {
+  font-size: 28px;
+  margin-bottom: 15px; 
+  color: rgba(6, 6, 64, 1);
+}
+
+.text-container p {
+  width: 90%;
+  color: #555;
+  font-size: 17px; 
+}

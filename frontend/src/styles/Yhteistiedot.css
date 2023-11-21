@@ -7,7 +7,7 @@
     font-family: 'Zen Antique Soft', sans-serif;
     background-color: #ECF9FF;
     padding-top: 2rem;
-    height: 53rem;
+    height: 80rem;
   }
 
   .yhteistiedot-main {
@@ -74,8 +74,7 @@
     transition: color 0.3s ease;
   }
 
-  @media screen and (max-width: 600px) {
-
+  @media screen and (max-width: 1351px) {
     .yhteistiedot {
       padding-top: 6rem;
     }

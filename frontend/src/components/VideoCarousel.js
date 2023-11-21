@@ -21,20 +21,30 @@ const VideoCarousel = () => {
 
   return (
     <div className="carousel-container">
-      <div className="header">Video Klipit</div>
-      <div className="video-container-small">
-        <FontAwesomeIcon
-          icon={faArrowLeft}
-          onClick={handlePrevClick}
-          className="arrow-icon left-arrow"
-        />
-        <div dangerouslySetInnerHTML={{ __html: getVideoEmbedCode(videoIds[currentVideoIndex]) }} />
-        <FontAwesomeIcon
-          icon={faArrowRight}
-          onClick={handleNextClick}
-          className="arrow-icon right-arrow"
-        />
+      <div className="text-container">
+          <h2>Romanian Kulttuuri</h2>
+        <p>awdwdadadawddawddawd</p>
       </div>
+      <div className="video-container-small">
+        <div dangerouslySetInnerHTML={{ __html: getVideoEmbedCode(videoIds[currentVideoIndex]) }} />
+        <div className="arrow-container">
+          {currentVideoIndex > 0 && (
+            <FontAwesomeIcon
+              icon={faArrowLeft}
+              onClick={handlePrevClick}
+              className="arrow-icon left-arrow"
+            />
+          )}
+          {currentVideoIndex < videoIds.length - 1 && (
+            <FontAwesomeIcon
+              icon={faArrowRight}
+              onClick={handleNextClick}
+              className="arrow-icon right-arrow"
+            />
+          )}
+        </div>
+      </div>
+
     </div>
   );
 };
