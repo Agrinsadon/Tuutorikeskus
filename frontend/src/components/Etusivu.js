@@ -24,7 +24,7 @@ const Etusivu = () => {
       <div className="etusivu">
         <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
         <div className="firstpage">
-          <div className="text-container">
+          <div className="text-container-etusivu">
             <h1>Täydellinen paikka lääketieteelliselle matkallesi</h1>
             <p>Paikka jossa tuemme, ohjaamme ja mentoroimme koko sydämestämme pyrkiviä kollegoita heidän tiellään lääketieteen alalle.</p>
             <button className="kurssit-button" onClick={handleKurssitButtonClick}>Kurssit</button>
@@ -130,7 +130,7 @@ const Etusivu = () => {
         <h1>Lisätiedot</h1>
         <div className='info-card-container'>
         <div className="info-card">
-          <img src="Aboutus.png" alt=" " className="card-pic" loading="lazy" />
+          <img src="Meistä-small.jpeg" alt=" " className="card-pic" loading="lazy" />
           <h2>Meistä</h2>
           <p>Me haluamme olla nuorten tukena elämänsä tärkeimmän polun valitsemisessa sekä haaveiden toteuttamisessa ja tätä kautta luoda lisäarvoa tuleville kollegoille.</p>
           <div className="card-links1">
