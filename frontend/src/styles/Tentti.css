@@ -15,11 +15,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Adjust to center properly */
-    z-index: 1; /* Ensure text is above the image */
-    max-width: 1439px; /* Set the desired maximum width for the text */
-    width: 100%; /* Ensure it takes the full width within the max-width */
-    margin: 0 auto; /* Center the text horizontally */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    max-width: 1439px;
+    width: 100%;
+    margin: 0 auto;
   }
   
   .tentti-main h1 {
@@ -71,8 +71,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ECF9FF; /* Match the background color of the .meistä section */
-    opacity: 0.9; /* Set the desired opacity */
+    background-color: #ECF9FF;
+    opacity: 0.9;
     border-radius: 15px;
   }
   
@@ -88,14 +88,14 @@
     font-size: 2.3rem;
     padding-top: 6rem;
     margin-top: 0rem;
-    color: black; /* Change the color to your preference */
+    color: black;
   }
 
   .myTentti h1::after {
     content: "";
     display: block;
-    border-bottom: 5px solid #fff; /* Width (2px in this example) and color */
-    width: 60%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    border-bottom: 5px solid #fff;
+    width: 60%;
     position: relative;
     left: 20%;
     border-radius: 15px; 
@@ -184,7 +184,7 @@
     }
   
     .myTentti h1::after {
-      width: 80%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+      width: 80%;
       position: relative;
       left: 10%;
     }

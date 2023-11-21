@@ -14,7 +14,7 @@
   margin-top: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 40px auto;
-  max-width: 1350px; /* Set the maximum width to 1439px */
+  max-width: 1350px;
   width: 90%; 
   background-color: white;
   z-index: 1000; 
@@ -34,7 +34,7 @@
 }
 
 .nav-links a {
-  font-family: 'Zen Antique Soft', sans-serif; /* Add font-family */
+  font-family: 'Zen Antique Soft', sans-serif;
   color: rgba(130, 130, 151, 1);
   text-decoration: none;
   transition: color 0.3s ease;
@@ -48,14 +48,13 @@
 
 .burger {
   margin-top: 0.2rem;
-  font-size: 22px; /* Adjust the font size as desired */
-  color: rgba(0, 229, 204, 1); /* Adjust the color as desired */
+  font-size: 22px;
+  color: rgba(0, 229, 204, 1);
   cursor: pointer;
-  margin-right: 10px; /* Add margin for spacing */
+  margin-right: 10px;
   display: none;
 }
 
-/* Add these media queries for responsive behavior */
 @media (min-width: 360px) and (max-width: 992px) {
   .tuutorikeskus-logo {
     width: 180px;

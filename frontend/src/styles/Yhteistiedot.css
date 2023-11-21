@@ -63,15 +63,15 @@
   .yhteistiedot-main .social-media {
     cursor: pointer;
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    gap: 20px; /* Adjust the value to control the spacing between icons */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
   
   .yhteistiedot-main .social-media a {
     margin-top: 1rem;
-    font-size: 22px; /* Adjust the value to change the icon size */
-    transition: color 0.3s ease; /* Add a smooth color transition effect */
+    font-size: 22px;
+    transition: color 0.3s ease;
   }
 
   @media screen and (max-width: 600px) {
@@ -120,11 +120,11 @@
     .yhteistiedot-main .company-info {
       margin-left: auto;
       margin-right: auto;
-      position: relative; /* Change to relative positioning on smaller screens */
-      bottom: auto; /* Reset the bottom position */
-      right: auto; /* Reset the right position */
-      width: 85%; /* Make it full-width on smaller screens */
-      height: auto; /* Allow the height to adjust based on content */
+      position: relative;
+      bottom: auto;
+      right: auto;
+      width: 85%;
+      height: auto;
     }
 }
 

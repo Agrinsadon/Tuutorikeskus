@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import Navbar from './Navbar';
 import '../styles/Romania.css';
+import VideoCarousel from './VideoCarousel';
 
 const Romania = () => {
     const [showLinks, setShowLinks] = useState(false);
@@ -56,6 +57,7 @@ const Romania = () => {
                 </div>
                 <img src="vapaa-aika.png" alt=" " className="vapaa-aika-image"/>
                 </div>
+                <VideoCarousel />
 
                 <div className="loma-content">
                 <img src="Holiday.jpeg" alt=" " className="loma-image"/>

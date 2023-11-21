@@ -27,8 +27,8 @@
   .romania-main h1::after {
     content: "";
     display: block;
-    border-bottom: 5px solid white; /* Width (2px in this example) and color */
-    width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    border-bottom: 5px solid white;
+    width: 50%;
     position: absolute;
     left: 25%;
     border-radius: 15px; 
@@ -51,12 +51,12 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     text-align: left;
-    overflow: hidden; /* Ensure the image stays within the card's frame */
+    overflow: hidden;
   }
 
   .romania-card-pic {
-    width: 100%; /* Limit the image size to the card's width */
-    height: 20rem; /* Maintain the image's aspect ratio */
+    width: 100%;
+    height: 20rem;
     border-radius: 15px 15px 0 0;
     mask-image: linear-gradient(to bottom, rgba(236, 249, 255, 1), transparent 20rem);
   }
@@ -69,16 +69,16 @@
   }
   
   .lääketiede-romania-text {
-    flex: 1; /* Takes up 50% of the available space */
-    padding: 10px; /* Add padding to both sides */
-    text-align: left; /* Align text to the left within the sections */
+    flex: 1;
+    padding: 10px;
+    text-align: left;
   }
 
   .tentti-romania-text {
-    flex: 1; /* Takes up 50% of the available space */
-    padding: 10px; /* Add padding to both sides */
-    border-left: 1px solid #ddd; /* Add a border to both sides */
-    text-align: left; /* Align text to the left within the sections */
+    flex: 1;
+    padding: 10px;
+    border-left: 1px solid #ddd;
+    text-align: left;
   }
   
   .lääketiede-romania-text h2 {
@@ -108,28 +108,27 @@
   }
   
   .lääketiede-romania-text a {
-    color: rgb(124, 216, 255); /* Change the link text color */
-    border-bottom: 2px solid transparent; /* Add a transparent border-bottom for the line */
-    transition: border-color 0.3s; /* Add a smooth transition for the border-color */
-    text-decoration: none; /* Remove the default underline */
+    color: rgb(124, 216, 255);
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+    text-decoration: none;
     margin-left: 1rem;
   }
   
   .lääketiede-romania-text a:hover {
-    border-color: rgb(124, 216, 255); /* Change the border color on hover */
+    border-color: rgb(124, 216, 255);
   }
   .tentti-romania-text a {
     margin-left: 1rem;
-    color: rgb(124, 216, 255); /* Change the link text color */
-    border-bottom: 2px solid transparent; /* Add a transparent border-bottom for the line */
-    transition: border-color 0.3s; /* Add a smooth transition for the border-color */
-    text-decoration: none; /* Remove the default underline */
+    color: rgb(124, 216, 255);
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+    text-decoration: none;
   }
   
   .tentti-romania-text a:hover {
     border-color: rgb(124, 216, 255); 
   }
-
 
 /* Vapaa aika Section */
   .vapaa-aika {
@@ -152,8 +151,8 @@
   .centered-header h1::after {
     content: "";
     display: block;
-    border-bottom: 5px solid #fff; /* Width (2px in this example) and color */
-    width: 50%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    border-bottom: 5px solid #fff;
+    width: 50%;
     position: absolute;
     left: 25%;
     border-radius: 15px; 
@@ -268,7 +267,7 @@
   cursor: pointer;
   width: 10rem;
   max-width: 10rem;
-  transition: background-color 0.3s; /* Smooth transition for background color */
+  transition: background-color 0.3s;
 }
 
 .overlay {
@@ -318,7 +317,6 @@
   color: rgba(6, 6, 64, 1);
 }
 
-/* Style for the text inside the form */
 .myForm p {
   margin-top: 2rem;
   font-size: 16px;
