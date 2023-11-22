@@ -23,7 +23,7 @@ const VideoCarousel = () => {
     <div className="carousel-container">
       <div className="text-container">
           <h2>Romanian Kulttuuri</h2>
-        <p>awdwdadadawddawddawd</p>
+        <p>Romanialla on pitkä historia ja se on säilyttänyt monia perinteitä ja kulttuurisia piirteitä vuosisatojen ajan. Roomalaisista juuristaan lähtien Romania on ollut kohtaamispaikka eri kulttuurien ja sivilisaatioiden välillä. Tämä näkyy monissa osissa Romanian kulttuuria, kuten sen kielessä, arkkitehtuurissa ja perinteisissä juhlissa.</p>
       </div>
       <div className="video-container-small">
         <div dangerouslySetInnerHTML={{ __html: getVideoEmbedCode(videoIds[currentVideoIndex]) }} />

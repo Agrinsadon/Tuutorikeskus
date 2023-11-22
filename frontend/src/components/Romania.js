@@ -27,8 +27,6 @@ const Romania = () => {
                 <div className="romania-card">
                 <div className="romania-pic-frame">
                 <iframe
-                    width="100%"
-                    height="315"
                     src="https://www.youtube.com/embed/snc2a09ra40?si=FtLaRye07gmWPbzs&autoplay=1&loop=1&playlist=snc2a09ra40&mute=1&modestbranding=1"
                     title="YouTube video player"
                     frameBorder="0"
