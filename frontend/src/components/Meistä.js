@@ -21,7 +21,7 @@ const Meistä = () => {
         <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
         <div className='meistä-pic-frame' style={{ backgroundImage: `url(/meistä.jpg)`}} loading="lazy" decoding="async">
         <div className='meistä-main'>
-          <h1>Tukemassa kaltaistemme nuorien lääkäripolkua</h1>
+          <h1>Tukemassa kaltaistemme nuorten lääkäripolkua</h1>
           <p>TUUTORIKESKUS Oy on vuonna 2016  perustettu täysin suomalainen osakeyhtiö kolmen lääketieteellisen opiskelijan toimesta. Meidän ydintehtävämme on yksinkertainen: tahdomme auttaa sinua saavuttamaan unelmasi.</p>
         </div>
         </div>
@@ -42,8 +42,8 @@ const Meistä = () => {
         <div className='myMeistä-text2-container'>
         <img src="box1.PNG" alt="" className="box2" loading="lazy" />
         <div className='myMeistä-text2'>
-        <h2>Menestys Tarina</h2>
-        <p>Havaitessamme muiden tarpeen samankaltaiseen ohjeistukseen päätimme toimia. Kesällä 2017 toteutimme intensiivikurssin, jonka 13 osallistujasta peräti 11 sai opiskelupaikan Romaniasta eri yliopistoista. Tästä syntyi idea tarjota apua ja ohjausta niille, jotka tavoittelevat kansainvälisiä jatko-opintoja.</p>
+        <h2>Menestystarina</h2>
+        <p>Havaitessamme muiden tarpeen samankaltaiseen ohjeistukseen päätimme toimia. Kesällä 2017 toteutimme intensiivikurssin jossa 13 osallistujasta peräti 11 hakijaa sai opiskelupaikan Romanian eri yliopistoista. Tästä syntyi idea tarjota apua ja ohjausta niille, jotka tavoittelevat kansainvälisiä jatko-opintoja.</p>
         <button onClick={showForm}>Lue Lisää</button>
         </div>
 
@@ -59,11 +59,10 @@ const Meistä = () => {
                 />
                 <div className="meistä-wrapper">
                     <h2>Haasteet</h2>
-                    <p>Toisen asteen tutkinnon suoritettua tavoitteenamme oli hakea lääketieteelliseen yliopistoon Suomessa. Esteeksi nousivat todella vaikeat pääsykokeet, jotka ovat jokaisen hakijan painajainen. Todennäköisyys päästä suomalaiseen lääketieteelliseen yliopistoon ensimmäisellä yrityksellä on häviävän pieni. Erityisen haastavaksi teki se, että olimme juuri valmistuneet toiseen asteen koulutuksesta, eikä jäänyt paljon aikaa valmistautua valintakokeeseen joka järjestetään luonnollisesti sinä kuluvana vuonna. Toinen vaihtoehto olisi ollut toki pitää välivuosi ja valmistautua ensivuoden pääsykokeeseen, mikä olisi tarkoittanut opiskelu vuosien menettämistä. Osa meistä oli jo käynyt tämänkin vaiheen käynyt läpi ja osallistunut muutaman kerran pääsykokeeseen tuloksetta.  Todennäköisyydet valmistua lääkärin ammattiin Suomessa olivat minimaaliset. Me tiesimme nämä faktat!
-                    Näitä faktoja pohtiessamme, päätimme hakea ulkomaille. Siten emme menettäsi enempää opiskeluvuosia  ja jossain vaiheessa valmistuisimme lääkäreiksi. Tällöin vastaan tuli kansainvälinen Romanian lääketieteellinen yliopisto.  Pääsykoe osoittautui yllättävän vaikeaksi sekä vastassa oli aivan erilainen hakuprosessi, puhumattakaan pääsykoemateriaalien puutteista. Emme tienneet mitä opiskella, mitä aihealuetta tulisi painottaa ja mistä asioista riittäisi vain yleistietämys. Anatomian ja fysiologian opinnot ovat erittäin laajoja sekä vaikeita aihealueita. Se oli kaikkien tiedossa oleva tosiasia. Me saimme ohjeistusta meidän onneksemme kaverilta, joka oli opiskelemassa Romaniassa lääketieteellisessä yliopistossa. Hän neuvoi ja opasti meitä. Nyt on vuoromme tehdä sama muiden puolesta.</p>
+                    <p>Erityisen haastavaksi teki se, että olimme juuri valmistuneet toiseen asteen koulutuksesta, eikä aikaa jäänyt valintakokeeseen valmistautumiseen, joka järjestetään luonnollisesti sinä kuluvana vuonna. Toinen vaihtoehto olisi ollut toki pitää välivuosi ja valmistautua ensivuoden pääsykokeeseen, joka olisi tarkoittanut opiskeluvuosien menettämistä. Osa meistä oli jo käynyt tämänkin vaiheen läpi ja osallistunut muutaman kerran pääsykokeeseen tuloksetta. Todennäköisyydet valmistua lääkärin ammattiin Suomessa olivat minimaaliset. Me tiesimme nämä faktat! Näitä faktoja pohtiessamme päätimme hakea ulkomaille. Siten emme menettäisi enempää opiskeluvuosia ja vuosien kuluessa valmistuisimme lääkäreiksi. Tällöin vastaan tuli kansainvälinen Romanian lääketieteellinen yliopisto. Pääsykoe osoittautui yllättävän vaikeaksi sekä vastassa oli aivan erilainen hakuprosessi, puhumattakaan pääsykoemateriaalien puutteista. Emme tienneet mitä opiskella, mitä aihealuetta tulisi painottaa ja mistä asioista riittäisi vain yleistietämys. Anatomian ja fysiologian opinnot ovat erittäin laajoja sekä vaikeita aihealueita. Se oli kaikkien tiedossa oleva tosiasia. Me saimme ohjeistusta meidän onneksemme kaverilta, joka oli opiskelemassa Romaniassa lääketieteellisessä yliopistossa. Hän neuvoi ja opasti meitä. Nyt on vuoromme tehdä sama muiden puolesta.</p>
                 <div className="meistä-content">
                     <h2>Ratkaisu</h2>
-                    <p>Huomasimme, että jatko-opintoihin hakevat tarvitsevat ohjeistusta, valmennusta pääsykokeessa onnistumisessa, neuvoja paperiasioissa ja apua asumisjärjestelyissä. Romaniassa, jos ei ole kontakteja tai tuttavia kyseisessä maassa, hakuprosessi hankaloituu huomattavasti. Tästä syntyi meidän ideamme, joka pilotoitiin kesän 2017 puolessa välissä. Kolmen viikon intensiivikurssille osallistui 13 kurssilaista, joista 11 opiskelijaa sai opiskelupaikan kolmesta eri yliopistosta ympäri Romaniaa. </p>
+                    <p>Huomasimme, että jatko-opintoihin hakevat tarvitsevat ohjeistusta, valmennusta pääsykokeessa onnistumisessa, neuvoja paperiasioissa ja apua asumisjärjestelyissä. Romaniassa, jos ei ole kontakteja tai tuttavia kyseisessä maassa, hakuprosessi hankaloituu huomattavasti. Tästä syntyi meidän ideamme, joka pilotoitiin kesän 2017 puolessa välissä. Kolmen viikon intensiivikurssille osallistui 13 kurssilaista, joista 11 opiskelijaa sai opiskelupaikan kolmesta eri yliopistosta ympäri Romaniaa.</p>
                 </div>
                 </div>
                 </div> 

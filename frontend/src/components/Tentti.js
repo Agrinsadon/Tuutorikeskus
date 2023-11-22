@@ -12,7 +12,7 @@ const Tentti = () => {
         <div className='tentti-pic-frame' style={{ backgroundImage: `url(/tentti-image.jpeg)`}} loading="lazy" decoding="async" >
         <div className='tentti-main'>
           <h1>Tenttivaatimukset</h1>
-          <p>Romanian arvostetuimissa yliopistoissa ei edellytetä kemiaa ja fysiikkaa valintakokeissa. Kemian ja fysiikan puolesta pääsykokeissa painotetaan anatomian ja fysiologian osaamista.</p>
+          <p>Romaniassa huippuyliopistot eivät vaadi kemiaa tai fysiikkaa. Pääsykokeissa keskitytään anatomiaan ja fysiologiaan. Koe on pääpainoitteisesti suullinen</p>
         </div>
         </div>
         </div>

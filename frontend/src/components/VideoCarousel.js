@@ -4,7 +4,7 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import '../styles/VideoCarousel.css';
 
 const VideoCarousel = () => {
-  const videoIds = ['QCFMcGtb9ao', 'newVideoId1', 'newVideoId2', 'newVideoId3'];
+  const videoIds = ['QCFMcGtb9ao', 't-9X8tF5Eyo', 'h0U1-TqsscY', 'newVideoId3'];
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const handlePrevClick = () => {

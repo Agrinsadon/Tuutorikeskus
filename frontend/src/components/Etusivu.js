@@ -26,7 +26,7 @@ const Etusivu = () => {
         <div className="firstpage">
           <div className="text-container-etusivu">
             <h1>Täydellinen paikka lääketieteelliselle matkallesi</h1>
-            <p>Paikka jossa tuemme, ohjaamme ja mentoroimme koko sydämestämme pyrkiviä kollegoita heidän tiellään lääketieteen alalle.</p>
+            <p>Paikka jossa tuemme, ohjaamme ja mentoroimme koko sydämestämme lääketieteen alalle pyrkiviä kollegoita</p>
             <button className="kurssit-button" onClick={handleKurssitButtonClick}>Kurssit</button>
             <div className="frame-container">
               <p>Siellä missä lääketieteen taidetta rakastetaan, siellä rakastetaan myös ihmiskuntaa - Hippocrates</p>
@@ -55,7 +55,7 @@ const Etusivu = () => {
               <FontAwesomeIcon icon={faBook} className="card-logo" />
             </div>
             <h2>Kurssit</h2>
-            <p>Valmennuskursseillamme koulutamme tulevia kollegoitamme suoriutumaan erinomaisesti pääsykokeissa. Opetusmenetelmäämme ja pääsykokeeseen liittyvät neuvot ovat jo neljän vuoden ajan osoittautuneet kursseillemme korvaamattomiksi.</p>
+            <p>Valmennuskursseillamme koulutamme tulevia kollegoitamme suoriutumaan erinomaisesti pääsykokeissa. Opetusmenetelmämme ja pääsykokeeseen liittyvät neuvot ovat jo vuosien ajan osoittautuneet kursseillamme korvaamattomiksi.</p>
           </div>
 
           <div className="server-card">
@@ -63,7 +63,7 @@ const Etusivu = () => {
               <FontAwesomeIcon icon={faSearch} className="card-logo" />
             </div>
             <h2>Hakuprosessi</h2>
-            <p>Paranna pääsymahdollisuuksiasi ulkoistamalla paperityöt ammattilaisille. Avullamme asia hoidetaan heti oikein ja sinulla on luonnollisesti mahdollisuus keskittyä vain lukemiseen ja pääsykokeessa menestymiseen.</p>
+            <p>Paranna pääsymahdollisuuksiasi ulkoistamalla paperityöt ammattilaisille. Toimitamme hakupaperisi puolestasi Romanian yliopistoon, jolloin sinulla on mahdollisuus keskittyä vain lukemiseen ja pääsykokeessa menestymiseen.</p>
           </div>
 
           <div className="server-card">
@@ -71,7 +71,7 @@ const Etusivu = () => {
               <FontAwesomeIcon icon={faPhone} className="card-logo" />
             </div>
             <h2>Asiakaspalvelu</h2>
-            <p>Ajatus ulkomailla opiskelusta liittyy usein ällistyttävään kysymykseen. Olemme täällä sinua varten, joten ota meihin yhteyttä, jos sinulla on kysyttävää palveluistamme tai Romanian lääketieteellisestä koulutusohjelmasta yleensä.</p>
+            <p>Ajatus ulkomailla opiskelusta herättää usein vaikeita kysymyksiä siksi olemme täällä sinua varten. Otathan meihin yhteyttä, jos sinulla on kysyttävää palveluistamme tai Romanian lääketieteellisestä koulutusohjelmasta.</p>
           </div>
         </div>
       </div>
@@ -80,7 +80,7 @@ const Etusivu = () => {
       <div className='aikajana'>
       <div className="aikajana-container">
       <h1>Aikajanamme</h1>
-      <p>Olemme erittäin ylpeitä tilastosaavutuksistamme vuosien varrella <br /> Tutoriemme ja opiskelijoiden yhdessä saavuttamat onnistumiset</p>
+      <p>Olemme erittäin ylpeitä Super-Takuu kurssin saavutuksistamme vuosien varrella.</p>
       <div className="timeline">
       <div className="timeline-item">
         <div className="circle">
@@ -130,9 +130,9 @@ const Etusivu = () => {
         <h1>Lisätiedot</h1>
         <div className='info-card-container'>
         <div className="info-card">
-          <img src="Meistä-small.jpeg" alt=" " className="card-pic" loading="lazy" />
+          <img src="Meistä-small.jpeg" alt=" " className="card-pic-meistä-small" loading="lazy" />
           <h2>Meistä</h2>
-          <p>Me haluamme olla nuorten tukena elämänsä tärkeimmän polun valitsemisessa sekä haaveiden toteuttamisessa ja tätä kautta luoda lisäarvoa tuleville kollegoille.</p>
+          <p>Me haluamme olla nuorten tukena elämän tärkeimmän polun valitsemisessa sekä haaveiden toteuttamisessa ja tätä kautta luoda lisäarvoa tuleville kollegoille.<br /><br /></p>
           <div className="card-links1">
           <a href="/Meistä">Lue Lisää</a>
           </div>
@@ -140,10 +140,11 @@ const Etusivu = () => {
 
         <div className="info-card">
           <div className="pic-frame">
-          <img src="Aboutus.png" alt=" " className="card-pic" loading="lazy" />
+          <img src="lääketiede-small.jpeg" alt=" " className="card-pic-lääketiede-small" loading="lazy" />
           </div>
           <h2>Lääketiede Romaniassa</h2>
-          <p>Opinnot ovat käytännönläheisiä, ja ensimmäiset vuodet keskittyvät teoriaan (prekliininen vaihe), kun taas viimeiset kolme vuotta sisältävät intensiivistä työkokemusta (postkliininen vaihe).</p>
+          <p>Opinnot ovat käytännönläheisiä. Ensimmäiset vuodet keskittyvät teoriaan (prekliininen vaihe), kun taas viimeiset kolme vuotta sisältävät intensiivistä työkokemusta (postkliininen vaihe).</p>
+          
           <div className="card-links2">
           <a href="/LääketiedeRomaniassa">Lue Lisää</a>
           </div>
@@ -151,10 +152,10 @@ const Etusivu = () => {
 
         <div className="info-card">
           <div className="pic-frame">
-          <img src="Aboutus.png" alt=" " className="card-pic" loading="lazy" />
+          <img src="tentti-small.jpeg" alt=" " className="card-pic-lääketiede-small" loading="lazy" />
           </div>
           <h2>Tenttivaatimukset</h2>
-          <p>Romanian huippuyliopistot jättävät kemian ja fysiikan väliin. Pääsykokeissa keskittyvät anatomiaan ja fysiologiaan. Kokeet yleensä vaihtelevat (suulliset tai kirjalliset).</p>
+          <p>Romaniassa huippuyliopistot eivät vaadi kemiaa tai fysiikkaa. Pääsykokeissa keskitytään anatomiaan ja fysiologiaan. Koe on pääpainoitteisesti suullinen.<br /><br /></p>
           <div className="card-links3">
           <a href="/Tenttivaatimukset">Lue Lisää</a>
           </div>

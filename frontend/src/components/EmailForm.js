@@ -74,7 +74,7 @@ function EmailForm() {
     <div className='screen'>
     <div className='contact-container'>
       <div className='ota-yhteyttä'>
-        <h1>Ota Yhteyttä</h1>
+        <h1>Ota yhteyttä</h1>
         <form onSubmit={handleSubmit}>
           <div className='inputs'>
             <input
