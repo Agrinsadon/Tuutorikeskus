@@ -931,6 +931,10 @@
   margin: 3rem auto;
   width: 80%;
 }
+
+.card-links2 {
+  margin-top: 2rem;
+}
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -1033,5 +1037,34 @@
     height: 27rem;
     margin: 30px auto;
     width: 65%;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1410px) {
+  .lisa-tietoa {
+    margin: 0px 0px;
+  }
+  
+  .lisa-tietoa h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .lisa-tietoa h1::after {
+    width: 57.3%;
+    left: 21%;
+  }
+  
+  .info-card-container {
+    display: block;
+  }
+  
+  .info-card {
+    height: 28.5rem;
+    margin: 3rem auto;
+    width: 80%;
+  }
+  
+  .card-links2 {
+    margin-top: 2rem;
   }
 }
