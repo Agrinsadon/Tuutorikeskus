@@ -40,7 +40,7 @@ const Meistä = () => {
         <img src="box1.PNG" alt="" className="box1" loading="lazy" />
         </div>
         <div className='myMeistä-text2-container'>
-        <img src="box1.PNG" alt="" className="box2" loading="lazy" />
+        <img src="box2.PNG" alt="" className="box2" loading="lazy" />
         <div className='myMeistä-text2'>
         <h2>Menestystarina</h2>
         <p>Havaitessamme muiden tarpeen samankaltaiseen ohjeistukseen päätimme toimia. Kesällä 2017 toteutimme intensiivikurssin jossa 13 osallistujasta peräti 11 hakijaa sai opiskelupaikan Romanian eri yliopistoista. Tästä syntyi idea tarjota apua ja ohjausta niille, jotka tavoittelevat kansainvälisiä jatko-opintoja.</p>
