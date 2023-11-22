@@ -79,7 +79,7 @@
 .myRomania {
   font-family: 'Zen Antique Soft', sans-serif;
   background-color: #ECF9FF;
-  height: 46rem;
+  height: 55rem;
 }
 
 .myRomania h1 {
@@ -163,8 +163,8 @@
     cursor: pointer;
     width: 7rem;
     max-width: 7rem;
-    display: block; /* Center the button horizontally */
-    margin: 0 auto; /* Center the button vertically and horizontally */
+    display: block;
+    margin: 0 auto;
 }
 
 .text2-content button:hover {
@@ -267,7 +267,7 @@
   }
 
   .myRomania h1::after {
-    width: 71.5%; /* Adjust the length (width) as a percentage or other valid CSS width value */
+    width: 71.5%;
     left: 14%;
   }
 
@@ -448,7 +448,7 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 1144px) {
   .lääketiede {
     padding-top: 7rem;
     height: 30rem;
