@@ -314,7 +314,7 @@
 
 .card-pic-meistä-small {
   width: 100%;
-  height: 30rem;
+  height: 27rem;
   border-radius: 15px 15px 0 0;
   mask-image: linear-gradient(to bottom, rgba(236, 249, 255, 0.9), transparent 14rem);
   position: absolute;
@@ -368,6 +368,7 @@
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .info-card a:hover {

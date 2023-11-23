@@ -33,6 +33,8 @@ const Kurssit = () => {
           </div>
           <div className='kurssi-text'>
           <p>
+          <span className="p-with-dots"></span>Kurssikirja 
+          <br />
           <span className="p-with-dots"></span>54 opetustuntia
           <br />
           <span className="p-with-dots"></span>Hakemusprosessissa avustaminen
@@ -59,6 +61,8 @@ const Kurssit = () => {
           </div>
           <div className='kurssi-text'>
           <p>
+          <span className="p-with-dots"></span>Kurssikirja 
+          <br />
           <span className="p-with-dots"></span>108 opetustuntia
           <br />
           <span className="p-with-dots"></span>Yksityisopetusta 1h
@@ -86,6 +90,8 @@ const Kurssit = () => {
           </div>
           <div className='kurssi-text'>
           <p>
+          <span className="p-with-dots"></span>Kurssikirja 
+          <br />
           <span className="p-with-dots"></span>114 opetustuntia + rahan palautus 
           <br />
           <span className="p-with-dots"></span>Yksityisopetusta 2h

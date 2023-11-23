@@ -73,7 +73,7 @@ const Romania = () => {
                     <p>Joululoma kestää 2 viikkoa</p>
                     <p>Hiihtoloma kestää 1 viikon</p>
                     <p>Pääsiäisloma kestää 11 päivää</p>
-                    <p>Kesäloma kestää 3 viikkoa</p>
+                    <p>Kesäloma kestää 3 kuukautta</p>
                 </div>
               </div>
 

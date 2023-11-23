@@ -130,7 +130,9 @@ const Etusivu = () => {
         <h1>Lisätiedot</h1>
         <div className='info-card-container'>
         <div className="info-card">
+        <div className="pic-frame">
           <img src="Meistä-small.jpeg" alt=" " className="card-pic-meistä-small" loading="lazy" />
+        </div>
           <h2>Meistä</h2>
           <p>Me haluamme olla nuorten tukena elämän tärkeimmän polun valitsemisessa sekä haaveiden toteuttamisessa ja tätä kautta luoda lisäarvoa tuleville kollegoille.<br /><br /></p>
           <div className="card-links1">
@@ -144,7 +146,6 @@ const Etusivu = () => {
           </div>
           <h2>Lääketiede Romaniassa</h2>
           <p>Opinnot ovat käytännönläheisiä. Ensimmäiset vuodet keskittyvät teoriaan (prekliininen vaihe), kun taas viimeiset kolme vuotta sisältävät intensiivistä työkokemusta (postkliininen vaihe).</p>
-          
           <div className="card-links2">
           <a href="/LääketiedeRomaniassa">Lue Lisää</a>
           </div>
