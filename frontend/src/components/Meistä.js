@@ -80,7 +80,6 @@ const Meistä = () => {
       </div>
       </div>
     </div>
-
     );
 };
 
