@@ -72,10 +72,10 @@ const Meistä = () => {
         </div>
         <div className='myMeistä-text3-container'>
         <div className='myMeistä-text3'>
-        <h2>Kokemus</h2>
+        <h2>Kurssikirja</h2>
         <p>Olemme perehtyneet Romanian lääketieteellisten yliopistojen valintakokeisiin, tiedämme, mitä niissä korostetaan ja mitä hakijan tulisi opiskellessaan huomioida. Ota yhteyttä, jos haluat lisätietoja Romanian lääketieteellisestä yliopistosta.</p>
         </div>
-        <img src="box1.PNG" alt="" className="box1" loading="lazy" />
+        <img src="box3.jpeg" alt="" className="box1" loading="lazy" />
         </div>
       </div>
       </div>

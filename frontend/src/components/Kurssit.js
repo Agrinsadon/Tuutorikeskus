@@ -25,7 +25,7 @@ const Kurssit = () => {
         <div className='kurssi-card-container'>
         <div className="kurssi-card">
         <div className="kurssi-pic-frame">
-          <img src="Aboutus.png" alt=" " className="kurssi-card-pic" />
+          <img src="intensiivinen-small.jpeg" alt=" " className="kurssi-card-pic"  loading='lazy'/>
         </div>
           <div className="kurssi-header">
           <h2>Intensiivinenkurssi</h2>
@@ -53,7 +53,7 @@ const Kurssit = () => {
 
         <div className="kurssi-card">
         <div className="kurssi-pic-frame">
-          <img src="Aboutus.png" alt=" " className="kurssi-card-pic" />
+          <img src="superkurssi-small.jpeg" alt=" " className="kurssi-card-pic" loading='lazy'/>
         </div>
           <div className="kurssi-header1">
           <h2>Superkurssi</h2>
@@ -82,7 +82,7 @@ const Kurssit = () => {
 
         <div className="kurssi-card">
         <div className="kurssi-pic-frame">
-          <img src="Aboutus.png" alt=" " className="kurssi-card-pic" />
+          <img src="supertakuu-small.jpeg" alt=" " className="kurssi-card-pic" loading='lazy' />
         </div>
           <div className="kurssi-header">
           <h2>Super-Takuu kurssi</h2>

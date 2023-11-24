@@ -17,8 +17,7 @@ function sendNews(email, callback) {
   const newsOptions = {
     from: process.env.GMAIL_USER,
     to: email,
-    subject: `Uutiskirje tilaus Tuutorikeskus`,
-    text: emailContent,
+    subject: `Tuutorikeskus uutiskirje`,
     html: `
     <h2>Tervetuloa Lääkiksen pariin</h1>
     <br />
@@ -28,6 +27,7 @@ function sendNews(email, callback) {
         <p>Opintojesi aikana luot kontakteja ympäri maailmaa tuleviin työtovereihin, esimiehiin ja työnantajiin. Avaat englanninkielisen koulutuksesi ansiosta myös sellaisia työmahdollisuuksia, jotka ovat Suomessa opiskelleille paljon vaikeammin saavutettavissa.</p>
         <p>Hakemalla Romanian lääketieteelliseen sinulla on suuremmat sisäänpääsymahdollisuudet ensikertalaisena kuin Suomessa. Suomessa sisäänpääsyyn hakijat keskimäärin kuluttavat keskimäärin 2-3 yrityskertaa. Tämä tarkoittaa sitä, että säästät 2- 3 vuotta, jos pääset Romaniaan lääketieteelliseen opiskelemaan jo heti ensimmäisellä pääsykoekierroksella. Aika on todella arvokasta. </p>
         <br />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BadnkcGYnzg?si=JVSE1K3SpCZltlwg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     `,  
   };
 
