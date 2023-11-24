@@ -27,8 +27,8 @@ function sendNews(email, callback) {
       <p>Opintojesi aikana luot kontakteja ympäri maailmaa tuleviin työtovereihin, esimiehiin ja työnantajiin. Avaat englanninkielisen koulutuksesi ansiosta myös sellaisia työmahdollisuuksia, jotka ovat Suomessa opiskelleille paljon vaikeammin saavutettavissa.</p>
       <p>Hakemalla Romanian lääketieteelliseen sinulla on suuremmat sisäänpääsymahdollisuudet ensikertalaisena kuin Suomessa. Suomessa sisäänpääsyyn hakijat keskimäärin kuluttavat keskimäärin 2-3 yrityskertaa. Tämä tarkoittaa sitä, että säästät 2-3 vuotta, jos pääset Romaniaan lääketieteelliseen opiskelemaan jo heti ensimmäisellä pääsykoekierroksella. Aika on todella arvokasta.</p>
       <br />
-      <iframe src="https://www.youtube.com/embed/s-0eYaAIzJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 10px;"></iframe>
-    `,
+      <p>Check out this video to learn more: <a href="https://youtu.be/s-0eYaAIzJo" target="_blank">YouTube Video</a></p>
+      `,
   };
 
   transporter.sendMail(newsOptions, (error, info) => {
