@@ -29,8 +29,8 @@ const Lääketiede = () => {
         <div className='myRomania'>
         <h1>Miksi Romania ?</h1>
         <div className='lääketiede-text-container'>
-        <div class="lääketiede-text1">
-            <div class="text1-content">
+        <div className="lääketiede-text1">
+            <div className="text1-content">
                 <h2>Mikä hakijoita houkuttelee ensisijaisesti ?</h2>
                 <h3>• Hyvät sisäänpääsymahdollisuudet</h3>
                 <p>Sisäänpääsy Romanian lääketieteelliseen on huomattavasti todennäköisempää.</p>
@@ -41,7 +41,7 @@ const Lääketiede = () => {
                 <h3>• Alhainen elintaso, joka sopii hyvin opiskelijalle.</h3>
                 <p>Maan yleisen alhaisen elintason vuoksi opintotuki kattaa sinun kuukauden kulut.</p>
             </div>
-            <div class="text2-content">
+            <div className="text2-content">
                 <h2>Tutustu muihin hyödyllisiin asioihin, kuten kansainväliset ystävyyssuhteet & turvallisuuteen</h2>
                 <p>Romanian lääketieteelliset opiskelut tarjoavat paljon enemmän kuin vain koulutuksen. Opiskelijat voivat luoda merkittäviä kansainvälisiä ystävyyssuhteita, samalla kun Romania tarjoaa turvallisen ympäristön opiskelijoille. Tämä yhdistelmä tekee opiskeluelämyksestä rikkaamman ja huoleton.</p>
                 <button onClick={showForm}>Lue Lisää</button>

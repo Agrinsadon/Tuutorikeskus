@@ -80,7 +80,7 @@ const Meistä = () => {
         <div className='myMeistä-text3-container'>
         <div className='myMeistä-text3'>
         <h2>Kurssikirja</h2>
-        <p>Olemme perehtyneet Romanian lääketieteellisten yliopistojen valintakokeisiin, tiedämme, mitä niissä korostetaan ja mitä hakijan tulisi opiskellessaan huomioida. Ota yhteyttä, jos haluat lisätietoja Romanian lääketieteellisestä yliopistosta.</p>
+        <p>Suunniteltu opettajiemme sekä aiempien pääsykokeiden pohjalta, hyödyntäen aikaisempien kysymysten tarjoamaa tietoa. Se on ainutlaatuisesti räätälöity vastaamaan kurssiemme ja pääsykokeidemme erityistarpeita, kuten muistisääntöjä ja ymmärtämiseen tukevia kuvia. Tämä kirja on täysin ainutlaatuinen eikä vastaavaa löydy markkinoilta.</p>
         <button onClick={handleKurssitButtonClick}>Kurssit</button>
         </div>
         <img src="box3.jpeg" alt="" className="box1" loading="lazy" />
