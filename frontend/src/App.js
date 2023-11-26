@@ -6,11 +6,11 @@ import Romania from './components/Romania';
 import Meistä from './components/Meistä';
 import Yhteistiedot from './components/Yhteistiedot';
 import Tentti from './components/Tentti';
-import LääkeRomania from './components/LääkeRomania'
+import LääkeRomania from './components/LääkeRomania';
 
 const App = () => {
   return (
-    <Router>
+    <Router forceRefresh={true}>
       <Switch>
         <Route path="/LääketiedeRomaniassa" component={LääkeRomania} />
         <Route path="/Tenttivaatimukset" component={Tentti} />
