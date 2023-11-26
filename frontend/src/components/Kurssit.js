@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
 import EmailForm from './EmailForm';
-import EnrollmentForm from './EnrollmentForm'; // New component
+import EnrollmentForm from './EnrollmentForm';
 import '../styles/Kurssit.css';
 
 const Kurssit = () => {
     const [showLinks, setShowLinks] = useState(false);
-    const [enrollmentInfo, setEnrollmentInfo] = useState(null); // State to store enrollment info
+    const [enrollmentInfo, setEnrollmentInfo] = useState(null);
 
     const handleIlmottauduButtonClick = (courseInfo) => {
         setEnrollmentInfo(courseInfo);
     };
 
     const handleEnrollmentSuccess = () => {
-        setEnrollmentInfo(null); // Clear the enrollment info to hide the form
+        setEnrollmentInfo(null);
     };
   
     return (
@@ -92,7 +92,7 @@ const Kurssit = () => {
           <p>
           <span className="p-with-dots"></span>Kurssikirja 
           <br />
-          <span className="p-with-dots"></span>114 opetustuntia + rahan palautus 
+          <span className="p-with-dots"></span>114 opetustuntia + rahanpalautus 
           <br />
           <span className="p-with-dots"></span>Yksityisopetusta 2h
           <br />

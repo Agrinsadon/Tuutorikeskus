@@ -61,7 +61,7 @@ const Romania = () => {
                 <div className="vapaa-aika-content">
                 <div className="vapaa-aika-text">
                     <h2>Vapaa-aika Romaniassa</h2>
-                    <p>Romaniassa on monipuoliset harrastus mahdollisuudet, josta jokainen varmasti löytää itsellensä sen oikean harrastuksen. Olit sitten kiinnostunut elokuvista, teatterista, ravintoloista, ratsastuksesta, vaelluksesta tai nyrkkeilystä. Romaniassa harrastukset ovat todella edullisia ja Kelan myöntämästä opintotuesta pystyt kattamaan harrastuksesi.</p>
+                    <p>Romaniassa on monipuoliset harrastusmahdollisuudet, josta jokainen varmasti löytää itsellensä sen oikean harrastuksen. Olit sitten kiinnostunut elokuvista, teatterista, ravintoloista, ratsastuksesta, vaelluksesta tai nyrkkeilystä. Romaniassa harrastukset ovat todella edullisia ja Kelan myöntämästä opintotuesta pystyt kattamaan harrastuksesi.</p>
                 </div>
                 <img src="vapaa-aika.png" alt=" " className="vapaa-aika-image"/>
                 </div>
@@ -91,7 +91,7 @@ const Romania = () => {
                         <div className="form-container">
                             <div className='myForm'>
                             <FontAwesomeIcon
-                            icon={faTimes} // Use the FontAwesome icon you prefer
+                            icon={faTimes}
                             className="x-button"
                             onClick={hideForm}
                             />
