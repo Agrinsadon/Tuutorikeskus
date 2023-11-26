@@ -67,7 +67,7 @@ const NewsletterPopup = () => {
             <div className="popup-content">
               <div className="main-content-news">
                 <h1>Tilaa uutiskirje</h1>
-                <p>Rahan arvoisia vinkkejä ja alennuksia Romanian lääketieteellisestä kiinnostuneille.</p>
+                <p>Rahanarvoisia vinkkejä ja alennuksia Romanian lääketieteellisestä kiinnostuneille.</p>
 
                 <div className="input-container">
                   <input

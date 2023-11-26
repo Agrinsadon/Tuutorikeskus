@@ -40,7 +40,7 @@ function sendNews(email, callback) {
       <p>Romaniassa opiskelu on käytännönläheisempää kuin Suomessa ja opiskelijat tekevät työharjoitteluja jo prekliinisessä vaiheessa, kun Suomessa vasta postkliinisessä. Voit itse valita suoritatko harjoittelut Romaniassa vai omassa terveysasemassasi kesäisin.</p>
       <p>KELA myöntää opintotukea ja asumislisää koko 6 vuoden opintojen ajaksi ja voit halutessasi hakea valtion takaamaa opintolainaa.</p>
       <p>Romanian lukuvuosimaksut ovat edulliset, vain 5000 € vuodessa johtuen alhaisista elinkustannuksista. Vertailuna Viron lääketieteelliset koulutukset maksavat lähes kolminkertaisesti. Asumiskustannukset mukaan lukien sähkö- ja vesimaksut ovat 300-400 € luokkaa.</p>
-      <p>Valmennuskurssimme auttaa sinua valmistautumaan kattavasti Romanian lääketieteelliseen pääsykokeeseen. Tarjoamme tukea kaikissa hakuprosessiin liittyvissä käytännön asioissa, kuten liitteiden ja asumisjärjestelyiden kanssa. Kurssin päätteeksi matkustamme yhdessä kanssasi Romaniaan pääsykokeisiin, huolehdimme käytännön järjestelyistä ja varmistamme päivän sujuvuuden, jotta voit keskittyä olennaiseen.</p>
+      <p>Valmennuskurssimme auttaa sinua valmistautumaan kattavasti Romanian lääketieteelliseen pääsykokeeseen. Tarjoamme tukea kaikissa hakuprosessiin liittyvissä käytännön asioissa, kuten asiakirjojen ja asumisjärjestelyiden kanssa. Kurssin päätteeksi matkustamme yhdessä kanssasi Romaniaan pääsykokeisiin, huolehdimme käytännön järjestelyistä ja varmistamme päivän sujuvuuden, jotta voit keskittyä olennaiseen.</p>
       <h3>Miksi valita kurssimme?</h3>
       <p>Haluat kansainvälisen lääkärikoulutuksen.
       Haluat paremmat mahdollisuudet päästä lääketieteelliseen nopeammin ja todennäköisemmin kuin Suomessa.
