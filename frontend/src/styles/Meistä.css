@@ -183,7 +183,7 @@
   height: 20rem;
 }
 
-.myMeistä-text2 button {
+.myMeistä button {
   font-family: 'Zen Antique Soft', sans-serif;
   background-color: rgba(6, 6, 64, 1);
   color: #fff;
@@ -341,12 +341,12 @@
   .myMeistä-text3-container {
     display: block;
     margin: 0px 0px;
-    height: 30rem;
+    height: 33rem;
     text-align: center;
   }
   
   .myMeistä-text3 h2 {
-    margin-top: 10.5rem;
+    margin-top: 11rem;
     margin-bottom: 0.5rem;
     font-size: 1.6rem;
   }
@@ -384,7 +384,7 @@
   }
   
   .myMeistä-text2 h2 {
-    margin-top: 0;
+    margin-top: 3rem;
     color: rgba(6, 6, 64, 1);
     margin-bottom: 0.5rem;
     font-size: 1.6rem;
@@ -520,7 +520,7 @@
   .myMeistä-text3-container {
     display: block;
     margin: 0px 0px;
-    height: 30rem;
+    height: 33rem;
     text-align: center;
   }
   
@@ -563,7 +563,7 @@
   }
   
   .myMeistä-text2 h2 {
-    margin-top: 0;
+    margin-top: 3rem;
     color: rgba(6, 6, 64, 1);
     margin-bottom: 0.5rem;
     font-size: 1.6rem;
@@ -699,12 +699,12 @@
   .myMeistä-text3-container {
     display: block;
     margin: 0px 0px;
-    height: 30rem;
+    height: 33rem;
     text-align: center;
   }
   
   .myMeistä-text3 h2 {
-    margin-top: 7rem;
+    margin-top: 5rem;
     margin-bottom: 0.5rem;
     font-size: 1.6rem;
   }
@@ -742,7 +742,7 @@
   }
   
   .myMeistä-text2 h2 {
-    margin-top: 0;
+    margin-top: 2rem;
     color: rgba(6, 6, 64, 1);
     margin-bottom: 0.5rem;
     font-size: 1.6rem;

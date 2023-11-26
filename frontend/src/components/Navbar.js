@@ -36,7 +36,7 @@ const Navbar = () => {
             Meistä
           </Link>
           <Link to="/Yhteistiedot" onClick={handleLinkClick}>
-            Yhteistiedot
+            Yhteystiedot
           </Link>
         </div>
         <FontAwesomeIcon

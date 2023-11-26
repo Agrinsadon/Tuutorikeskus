@@ -111,7 +111,7 @@ const Kurssit = () => {
 
         <div className="kurssi-card-small">
         <div className="kurssi-pic-frame">
-          <img src="Aboutus.png" alt=" " className="kurssi-card-pic" />
+          <img src="hakemus-matka-small.jpeg" alt=" " className="kurssi-card-pic" loading='lazy'/>
         </div>
           <div className="kurssi-header">
           <h2>Hakemuspalvelu + matka</h2>
@@ -131,7 +131,7 @@ const Kurssit = () => {
 
         <div className="kurssi-card-small">
         <div className="kurssi-pic-frame">
-          <img src="Aboutus.png" alt=" " className="kurssi-card-pic" />
+          <img src="hakemus-small.jpeg" alt=" " className="kurssi-card-pic" loading='lazy'/>
         </div>
           <div className="kurssi-header">
           <h2>Hakemuspalvelu</h2>
@@ -150,7 +150,7 @@ const Kurssit = () => {
 
         <div className="kurssi-card-small">
         <div className="kurssi-pic-frame">
-          <img src="Aboutus.png" alt=" " className="kurssi-card-pic" />
+          <img src="kirurgi.jpg" alt=" " className="kurssi-card-pic" loading='lazy'/>
         </div>
           <div className="kurssi-header">
           <h2>Knots & Suture</h2>

@@ -1,12 +1,19 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { useHistory } from 'react-router-dom';
 import Navbar from './Navbar';
 import '../styles/Meistä.css';
 
 const Meistä = () => {
     const [showLinks, setShowLinks] = useState(false);
     const [isFormVisible, setFormVisible] = useState(false);
+    const history = useHistory();
+
+    const handleKurssitButtonClick = () => {
+      window.scrollTo({ top: 0});
+      history.push('/Kurssit');
+    };
 
     const showForm = () => {
       setFormVisible(true);
@@ -74,6 +81,7 @@ const Meistä = () => {
         <div className='myMeistä-text3'>
         <h2>Kurssikirja</h2>
         <p>Olemme perehtyneet Romanian lääketieteellisten yliopistojen valintakokeisiin, tiedämme, mitä niissä korostetaan ja mitä hakijan tulisi opiskellessaan huomioida. Ota yhteyttä, jos haluat lisätietoja Romanian lääketieteellisestä yliopistosta.</p>
+        <button onClick={handleKurssitButtonClick}>Kurssit</button>
         </div>
         <img src="box3.jpeg" alt="" className="box1" loading="lazy" />
         </div>

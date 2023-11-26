@@ -139,7 +139,7 @@ function EmailForm() {
             <h3>Sähköposti</h3>
             <p>info.tuutorikeskus@gmail.com</p>
             <h3>Puhelin</h3>
-            <p>+123 456 7890</p>
+            <p>+358 442 447 576</p>
             <div className="social-media">
               <a href="https://www.facebook.com/profile.php?id=100063566469459" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon color='#4267B2' icon={faFacebook} />

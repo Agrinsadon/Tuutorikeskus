@@ -27,7 +27,7 @@ function sendNews(email, callback) {
       <p>Opintojesi aikana luot kontakteja ympäri maailmaa tuleviin työtovereihin, esimiehiin ja työnantajiin. Avaat englanninkielisen koulutuksesi ansiosta myös sellaisia työmahdollisuuksia, jotka ovat Suomessa opiskelleille paljon vaikeammin saavutettavissa.</p>
       <p>Hakemalla Romanian lääketieteelliseen sinulla on suuremmat sisäänpääsymahdollisuudet ensikertalaisena kuin Suomessa. Suomessa sisäänpääsyyn hakijat keskimäärin kuluttavat keskimäärin 2-3 yrityskertaa. Tämä tarkoittaa sitä, että säästät 2-3 vuotta, jos pääset Romaniaan lääketieteelliseen opiskelemaan jo heti ensimmäisellä pääsykoekierroksella. Aika on todella arvokasta.</p>
       <br />
-      <p>Check out this video to learn more: <a href="https://youtu.be/s-0eYaAIzJo" target="_blank">YouTube Video</a></p>
+      <p>Katso tämä video saadaksesi lisätietoja muitten opiskelijoiden kokemuksista: <a href="https://youtu.be/BadnkcGYnzg" target="_blank">Opiskelijoiden kokemukset</a></p>
       `,
   };
 
