@@ -6,8 +6,8 @@ function sendEmail(name, email, phone, subject, message, callback) {
 
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
-    port: 465, // Use 587 for TLS
-    secure: true, // For SSL
+    port: 465, 
+    secure: true,
     auth: {
     user: process.env.GMAIL_USER,
     pass: process.env.GMAIL_PASS,
@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
 
   const mailOptions = {
     from: email,
-    to: 'sadon.code@gmail.com',
+    to: process.env.GMAIL_USER,
     subject: subject,
     text: emailContent
   };
@@ -27,7 +27,7 @@ const transporter = nodemailer.createTransport({
       callback(error, null);
     } else {
       console.log('Email sent: ' + info.response);
-      callback(null, { message: 'Email sent successfully' }); // Send a success message
+      callback(null, { message: 'Email sent successfully' }); 
     }
   });
 }

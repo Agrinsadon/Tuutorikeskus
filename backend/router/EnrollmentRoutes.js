@@ -16,14 +16,12 @@ function validateRequiredFields(req, res, next) {
     }
   }
 
-  // Check for a valid email format
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailPattern.test(req.body.email)) {
     return res.status(400).json({ error: 'Invalid email format' });
   }
   next();
 }
-
 
 router.post('/send-enroll', validateRequiredFields, (req, res) => {
   const { name, surname, birthday, email, phone, tutkinto, milloin, courseTitle } = req.body;
@@ -35,7 +33,6 @@ router.post('/send-enroll', validateRequiredFields, (req, res) => {
       return res.status(500).json({ error: error.toString() });
     }
 
-    // Send a success response with a message
     res.status(200).json({ message: 'Email sent successfully' });
   });
 });
