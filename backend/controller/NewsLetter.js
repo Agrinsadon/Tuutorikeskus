@@ -28,7 +28,7 @@ function sendNews(email, callback) {
     html: `
       <h2>Tervetuloa Lääkiksen pariin</h2>
       <br />
-      <p>Katso tämä video saadaksesi lisätietoja muiden opiskelijoiden kokemuksista: <a href="https://youtu.be/BadnkcGYnzg" target="_blank">Opiskelijoiden kokemuksia</a></p>
+      <p>Katso tämä video saadaksesi lisätietoa muiden opiskelijoiden kokemuksista: <a href="https://youtu.be/BadnkcGYnzg" target="_blank">Opiskelijoiden kokemuksia</a></p>
       <br />
       <h3>Miksi valita Romania?</h3>
       <p>Suomessa lääkäriopintoihin hyväksytään vuosittain vain noin 10 % hakijoista. Kuitenkin Romaniaan valmistautuvista kurssilaisistamme monena vuotena peräkkäin 100 % on päässyt lääketieteelliseen tiedekuntaan! Romania tarjoaa EU-maana Valviran hyväksymän koulutuksen, joka avaa kaikki eurooppalaiset työmarkkinat Suomalaisen diplomisi lisäksi. Opiskelu tapahtuu englanniksi.</p>
