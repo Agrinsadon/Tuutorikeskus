@@ -92,7 +92,7 @@ const NewsletterPopup = () => {
               <div className="right-content-news">
                 <h2>Sisällys</h2>
                 <p>• Lukuvuosimaksut & Kelan tuet</p> 
-                <p>• Suomessa laillistuminen & Työharjoittelut</p> 
+                <p>• Suomessa laillistuminen & työharjoittelut</p> 
                 <p>• Miksi Romania & Romaniassa asuminen</p> 
                 <p>• Lääketieteelliseen hakemisen edellytykset</p> 
               </div>
