@@ -341,12 +341,12 @@
   .myMeistä-text3-container {
     display: block;
     margin: 0px 0px;
-    height: 33rem;
+    height: 40rem;
     text-align: center;
   }
   
   .myMeistä-text3 h2 {
-    margin-top: 11rem;
+    margin-top: 12rem;
     margin-bottom: 0.5rem;
     font-size: 1.6rem;
   }
@@ -384,7 +384,7 @@
   }
   
   .myMeistä-text2 h2 {
-    margin-top: 3rem;
+    margin-top: 0rem;
     color: rgba(6, 6, 64, 1);
     margin-bottom: 0.5rem;
     font-size: 1.6rem;
@@ -563,7 +563,7 @@
   }
   
   .myMeistä-text2 h2 {
-    margin-top: 3rem;
+    margin-top: 1rem;
     color: rgba(6, 6, 64, 1);
     margin-bottom: 0.5rem;
     font-size: 1.6rem;
@@ -742,7 +742,7 @@
   }
   
   .myMeistä-text2 h2 {
-    margin-top: 2rem;
+    margin-top: 0rem;
     color: rgba(6, 6, 64, 1);
     margin-bottom: 0.5rem;
     font-size: 1.6rem;
