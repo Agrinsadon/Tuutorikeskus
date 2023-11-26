@@ -8,6 +8,7 @@ import Yhteistiedot from './components/Yhteistiedot';
 import Tentti from './components/Tentti';
 import LääkeRomania from './components/LääkeRomania'
 
+
 const App = () => {
   return (
     <Router>
