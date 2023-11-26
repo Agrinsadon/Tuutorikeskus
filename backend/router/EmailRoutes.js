@@ -7,7 +7,6 @@ const router = express.Router();
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
 
-// Validation middleware (unchanged)
 function validateRequiredFields(req, res, next) {
   const requiredFields = ['name', 'email', 'subject', 'message'];
 
@@ -17,7 +16,6 @@ function validateRequiredFields(req, res, next) {
     }
   }
 
-  // Check for a valid email format
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailPattern.test(req.body.email)) {
     return res.status(400).json({ error: 'Invalid email format' });
@@ -29,15 +27,13 @@ function validateRequiredFields(req, res, next) {
 router.post('/send-email', validateRequiredFields, (req, res) => {
   const { name, email, phone, subject, message } = req.body;
 
-  // Logging the received data for debugging
   console.log('Received data:', req.body);
 
   sendEmail(name, email, phone, subject, message, (error, info) => {
     if (error) {
-      return res.status(500).json({ error: error.toString() }); // Send an error response
+      return res.status(500).json({ error: error.toString() });
     }
 
-    // Send a success response with a message
     res.status(200).json({ message: 'Email sent successfully' });
   });
 });

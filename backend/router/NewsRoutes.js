@@ -23,7 +23,6 @@ function validateRequiredFields(req, res, next) {
   next();
 }
 
-
 router.post('/send-news', validateRequiredFields, (req, res) => {
   const {email} = req.body;
 
