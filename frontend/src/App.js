@@ -8,7 +8,6 @@ import Yhteistiedot from './components/Yhteistiedot';
 import Tentti from './components/Tentti';
 import LääkeRomania from './components/LääkeRomania'
 
-
 const App = () => {
   return (
     <Router>
@@ -18,7 +17,7 @@ const App = () => {
         <Route path="/Kurssit" component={Kurssit} />
         <Route path="/Romania" component={Romania} />
         <Route path="/Meistä" component={Meistä} />
-        <Route path="/Yhteystiedot" component={Yhteistiedot} />
+        <Route path="/Yhteistiedot" component={Yhteistiedot} />
         <Route path="/" component={Koti} />
       </Switch>
     </Router>
