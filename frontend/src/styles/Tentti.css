@@ -105,7 +105,7 @@
     display: flex;
     justify-content: center;
     padding: 10px;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
   }
 
   .tentti-text1 {
@@ -191,7 +191,7 @@
     .tentti-container {
       display: block;
       padding: 10px;
-      margin-bottom: 1rem;
+      padding-bottom: 3rem;
     }
   
     .tentti-text1 {
