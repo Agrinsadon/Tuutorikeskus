@@ -78,7 +78,7 @@
   
   .myTentti {
     font-family: 'Zen Antique Soft', sans-serif;
-    height: 40rem;
+    height: auto;
     background-color: #ECF9FF;
     margin-top: 0;
   }
@@ -138,8 +138,7 @@
     text-align: left;
   }
 
-  @media screen and (max-width: 600px) {
-
+  @media screen and (max-width: 992px) {
     .tentti {
       padding-top: 7rem;
       height: 30rem;
@@ -172,7 +171,7 @@
 
     .myTentti {
       background-color: #ECF9FF;
-      height: 84.5rem;
+      height: auto;
     }
 
     .myTentti h1 {
