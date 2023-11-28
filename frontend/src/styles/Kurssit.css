@@ -407,7 +407,7 @@
 
 .kurssi-card {
   margin-top: 0rem;
-  width: 25rem;
+  width: 90%;
   height: 32rem;
   max-width: 22rem;
   margin: 30px auto;
@@ -433,6 +433,7 @@
 
 .kurssi-text p {
   font-size: 16px;
+  margin-right: 1rem;
 }
 
 .price-label {
@@ -444,7 +445,7 @@
 /* Small version of cards Section */
 .kurssi-card-small {
   margin-top: 0rem;
-  width: 25rem;
+  width: 90%;
   height: 26rem;
   max-width: 22rem;
   margin: 30px auto;

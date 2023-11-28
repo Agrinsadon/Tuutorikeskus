@@ -34,11 +34,7 @@ const Timeline = () => {
     <div className="aikajana-small">
       <div className="aikajana-container-small">
         <h1>Aikajanamme</h1>
-        <p>
-          Olemme erittäin ylpeitä tilastosaavutuksistamme vuosien varrella
-          <br />
-          Tutoriemme ja opiskelijoiden yhdessä saavuttamat onnistumiset
-        </p>
+        <p>Olemme erittäin ylpeitä Super-Takuu kurssin saavutuksistamme vuosien varrella.</p>
         <div className="timeline-small">
           <div className="timeline-item-small">
             <div className="circle-small" onClick={handleNextYear}>
