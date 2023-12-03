@@ -95,7 +95,6 @@ function getPdfFileName(courseTitle) {
     return null;
   }
 
-  // Default case, return a generic PDF filename
   return 'generic-sopimus.pdf';
 }
 
