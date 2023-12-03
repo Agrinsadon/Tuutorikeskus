@@ -33,7 +33,7 @@ function sendEnroll(name, surname, birthday, email, phone, tutkinto, milloin, co
       `
       : `
         <p>Tervetuloa kurssillemme, ${name}!</p>
-        <p>Olemme iloisia, että päätit liittyä meidän ${courseTitle}lle.</p>
+        <p>Olemme iloisia, että päätit liittyä meidän kursille: ${courseTitle}. Olemme teihin yhteydessä pian.</p>
         <p>Mikäli sinulla on kysyttävää kurssistamme ole yhteydessä sähköpostitse tai puh: +358 44 2447576, laitathan ensin viestiä meille jossa palaamme sinulle paremmalla ajalla.</p>
         <p>Kiitos ja tervetuloa!</p>
       `,
