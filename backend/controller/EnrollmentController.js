@@ -14,7 +14,7 @@ function sendEnroll(name, surname, birthday, email, phone, tutkinto, milloin, co
     pdfFileName = 'Supertakuukurssi-sopimus.pdf';
   }
 
-  const pdfFilePath = path.join(__dirname, 'contract.pdf');
+  const pdfFilePath = path.join(__dirname, pdfFileName);
 
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
