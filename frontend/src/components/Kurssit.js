@@ -105,7 +105,7 @@ const Kurssit = () => {
           </div>
           <div className="ilmottaudu-button-container">
           <span className="price-label">5500€</span>
-          <button onClick={() => handleIlmottauduButtonClick({ title: 'Super-Takuu kurssi' })} className='ilmottaudu-button'>Ilmottaudu</button>
+          <button onClick={() => handleIlmottauduButtonClick({ title: 'Super-Takuukurssi' })} className='ilmottaudu-button'>Ilmottaudu</button>
           </div>
         </div>
 

@@ -5,16 +5,39 @@ const path = require('path');
 function sendEnroll(name, surname, birthday, email, phone, tutkinto, milloin, courseTitle, callback) {
   const emailContent = `Ilmottautuiminen ${courseTitle}lle:\nEtunimi: ${name}\nSukunimi: ${surname}\nSyntymäpäivä: ${birthday}\nSähköposti: ${email}\nPuhelin: ${phone}\nTutkinto: ${tutkinto}\nValmistuu/Valmistunut: ${milloin}`;
 
-  let pdfFileName;
-  if (courseTitle === 'Intensiivinenkurssi') {
-    pdfFileName = 'Intensiivinenkurssi-sopimus.pdf';
-  } else if (courseTitle === 'Superkurssi') {
-    pdfFileName = 'Superkurssi-sopimus.pdf';
-  } else {
-    pdfFileName = 'Supertakuukurssi-sopimus.pdf';
-  }
+  const pdfFileName = getPdfFileName(courseTitle);
+  const pdfFilePath = pdfFileName ? path.join(__dirname, pdfFileName) : null;
 
-  const pdfFilePath = path.join(__dirname, pdfFileName);
+  const isAttachmentIncluded = pdfFilePath !== null;
+
+  const enrollOptions = {
+    from: process.env.GMAIL_USER,
+    to: email,
+    subject: `Ilmottautuminen ${courseTitle}lle`,
+    text: emailContent,
+    attachments: isAttachmentIncluded
+      ? [
+          {
+            filename: pdfFileName,
+            path: pdfFilePath,
+          },
+        ]
+      : [],
+    html: isAttachmentIncluded
+      ? `
+        <p>Tervetuloa kurssillemme, ${name}!</p>
+        <p>Olemme iloisia, että päätit liittyä meidän ${courseTitle}lle:</p>
+        <p>Liitteenä on kurssisopimus (PDF-tiedosto), joka tulee täyttää ja palauttaa meille.</p>
+        <p>Mikäli sinulla on kysyttävää sopimuksesta tai kurssistamme ole yhteydessä sähköpostitse tai puh: +358 44 2447576, laitathan ensin viestiä meille jossa palaamme sinulle paremmalla ajalla.</p>
+        <p>Kiitos ja tervetuloa!</p>
+      `
+      : `
+        <p>Tervetuloa kurssillemme, ${name}!</p>
+        <p>Olemme iloisia, että päätit liittyä meidän ${courseTitle}lle.</p>
+        <p>Mikäli sinulla on kysyttävää kurssistamme ole yhteydessä sähköpostitse tai puh: +358 44 2447576, laitathan ensin viestiä meille jossa palaamme sinulle paremmalla ajalla.</p>
+        <p>Kiitos ja tervetuloa!</p>
+      `,
+  };
 
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
@@ -31,26 +54,6 @@ function sendEnroll(name, surname, birthday, email, phone, tutkinto, milloin, co
     to: process.env.GMAIL_USER,
     subject: `Ilmottautuminen ${courseTitle}lle`,
     text: emailContent,
-  };
-
-  const enrollOptions = {
-    from: process.env.GMAIL_USER,
-    to: email,
-    subject: `Ilmottautuminen ${courseTitle}lle`,
-    text: emailContent,
-    attachments: [
-      {
-        filename: pdfFileName,
-        path: pdfFilePath,
-      },
-    ],
-    html: `
-      <p>Tervetuloa kurssillemme, ${name}!</p>
-      <p>Olemme iloisia, että päätit liittyä meidän ${courseTitle}lle:</p>
-      <p>Liitteenä on kurssisopimus (PDF-tiedosto), joka tulee täyttää ja palauttaa meille.</p>
-      <p>Mikäli sinulla on kysyttävää sopimuksesta tai kurssistamme ole yhteydessä sähköpostitse tai puh: +358 44 2447576, laitathan ensin viestiä meille jossa palaamme sinulle paremmalla ajalla.</p>
-      <p>Kiitos ja tervetuloa!</p>
-    `,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
@@ -72,6 +75,28 @@ function sendEnroll(name, surname, birthday, email, phone, tutkinto, milloin, co
       callback(null, { message: 'Enroll sent successfully' });
     }
   });
+}
+
+function getPdfFileName(courseTitle) {
+  if (
+    courseTitle === 'Intensiivinenkurssi' ||
+    courseTitle === 'Superkurssi' ||
+    courseTitle === 'Super-Takuukurssi'
+  ) {
+    return courseTitle + '-sopimus.pdf';
+  }
+
+  // Exclude attachment for specific course titles
+  if (
+    courseTitle === 'Hakemuspalvelu' ||
+    courseTitle === 'Hakemuspalvelu + matka' ||
+    courseTitle === 'Knots & Suture'
+  ) {
+    return null;
+  }
+
+  // Default case, return a generic PDF filename
+  return 'generic-sopimus.pdf';
 }
 
 module.exports = { sendEnroll };
