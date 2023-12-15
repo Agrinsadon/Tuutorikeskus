@@ -39,7 +39,7 @@ const Romania = () => {
                 <div className="outside-romania">
                     <div className="lääketiede-romania-text">
                         <h2>Lääketiede Romaniassa</h2>
-                        <p>Opinnot ovat käytännönläheisiä. Ensimmäiset vuodet keskittyvät teoriaan (prekliininen vaihe), kun taas viimeiset kolme vuotta sisältävät intensiivistä työkokemusta (postkliininen vaihe).</p>
+                        <p>Opinnot ovat käytännönläheisiä. Ensimmäisinä vuosina keskitytään teoriaan (prekliininen vaihe), kun taas viimeiset kolme vuotta sisältävät intensiivistä työkokemusta (postkliininen vaihe).</p>
                         <a href="/LääketiedeRomaniassa">Lue Lisää</a>
                     </div>
                     <div className="tentti-romania-text">
