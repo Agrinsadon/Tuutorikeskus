@@ -26,7 +26,7 @@ const Etusivu = () => {
         <div className="firstpage">
           <div className="text-container-etusivu">
             <h1>Täydellinen paikka lääketieteelliselle matkallesi</h1>
-            <p>Paikka jossa tuemme, ohjaamme ja mentoroimme koko sydämestämme lääketieteen alalle pyrkiviä kollegoita</p>
+            <p>Paikka jossa tuemme, ohjaamme ja mentoroimme koko sydämestämme lääketieteen alalle pyrkiviä kollegoita.</p>
             <button className="kurssit-button" onClick={handleKurssitButtonClick}>Kurssit</button>
             <div className="frame-container">
               <p>Siellä missä lääketieteen taidetta rakastetaan, siellä rakastetaan myös ihmiskuntaa - Hippocrates</p>
